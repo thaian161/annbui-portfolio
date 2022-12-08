@@ -142,27 +142,26 @@ export default function Home() {
               </div>
             </div>
             <div className="relative w-full max-w-lg">
-              <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-              <div className="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
-              <div className="absolute top-20 -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
-            </div>
+              <div>
+                {/* -------MY PROFILE PHOTO SECTION------- */}
 
-            <div>
-              {/* -------MY PROFILE PHOTO SECTION------- */}
-
-              <div
-                className="relative rounded-xl mx-auto mb-20 bg-gradient-to-b from-blue-300 w-80 h-80 mt-10 overflow-hidden md:h-94 md:w-94 md:mt-20 lg:mt-52 lg:ml-32 md:my-4 md:mb-20"
-                style={{
-                  boxShadow: '30px 30px #f8fafc, 30px 30px 0 6px  #93c5fd',
-                }}
-              >
-                <Image
-                  src={AnnProfilePhoto}
-                  layout="fill"
-                  objectFit="cover"
-                  alt="Ann Bui Profile Picture"
-                />
+                <div
+                  className="relative z-40 rounded-xl mx-auto mb-20 bg-gradient-to-b from-blue-300 w-80 h-80 mt-10 overflow-hidden md:h-94 md:w-94 md:mt-20 lg:mt-52 lg:ml-32 md:my-4 md:mb-20"
+                  style={{
+                    boxShadow: '30px 30px #f8fafc, 30px 30px 0 6px  #93c5fd',
+                  }}
+                >
+                  <Image
+                    src={AnnProfilePhoto}
+                    layout="fill"
+                    objectFit="cover"
+                    alt="Ann Bui Profile Picture"
+                  />
+                </div>
               </div>
+              <div className="absolute z-0 top-24 -left-4 w-72 h-72 bg-[#c8fad9] rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob animation-delay-400"></div>
+              <div className="absolute z-0 top-7 -right-14 w-80 h-80 bg-[#E0D3FE] rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-3000"></div>
+              <div className="absolute z-0 top-76 -bottom-8 left-20 w-72 h-72 bg-[#fbacb2dc] rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob "></div>
             </div>
           </div>
         </section>
