@@ -46,7 +46,7 @@ export default function Home() {
           </nav>
 
           {/* -------ABOUT ME/ FRONT PAGE SECTION------- */}
-          <div className="text-center p-10">
+          <div className="text-center p-10 m-auto">
             <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-7xl">
               Ann Bui
             </h2>
@@ -119,7 +119,7 @@ export default function Home() {
           {/* -------THREE SERVICES SECTION------- */}
           <div className="lg:flex gap-10">
             {/* -------DEVELOPING WEB CARD-------*/}
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 ">
               <Image src={Developing} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">
                 Developing Website || Web App
@@ -139,7 +139,7 @@ export default function Home() {
             </div>
 
             {/* -------UXUI CARD-------*/}
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 ">
               <Image src={UXUI} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">UX/UI Design</h3>
               <li className="text-left">
@@ -160,7 +160,7 @@ export default function Home() {
             </div>
 
             {/* -------CONSULTING CARD-------*/}
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 ">
               <Image src={Consulting} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">Consulting</h3>
               <li className="text-left">
@@ -194,10 +194,16 @@ export default function Home() {
             </p>
           </div>
           {/* -------SHOWCASE EACH PROJECT SECTION------- */}
-          <div>
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             {/* ---------------------Dirty Paws-------------------------- */}
-            <div>
-              <Image src={Testing} />
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={Testing}
+                className="rounded-lg object-cover"
+                width={'100%'}
+                height={'50%'}
+                layout="responsive"
+              />
               <div className="flex items-center justify-center">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   <a
@@ -218,8 +224,14 @@ export default function Home() {
               </div>
             </div>
             {/* ---------------------Expense App-------------------------- */}
-            <div>
-              <Image src={Testing} />
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={Testing}
+                className="rounded-lg object-cover"
+                width={'100%'}
+                height={'50%'}
+                layout="responsive"
+              />
               <div className="flex items-center justify-center">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   <a
@@ -240,8 +252,14 @@ export default function Home() {
               </div>
             </div>
             {/* ------------------------Jugnle Plant Shop----------------------- */}
-            <div>
-              <Image src={Testing} />
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={Testing}
+                className="rounded-lg object-cover"
+                width={'100%'}
+                height={'50%'}
+                layout="responsive"
+              />
               <div className="flex items-center justify-center">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   <a
@@ -263,8 +281,14 @@ export default function Home() {
             </div>
             {/* ------------------Bake It Up----------------------------- */}
 
-            <div>
-              <Image src={Testing} />
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={Testing}
+                className="rounded-lg object-cover"
+                width={'100%'}
+                height={'50%'}
+                layout="responsive"
+              />
               <div className="flex items-center justify-center">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   <a
@@ -286,8 +310,14 @@ export default function Home() {
             </div>
             {/* --------------------Tweeter--------------------------- */}
 
-            <div>
-              <Image src={Testing} />
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={Testing}
+                className="rounded-lg object-cover"
+                width={'100%'}
+                height={'50%'}
+                layout="responsive"
+              />
               <div className="flex items-center justify-center">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   <a
@@ -309,8 +339,14 @@ export default function Home() {
             </div>
             {/* -----------------------NFlyte Figma Mock-up------------------------ */}
 
-            <div>
-              <Image src={Testing} />
+            <div className="basis-1/3 flex-1">
+              <Image
+                src={Testing}
+                className="rounded-lg object-cover"
+                width={'100%'}
+                height={'50%'}
+                layout="responsive"
+              />
               <div className="flex items-center justify-center">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
                   <a
