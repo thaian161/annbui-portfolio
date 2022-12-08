@@ -86,3 +86,7 @@ Resume
 ## Import and use Image in Index.js
 
 - import Image to use in index.js using `import Image from 'next/image';` then import your photo `import AnnBuiPhoto from '../public/AnnBuiPhoto.jpeg'; `
+
+# Responsive
+
+- With the Mobile First developing approach, whatever come first will be set as default, use `md:px-20` to set padding for medium screeen, use `lg:px-40` to set padding for large screen.
