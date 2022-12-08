@@ -34,7 +34,7 @@ export default function Home() {
         <section className="min-h-fit">
           {/* -------NAV BAR SECTION------- */}
 
-          <nav className="sticky top-0 z-30 w-full px-2 py-4 bg-[#f8fafc] sm:px-4 flex justify-between dark:bg-gray-600">
+          <nav className="sticky top-0 z-30 w-full px-2 py-2 bg-[#f8fafc] sm:px-4 flex justify-between dark:bg-gray-600">
             <Image
               className="text-xl"
               src={Logo}
@@ -81,10 +81,10 @@ export default function Home() {
           <div className="lg:flex row md:w-full">
             <div>
               <div className="text-center m-auto md:text-left">
-                <h2 className="text-5xl py-2 text-blue-700 font-[700] md:text-7xl mt-10 mb-5 font-Poppins leading-10">
+                <h2 className="text-5xl py-2 text-[#385E8F] font-[700] md:text-7xl mt-10 mb-5 font-Poppins leading-10">
                   Heyyy, I am Ann Bui 👋🏼
                 </h2>
-                <span className="font-Nunito font-[700] text-2xl md:text-3xl text-white bg-blue-300 px-2 rounded-md">
+                <span className="font-Nunito font-[700] text-2xl md:text-4xl text-white bg-blue-300 px-2 rounded-md">
                   Jr Front-end Dev & UXUI Designer
                 </span>
                 <p className=" font-Open text-md lg:pr-14 py-5 leading-6 text-gray-800 md:text-xl max-w-4xl mx-auto mt-6">
@@ -141,12 +141,17 @@ export default function Home() {
                 </a>
               </div>
             </div>
+            <div className="relative w-full max-w-lg">
+              <div className="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+              <div className="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+              <div className="absolute top-20 -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70"></div>
+            </div>
 
             <div>
               {/* -------MY PROFILE PHOTO SECTION------- */}
 
               <div
-                className="relative rounded-xl mx-auto mb-20 bg-gradient-to-b from-blue-300 w-80 h-80 mt-10 overflow-hidden md:h-94 md:w-94 md:mt-10 lg:mt-40 md:my-4 md:mb-20"
+                className="relative rounded-xl mx-auto mb-20 bg-gradient-to-b from-blue-300 w-80 h-80 mt-10 overflow-hidden md:h-94 md:w-94 md:mt-20 lg:mt-52 lg:ml-32 md:my-4 md:mb-20"
                 style={{
                   boxShadow: '30px 30px #f8fafc, 30px 30px 0 6px  #93c5fd',
                 }}
