@@ -30,6 +30,8 @@ npx tailwindcss init -p`
 
 # Develop Mobile First
 
+## Building <Nav>
+
 - Directly styling using className, example `h-screen` = make an element span the entire height of the viewport.
 - In `tailwind.config.js` file, follow instruction on [2. Configure your templaye paths](https://tailwindcss.com/docs/installation), add the below code
 
@@ -75,3 +77,10 @@ Resume
 ```
 <a className="bg-gradient-to-r from-cyan-300 to-pink-300 text-white >
 ```
+
+## Custom Our Own Theme Color
+
+- in the `tailwind.config.js`, under theme > extend, we can customize our own color.
+- use google font following this docs [How To use Google Fonts in TailwindCSS](https://dev.to/avneesh0612/how-to-use-google-fonts-in-tailwindcss-5050)
+
+## Building the Main Page (about-contact)
