@@ -33,6 +33,7 @@ export default function Home() {
       <main className="bg-[#f8fafc] px-10 md:px-20 lg:px-40 dark:bg-gray-600">
         <section className="min-h-fit">
           {/* -------NAV BAR SECTION------- */}
+
           <nav className="sticky top-0 z-30 w-full px-2 py-4 bg-[#f8fafc] sm:px-4 flex justify-between dark:bg-gray-600">
             <Image
               className="text-xl"
@@ -45,21 +46,27 @@ export default function Home() {
             <ul className="flex items-center">
               <li>
                 {!darkMode && (
-                  <BsFillMoonStarsFill
-                    onClick={() => setDarkMode(!darkMode)}
-                    className="cursor-pointer text-xl"
-                  />
+                  <h1 className="flex">
+                    Dark
+                    <BsFillMoonStarsFill
+                      onClick={() => setDarkMode(!darkMode)}
+                      className="cursor-pointer text-xl"
+                    />
+                  </h1>
                 )}
                 {darkMode && (
-                  <RiSunFill
-                    onClick={() => setDarkMode(!darkMode)}
-                    className="cursor-pointer text-2xl text-yellow-300 hover:text-yellow-500"
-                  />
+                  <h1 className="flex text-yellow-300">
+                    Light
+                    <RiSunFill
+                      onClick={() => setDarkMode(!darkMode)}
+                      className="cursor-pointer text-2xl text-yellow-300 hover:text-yellow-500"
+                    />
+                  </h1>
                 )}
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-blue-500 to-blue-200 text-[#f8fafc] px-4 py-2 rounded-md ml-8"
+                  className="bg-blue-500 text-[#f8fafc] px-4 py-2 rounded-md ml-8"
                   href="https://resume.creddle.io/resume/j1ryfjyu3f1"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -74,26 +81,31 @@ export default function Home() {
           <div className="lg:flex row md:w-full">
             <div>
               <div className="text-center m-auto md:text-left">
-                <h2 className="text-5xl py-2 text-blue-600 font-[700] md:text-7xl mt-10 mb-5 font-Poppins leading-10">
+                <h2 className="text-5xl py-2 text-blue-700 font-[700] md:text-7xl mt-10 mb-5 font-Poppins leading-10">
                   Heyyy, I am Ann Bui 👋🏼
                 </h2>
-                <span className="font-Nunito font-[700] text-2xl py-2 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-300 ">
+                <span className="font-Nunito font-[700] text-2xl md:text-3xl text-white bg-blue-300 px-2 rounded-md">
                   Jr Front-end Dev & UXUI Designer
                 </span>
-                <p className=" font-Open text-md lg:pr-14 py-5 leading-6 text-gray-800 md:text-xl max-w-4xl mx-auto">
+                <p className=" font-Open text-md lg:pr-14 py-5 leading-6 text-gray-800 md:text-xl max-w-4xl mx-auto mt-6">
                   I have a strong interest in Web Development and love the
-                  ability to be creative and design visually appealing
-                  applications.
+                  ability to be{' '}
+                  <span className="text-blue-500">creative and design</span>{' '}
+                  visually appealing applications.
                   <br />
-                  Passionate about creating beautiful and user-centered products
+                  Passionate about creating beautiful and{' '}
+                  <span className="text-blue-500">
+                    user-centered products
+                  </span>{' '}
                   that bring joy and meet the needs of users in their daily
                   lives.
                   <br />
                   <br />
                   High achiever, detail oriented to pixel perfect with
                   experience in Project Management and Documentation. With a
-                  “work hard play hard” attitude, a willingness to learn, and a
-                  desire to get my job done excellently!
+                  “work hard play hard” attitude,{' '}
+                  <span className="text-blue-500">willingness to learn</span> ,
+                  and a desire to get my job done excellently!
                   <br />
                   <br />
                   Though I still have a lot to learn, I am eager to do so and
@@ -134,9 +146,9 @@ export default function Home() {
               {/* -------MY PROFILE PHOTO SECTION------- */}
 
               <div
-                className="relative rounded-xl mx-auto mb-20 bg-gradient-to-b from-blue-500 w-80 h-80 mt-10 overflow-hidden md:h-94 md:w-94 md:mt-10 lg:mt-40 md:my-4 md:mb-20"
+                className="relative rounded-xl mx-auto mb-20 bg-gradient-to-b from-blue-300 w-80 h-80 mt-10 overflow-hidden md:h-94 md:w-94 md:mt-10 lg:mt-40 md:my-4 md:mb-20"
                 style={{
-                  boxShadow: '30px 30px #f8fafc, 30px 30px 0 6px #3b82f6',
+                  boxShadow: '30px 30px #f8fafc, 30px 30px 0 6px  #93c5fd',
                 }}
               >
                 <Image
@@ -153,7 +165,7 @@ export default function Home() {
         {/* ------- SERVICES I OFFER SECTION------ */}
         <section>
           <div>
-            <span className="font-Nunito font-[700] text-2xl py-2 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-300 ">
+            <span className="font-Nunito font-[700] text-2xl py-2 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-200 ">
               Service I Offer
             </span>
             <p className=" font-Open text-md lg:pr-14 py-5 leading-6 md:text-xl">
@@ -167,7 +179,7 @@ export default function Home() {
           {/* -------THREE SERVICES SECTION------- */}
           <div className="lg:flex gap-10">
             {/* -------DEVELOPING WEB CARD-------*/}
-            <div className=" lg:w-1/3 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300 flex-auto">
+            <div className=" lg:w-1/3 text-center shadow-xl p-10 rounded-xl my-10 bg-gradient-to-tl from-white to-blue-200 dark:bg-slate-300 flex-auto">
               <Image
                 src={Developing}
                 width={100}
@@ -197,7 +209,7 @@ export default function Home() {
             </div>
 
             {/* -------UXUI CARD-------*/}
-            <div className="lg:w-1/3  text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300 flex-auto">
+            <div className="lg:w-1/3  text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300 flex-auto bg-gradient-to-t from-white to-blue-100">
               <Image
                 src={UXUI}
                 width={100}
@@ -226,7 +238,7 @@ export default function Home() {
               </h4>
             </div>
             {/* -------CONSULTING CARD-------*/}
-            <div className="lg:w-1/3  text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300  flex-auto">
+            <div className="lg:w-1/3  text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300  flex-auto bg-gradient-to-tr from-white to-blue-200">
               <Image
                 src={Consulting}
                 width={100}
@@ -277,7 +289,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={Testing}
-                className="rounded-lg object-cover hover:scale-110"
+                className="rounded-lg object-cover hover:scale-110 transition ease-in-out delay-300"
                 width={'100%'}
                 height={'50%'}
                 layout="responsive"
@@ -308,7 +320,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={Testing}
-                className="rounded-lg object-cover hover:scale-110"
+                className="rounded-lg object-cover hover:scale-110 transition ease-in-out delay-300"
                 width={'100%'}
                 height={'50%'}
                 layout="responsive"
@@ -339,7 +351,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={Testing}
-                className="rounded-lg object-cover hover:scale-110"
+                className="rounded-lg object-cover hover:scale-110 transition ease-in-out delay-300"
                 width={'100%'}
                 height={'50%'}
                 layout="responsive"
@@ -371,7 +383,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={Testing}
-                className="rounded-lg object-cover hover:scale-110"
+                className="rounded-lg object-cover hover:scale-110 transition ease-in-out delay-300"
                 width={'100%'}
                 height={'50%'}
                 layout="responsive"
@@ -403,7 +415,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={Testing}
-                className="rounded-lg object-cover hover:scale-110"
+                className="rounded-lg object-cover hover:scale-110 transition ease-in-out delay-300"
                 width={'100%'}
                 height={'50%'}
                 layout="responsive"
@@ -435,7 +447,7 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={Testing}
-                className="rounded-lg object-cover hover:scale-110"
+                className="rounded-lg object-cover hover:scale-110 transition ease-in-out delay-300"
                 width={'100%'}
                 height={'50%'}
                 layout="responsive"
@@ -468,10 +480,10 @@ export default function Home() {
       </main>
 
       <footer>
-        <div className="text-center mt-2">
+        <div className="text-center mt-2 text-lg">
           Made with lots of -❤️- by Ann Bui
         </div>
-        <div className="text-2xl flex justify-center gap-4 py-3 mb-2 text-gray-600">
+        <div className="text-3xl flex justify-center gap-4 py-3 mb-2 text-gray-600">
           <a
             href="https://github.com/thaian161"
             target="_blank"
