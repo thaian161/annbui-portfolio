@@ -58,7 +58,7 @@ export default function Home() {
             <div>
               <div className="text-center m-auto md:text-left">
                 <h2 className="text-5xl py-2 text-blue-600 font-medium md:text-7xl">
-                  Ann Bui
+                  Heyyy, I'm Ann Bui
                 </h2>
                 <h3 className="text-2xl py-2 md:text-3xl">
                   Jr Front-end Dev & UXUI Designer
@@ -85,30 +85,30 @@ export default function Home() {
                 </p>
               </div>
               {/* -------SOCIAL MEDIA ICONS SECTION------- */}
-              <div className=" text-4xl flex justify-center gap-14 py-3 text-gray-600 md:justify-start md:gap-6 md:mb-10">
+              <div className=" text-4xl flex justify-center gap-14 py-3 text-gray-600 md:justify-start md:gap-6 md:mb-10 ">
                 <a
                   href="https://github.com/thaian161"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <AiFillGithub />
+                  <AiFillGithub className="hover:text-blue-700 hover:scale-125" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/thaian161/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <AiFillLinkedin />
+                  <AiFillLinkedin className="hover:text-blue-700 hover:scale-125" />
                 </a>
                 <a href="mailto:hello.annbui@gmail.com">
-                  <AiOutlineMail />
+                  <AiOutlineMail className="hover:text-blue-700 hover:scale-125" />
                 </a>
                 <a
                   href="https://www.youtube.com/@JanthBui/videos"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <AiFillYoutube />
+                  <AiFillYoutube className="hover:text-blue-700 hover:scale-125" />
                 </a>
               </div>
             </div>
@@ -396,33 +396,31 @@ export default function Home() {
       </main>
 
       <footer>
-        <div className="text-center mt-2">
-          Made with lots of love by Ann Bui
-        </div>
+        <div className="text-center mt-2">Made with lots of ❤️ by Ann Bui</div>
         <div className="text-2xl flex justify-center gap-4 py-3 mb-2 text-gray-600">
           <a
             href="https://github.com/thaian161"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <AiFillGithub />
+            <AiFillGithub className="hover:text-blue-700 hover:scale-125" />
           </a>
           <a
             href="https://www.linkedin.com/in/thaian161/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <AiFillLinkedin />
+            <AiFillLinkedin className="hover:text-blue-700 hover:scale-125" />
           </a>
           <a href="mailto:hello.annbui@gmail.com">
-            <AiOutlineMail />
+            <AiOutlineMail className="hover:text-blue-700 hover:scale-125" />
           </a>
           <a
             href="https://www.youtube.com/@JanthBui/videos"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <AiFillYoutube />
+            <AiFillYoutube className="hover:text-blue-700 hover:scale-125" />
           </a>
         </div>
       </footer>
