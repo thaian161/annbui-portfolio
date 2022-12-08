@@ -8,7 +8,7 @@ import {
 } from 'react-icons/ai';
 
 import Image from 'next/legacy/image';
-import Ann from '../public/Ann.png';
+import AnnProfilePhoto from '../public/AnnBuiProfilePhoto.png';
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
 
       <main className="bg-white px-10">
         <section className="min-h-screen">
-          {/* Nav Bar Section */}
+          {/* -------Nav Bar Section------- */}
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl"> Ann Bui Portfolio</h1>
             <ul className="flex items-center">
@@ -41,7 +41,7 @@ export default function Home() {
             </ul>
           </nav>
 
-          {/* About Me Section */}
+          {/* -------About Me/Front Page Section------- */}
           <div className="text-center p-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium ">
               Ann Bui
@@ -66,7 +66,7 @@ export default function Home() {
               forward to sharpening the skills I've gained from my education.
             </p>
           </div>
-          {/* Social Media Icon links section */}
+          {/* -------Social Media Icon links section------- */}
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
             <a
               href="https://github.com/thaian161"
@@ -93,9 +93,9 @@ export default function Home() {
               <AiFillYoutube />
             </a>
           </div>
-          {/* My Photo Section */}
+          {/* -------My Profile Photo Section------- */}
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
-            <Image src={Ann} layout="fill" objectFit="cover" />
+            <Image src={AnnProfilePhoto} layout="fill" objectFit="cover" />
           </div>
         </section>
       </main>
