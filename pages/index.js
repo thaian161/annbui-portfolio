@@ -9,6 +9,9 @@ import {
 
 import Image from 'next/legacy/image';
 import AnnProfilePhoto from '../public/AnnBuiProfilePhoto.png';
+import Developing from '../public/Developing.png';
+import UXUI from '../public/UX:UI.png';
+import Consulting from '../public/Consulting.png';
 
 export default function Home() {
   return (
@@ -21,7 +24,7 @@ export default function Home() {
 
       <main className="bg-white px-10">
         <section className="min-h-screen">
-          {/* -------Nav Bar Section------- */}
+          {/* -------NAV BAR SECTION------- */}
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl"> Ann Bui Portfolio</h1>
             <ul className="flex items-center">
@@ -41,7 +44,7 @@ export default function Home() {
             </ul>
           </nav>
 
-          {/* -------About Me/Front Page Section------- */}
+          {/* -------ABOUT ME/ FRONT PAGE SECTION------- */}
           <div className="text-center p-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium ">
               Ann Bui
@@ -66,7 +69,7 @@ export default function Home() {
               forward to sharpening the skills I've gained from my education.
             </p>
           </div>
-          {/* -------Social Media Icon links section------- */}
+          {/* -------SOCIAL MEDIA ICONS SECTION------- */}
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
             <a
               href="https://github.com/thaian161"
@@ -93,9 +96,95 @@ export default function Home() {
               <AiFillYoutube />
             </a>
           </div>
-          {/* -------My Profile Photo Section------- */}
+          {/* -------MY PROFILE PHOTO SECTION------- */}
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
             <Image src={AnnProfilePhoto} layout="fill" objectFit="cover" />
+          </div>
+        </section>
+        {/* ------- SERVICES I OFFER SECTION------ */}
+        <section>
+          <div>
+            <h3 className="text-3xl py-1"> Service I Offer</h3>
+            <p className="text-md py-5 leading-6 text-gray-800">
+              Aside from my full-time job, I am also{' '}
+              <span className="text-teal-500">
+                available for part-time freelance work
+              </span>
+              . Below are the services I offer.
+            </p>
+          </div>
+          {/* THREE SERVICES SECTION */}
+          <div>
+            {/* BUILDING WEB CARD*/}
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={Developing} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Developing Website || Web App
+              </h3>
+              <li>Build static website, landing page, blogs...etc</li>
+              <li>Build web applications</li>
+              <li>
+                Develop WordPress templates, pages, and posts, document the
+                process, and make user guide for future reference
+              </li>
+              <h4 className="py-4 text-teal-600">
+                Technology:
+                <span className="text-gray-800"> React, Wordpress</span>
+              </h4>
+            </div>
+
+            {/* UXUI CARD*/}
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={UXUI} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2">UX/UI Design</h3>
+              <li>
+                UX research: understand user-story, conduct user research and
+                analyst data collected from surveys
+              </li>
+              <li>
+                Create user interface by choosing color scheme, typography,
+                design pattern and system
+              </li>
+              <li>Build wire-frame, prototype and final look mock-up</li>
+              <h4 className="py-4 text-teal-600">
+                Technology:
+                <span className="text-gray-800"> Figma, Adobe Express </span>
+              </h4>
+            </div>
+
+            {/* CONSULTING CARD*/}
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={Consulting} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2">Consulting</h3>
+              <li>
+                You want to know whether your product is user-friendly or need
+                feedback on the UX/UI? Contact me :D
+              </li>
+              <li>
+                Website audit to improve SEO, or re-design your entire
+                website/application interface
+              </li>
+              <li>
+                Feeling nervous before your interview? I can conduct a mock
+                interview and provide feedback
+              </li>
+              <h4 className="py-4 text-teal-600">
+                Contact me via:
+                <span className="text-gray-800"> email or linkedin </span>
+              </h4>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <h3 className="text-3xl py-1">Portfolio</h3>
+            <p className="text-md py-5 leading-6 text-gray-800">
+              Here are some of my{' '}
+              <span className="text-teal-500">coding projects</span> and{' '}
+              <span className="text-teal-500">UX/UI design</span> I have done so
+              far
+            </p>
           </div>
         </section>
       </main>
