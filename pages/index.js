@@ -14,6 +14,7 @@ import Developing from '../public/Developing.png';
 import UXUI from '../public/UX:UI.png';
 import Consulting from '../public/Consulting.png';
 import Testing from '../public/Testing.png';
+import Logo from '../public/Logo2.png';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -32,7 +33,14 @@ export default function Home() {
         <section className="min-h-fit">
           {/* -------NAV BAR SECTION------- */}
           <nav className="sticky top-0 z-30 w-full px-2 py-5 bg-white sm:px-4 flex justify-between">
-            <h1 className="text-xl"> Ann Bui Portfolio Logo</h1>
+            <Image
+              className="text-xl"
+              src={Logo}
+              width={100}
+              height={100}
+              alt="Developing Serive An Bui Provides"
+            />
+
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -434,7 +442,9 @@ export default function Home() {
       </main>
 
       <footer>
-        <div className="text-center mt-2">Made with lots of ❤️ by Ann Bui</div>
+        <div className="text-center mt-2">
+          Made with lots of -❤️- by Ann Bui
+        </div>
         <div className="text-2xl flex justify-center gap-4 py-3 mb-2 text-gray-600">
           <a
             href="https://github.com/thaian161"
