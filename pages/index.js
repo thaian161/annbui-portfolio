@@ -74,10 +74,10 @@ export default function Home() {
           <div className="lg:flex row md:w-full">
             <div>
               <div className="text-center m-auto md:text-left">
-                <h2 className="text-5xl py-2 text-blue-600 font-[700] md:text-7xl mt-10 mb-5 font-Poppins">
+                <h2 className="text-5xl py-2 text-blue-600 font-[700] md:text-7xl mt-10 mb-5 font-Poppins leading-10">
                   Heyyy, I am Ann Bui 👋🏼
                 </h2>
-                <span className="font-Poppins font-[500] text-2xl py-2 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-300 ">
+                <span className="font-Nunito font-[700] text-2xl py-2 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-300 ">
                   Jr Front-end Dev & UXUI Designer
                 </span>
                 <p className=" font-Open text-md lg:pr-14 py-5 leading-6 text-gray-800 md:text-xl max-w-4xl mx-auto">
@@ -153,10 +153,10 @@ export default function Home() {
         {/* ------- SERVICES I OFFER SECTION------ */}
         <section>
           <div>
-            <span className="font-Varela font-[800] text-2xl py-2 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-300 ">
+            <span className="font-Nunito font-[700] text-2xl py-2 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-300 ">
               Service I Offer
             </span>
-            <p className=" font-Varela text-md lg:pr-14 py-5 leading-6 md:text-xl">
+            <p className=" font-Open text-md lg:pr-14 py-5 leading-6 md:text-xl">
               Aside from my full-time job, I am also{' '}
               <span className="text-blue-500">
                 available for part-time freelance work
@@ -167,82 +167,93 @@ export default function Home() {
           {/* -------THREE SERVICES SECTION------- */}
           <div className="lg:flex gap-10">
             {/* -------DEVELOPING WEB CARD-------*/}
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300">
+            <div className=" lg:w-1/3 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300 flex-auto">
               <Image
                 src={Developing}
                 width={100}
                 height={100}
                 alt="Developing Serive An Bui Provides"
               />
-              <h3 className="text-lg font-medium pt-8 pb-2">
-                Developing Website || Web App
+              <h3 className="text-lg font-Poppins font-medium pt-8 pb-4 leading-6 md:text-xl">
+                Developing Website || App
               </h3>
-              <li className="text-left">
-                Build static website, landing page, blogs...etc
+              <li className="text-left font-Open font-md">
+                Build static website, landing page, promotion page, blogs...etc
               </li>
-              <li className="text-left">Build web applications</li>
-              <li className="text-left">
+              <li className="text-left font-Open font-md">
+                Build web applications
+              </li>
+              <li className="text-left font-Open font-md">
                 Develop WordPress templates, pages, and posts, document the
                 process, and make user guide for future reference
               </li>
-              <h4 className="py-4 text-blue-600">
+              <h4 className="py-4 text-blue-600 font-Open font-[700]">
                 Technology:
-                <span className="text-gray-800"> React, Wordpress</span>
+                <span className="text-gray-800 font-Open font-[500]">
+                  <br /> ReactJS, Wordpress, Tailwind, Custom CSS, NodeJS,
+                  mySQL, PostgreSQL, ExpressJS
+                </span>
               </h4>
             </div>
 
             {/* -------UXUI CARD-------*/}
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300">
+            <div className="lg:w-1/3  text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300 flex-auto">
               <Image
                 src={UXUI}
                 width={100}
                 height={100}
-                alt="UXUI Design Serive An Bui Provides"
+                alt="Developing Serive An Bui Provides"
               />
-              <h3 className="text-lg font-Poppins font-medium pt-8 pb-2 leading-6 md:text-xl">
-                UX/UI Design
+              <h3 className="text-lg font-Poppins font-medium pt-8 pb-4  leading-6 md:text-xl">
+                UX/UI Designing
               </h3>
-              <li className="text-left">
-                UX research: understand user-story, conduct user research and
-                analyst data collected from surveys
+              <li className="text-left font-Open font-md">
+                UX research: understand user-story, conduct user
+                research/surveys
               </li>
-              <li className="text-left">
-                Create user interface by choosing color scheme, typography,
-                design pattern and system
+              <li className="text-left font-Open font-md">
+                Create user interface: choose color scheme, typography, design
+                pattern and system
               </li>
-              <li className="text-left">
+              <li className="text-left font-Open font-md">
                 Build wire-frame, prototype and final look mock-up
               </li>
-              <h4 className="py-4 text-blue-600">
-                Technology:
-                <span className="text-gray-800"> Figma, Adobe Express </span>
+              <h4 className="py-4 text-blue-600 font-Open font-[700]">
+                Tools:
+                <span className="text-gray-800 font-Open font-[500]">
+                  <br /> Figma, Plugins in Figma, Adobe Express
+                </span>
               </h4>
             </div>
-
             {/* -------CONSULTING CARD-------*/}
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300">
+            <div className="lg:w-1/3  text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300  flex-auto">
               <Image
                 src={Consulting}
                 width={100}
                 height={100}
                 alt="Consulting Serive An Bui Provides"
               />
-              <h3 className="text-lg font-medium pt-8 pb-2">Consulting</h3>
-              <li className="text-left">
-                You want to know whether your product is user-friendly or need
-                feedback on the UX/UI? Contact me :D
+              <h3 className="text-lg font-Poppins font-medium pt-8 pb-4 leading-6 md:text-xl">
+                Consulting Servies
+              </h3>
+              <li className="text-left font-Open font-md">
+                End to end user testing and prodive feeback for your products
               </li>
-              <li className="text-left">
-                Website audit to improve SEO, or re-design your entire
-                website/app interface
+              <li className="text-left font-Open font-md">
+                Website audit to optimize SEO & re-design your website/app
+                interface
               </li>
-              <li className="text-left">
+              <li className="text-left font-Open font-md">
                 Feeling nervous before your interview? I can conduct a mock
                 interview and provide feedback
               </li>
-              <h4 className="py-4 text-blue-600">
+              <h4 className="py-4 text-blue-600 font-Open font-[700]">
                 Contact me via:
-                <span className="text-gray-800"> email or linkedin </span>
+                <span className="text-gray-800  font-Open font-[500]">
+                  <br />
+                  <a href="mailto:hello.annbui@gmail.com">Email</a> or{' '}
+                  <a href="https://www.linkedin.com/in/thaian161/">Linkedin</a>
+                </span>
               </h4>
             </div>
           </div>
@@ -250,10 +261,10 @@ export default function Home() {
         {/* -------PROJECTS PORTFOLIO SECTION------- */}
         <section>
           <div>
-            <span className="font-Varela font-[800] text-2xl py-2 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-300 ">
+            <span className="font-Nunito font-[700] text-2xl py-2 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-300 ">
               Portfolio
             </span>
-            <p className=" font-Varela text-md lg:pr-14 py-5 leading-6 md:text-xl">
+            <p className="font-Open text-mdtext-md lg:pr-14 py-5 leading-6 md:text-xl">
               Here are some of my{' '}
               <span className="text-blue-500">coding projects</span> and{' '}
               <span className="text-blue-500">UX/UI design</span> I have done so
@@ -261,7 +272,7 @@ export default function Home() {
             </p>
           </div>
           {/* -------SHOWCASE EACH PROJECT SECTION------- */}
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap font-Nunito font-[500]">
             {/* ---------------------Dirty Paws-------------------------- */}
             <div className="basis-1/3 flex-1">
               <Image
