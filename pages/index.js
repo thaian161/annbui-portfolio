@@ -12,6 +12,7 @@ import AnnProfilePhoto from '../public/AnnBuiProfilePhoto.png';
 import Developing from '../public/Developing.png';
 import UXUI from '../public/UX:UI.png';
 import Consulting from '../public/Consulting.png';
+import Testing from '../public/Testing.png';
 
 export default function Home() {
   return (
@@ -113,9 +114,9 @@ export default function Home() {
               . Below are the services I offer.
             </p>
           </div>
-          {/* THREE SERVICES SECTION */}
+          {/* -------THREE SERVICES SECTION------- */}
           <div>
-            {/* BUILDING WEB CARD*/}
+            {/* -------DEVELOPING WEB CARD-------*/}
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
               <Image src={Developing} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">
@@ -133,7 +134,7 @@ export default function Home() {
               </h4>
             </div>
 
-            {/* UXUI CARD*/}
+            {/* -------UXUI CARD-------*/}
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
               <Image src={UXUI} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">UX/UI Design</h3>
@@ -152,7 +153,7 @@ export default function Home() {
               </h4>
             </div>
 
-            {/* CONSULTING CARD*/}
+            {/* -------CONSULTING CARD-------*/}
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
               <Image src={Consulting} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">Consulting</h3>
@@ -175,7 +176,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-
+        {/* -------PROJECTS PORTFOLIO SECTION------- */}
         <section>
           <div>
             <h3 className="text-3xl py-1">Portfolio</h3>
@@ -185,6 +186,145 @@ export default function Home() {
               <span className="text-teal-500">UX/UI design</span> I have done so
               far
             </p>
+          </div>
+          {/* -------SHOWCASE EACH PROJECT SECTION------- */}
+          <div>
+            {/* ---------------------Dirty Paws-------------------------- */}
+            <div>
+              <Image src={Testing} />
+              <div className="flex items-center justify-center">
+                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  <a
+                    href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
+                    target="_blank"
+                  >
+                    Live Demo
+                  </a>
+                </button>
+                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  <a
+                    href="https://github.com/thaian161/Dirty-Paws"
+                    target="_blank"
+                  >
+                    Source Code
+                  </a>
+                </button>
+              </div>
+            </div>
+            {/* ---------------------Expense App-------------------------- */}
+            <div>
+              <Image src={Testing} />
+              <div className="flex items-center justify-center">
+                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  <a
+                    href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
+                    target="_blank"
+                  >
+                    Live Demo
+                  </a>
+                </button>
+                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  <a
+                    href="https://github.com/thaian161/Dirty-Paws"
+                    target="_blank"
+                  >
+                    Source Code
+                  </a>
+                </button>
+              </div>
+            </div>
+            {/* ------------------------Jugnle Plant Shop----------------------- */}
+            <div>
+              <Image src={Testing} />
+              <div className="flex items-center justify-center">
+                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  <a
+                    href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
+                    target="_blank"
+                  >
+                    Live Demo
+                  </a>
+                </button>
+                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  <a
+                    href="https://github.com/thaian161/Dirty-Paws"
+                    target="_blank"
+                  >
+                    Source Code
+                  </a>
+                </button>
+              </div>
+            </div>
+            {/* ------------------Bake It Up----------------------------- */}
+
+            <div>
+              <Image src={Testing} />
+              <div className="flex items-center justify-center">
+                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  <a
+                    href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
+                    target="_blank"
+                  >
+                    Live Demo
+                  </a>
+                </button>
+                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  <a
+                    href="https://github.com/thaian161/Dirty-Paws"
+                    target="_blank"
+                  >
+                    Source Code
+                  </a>
+                </button>
+              </div>
+            </div>
+            {/* --------------------Tweeter--------------------------- */}
+
+            <div>
+              <Image src={Testing} />
+              <div className="flex items-center justify-center">
+                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  <a
+                    href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
+                    target="_blank"
+                  >
+                    Live Demo
+                  </a>
+                </button>
+                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  <a
+                    href="https://github.com/thaian161/Dirty-Paws"
+                    target="_blank"
+                  >
+                    Source Code
+                  </a>
+                </button>
+              </div>
+            </div>
+            {/* -----------------------NFlyte Figma Mock-up------------------------ */}
+
+            <div>
+              <Image src={Testing} />
+              <div className="flex items-center justify-center">
+                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  <a
+                    href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
+                    target="_blank"
+                  >
+                    Live Demo
+                  </a>
+                </button>
+                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                  <a
+                    href="https://github.com/thaian161/Dirty-Paws"
+                    target="_blank"
+                  >
+                    Source Code
+                  </a>
+                </button>
+              </div>
+            </div>
+            {/* ----------------------------------------------- */}
           </div>
         </section>
       </main>
