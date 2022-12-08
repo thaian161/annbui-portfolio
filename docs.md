@@ -90,3 +90,21 @@ Resume
 # Responsive
 
 - With the Mobile First developing approach, whatever come first will be set as default, use `md:px-20` to set padding for medium screeen, use `lg:px-40` to set padding for large screen.
+
+# Dark Mode
+
+- Import `useState`
+- in the `tailwind.config.js` file, add `darkMode: "class"` in the module.exports
+- add `className={darkMode ? 'dark' : ''}` to the div that wrap the entire page, if it is darkMode then add class "dark", otherwise, do not add anything (empty string)
+- hookup onClick function to the darkMode Toggle Button
+
+```
+onClick={() => setDarkMode(!darkMode)}
+```
+
+- now add `dark:bg-gray-900` for example to the background of the entire app. Similar to the way we use `md:......` or `lg:.......` for responsive design
+
+# Fix the weirdly uneven larger margin on the right side on Mobile View
+
+- Simply add the `meta tag` to the `Head` component `<meta name="viewport" content="width=device-width, initial-scale=0.7" />`
+  BOOMMMMM save the day LOL
