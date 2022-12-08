@@ -9,6 +9,11 @@ module.exports = {
     extend: {
       fontFamily: {
         Montserrat: ['Montserrat', 'sans-serif'],
+        Nunito: ['Nunito Sans', 'sans-serif'],
+        Open: ['Open Sans', 'sans-serif'],
+        Poppins: ['Poppins', 'sans-serif'],
+        Varela: ['Varela Round', 'sans-serif'],
+        Baloo: ['Baloo 2', 'cursive'],
       },
     },
   },

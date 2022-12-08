@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import { BsFillMoonStarsFill } from 'react-icons/bs';
+import { BsFillMoonStarsFill, BsSunFill } from 'react-icons/bs';
+import { RiSunFill } from 'react-icons/ri';
 import {
   AiFillGithub,
   AiFillLinkedin,
@@ -29,10 +30,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-700">
+      <main className="bg-[#f8fafc] px-10 md:px-20 lg:px-40 dark:bg-gray-600">
         <section className="min-h-fit">
           {/* -------NAV BAR SECTION------- */}
-          <nav className="sticky top-0 z-30 w-full px-2 py-5 bg-white sm:px-4 flex justify-between">
+          <nav className="sticky top-0 z-30 w-full px-2 py-4 bg-[#f8fafc] sm:px-4 flex justify-between dark:bg-gray-600">
             <Image
               className="text-xl"
               src={Logo}
@@ -43,14 +44,22 @@ export default function Home() {
 
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill
-                  onClick={() => setDarkMode(!darkMode)}
-                  className="cursor-pointer text-sm"
-                />
+                {!darkMode && (
+                  <BsFillMoonStarsFill
+                    onClick={() => setDarkMode(!darkMode)}
+                    className="cursor-pointer text-xl"
+                  />
+                )}
+                {darkMode && (
+                  <RiSunFill
+                    onClick={() => setDarkMode(!darkMode)}
+                    className="cursor-pointer text-2xl text-yellow-300 hover:text-yellow-500"
+                  />
+                )}
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-blue-500 to-blue-200 text-white px-4 py-2 rounded-md ml-8 font-Montserrat"
+                  className="bg-gradient-to-r from-blue-500 to-blue-200 text-[#f8fafc] px-4 py-2 rounded-md ml-8"
                   href="https://resume.creddle.io/resume/j1ryfjyu3f1"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -62,16 +71,16 @@ export default function Home() {
           </nav>
 
           {/* -------ABOUT ME/ FRONT PAGE SECTION------- */}
-          <div className="xl:flex row md:w-full">
+          <div className="lg:flex row md:w-full">
             <div>
               <div className="text-center m-auto md:text-left">
-                <h2 className="text-5xl py-2 text-blue-600 font-medium md:text-7xl">
-                  Heyyy, I am Ann Bui
+                <h2 className="text-5xl py-2 text-blue-600 font-[700] md:text-7xl mt-10 mb-5 font-Poppins">
+                  Heyyy, I am Ann Bui 👋🏼
                 </h2>
-                <h3 className="text-2xl py-2 md:text-3xl">
+                <span className="font-Poppins font-[500] text-2xl py-2 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-300 ">
                   Jr Front-end Dev & UXUI Designer
-                </h3>
-                <p className="text-md lg:pr-14 py-5 leading-6 text-gray-800 md:text-xl max-w-4xl mx-auto">
+                </span>
+                <p className=" font-Open text-md lg:pr-14 py-5 leading-6 text-gray-800 md:text-xl max-w-4xl mx-auto">
                   I have a strong interest in Web Development and love the
                   ability to be creative and design visually appealing
                   applications.
@@ -127,7 +136,7 @@ export default function Home() {
               <div
                 className="relative rounded-xl mx-auto mb-20 bg-gradient-to-b from-blue-500 w-80 h-80 mt-10 overflow-hidden md:h-94 md:w-94 md:mt-10 lg:mt-40 md:my-4 md:mb-20"
                 style={{
-                  boxShadow: '30px 30px white, 30px 30px 0 6px blue',
+                  boxShadow: '30px 30px #f8fafc, 30px 30px 0 6px #3b82f6',
                 }}
               >
                 <Image
@@ -144,8 +153,10 @@ export default function Home() {
         {/* ------- SERVICES I OFFER SECTION------ */}
         <section>
           <div>
-            <h3 className="text-3xl py-1"> Service I Offer</h3>
-            <p className="text-md py-5 leading-6 text-gray-800">
+            <span className="font-Varela font-[800] text-2xl py-2 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-300 ">
+              Service I Offer
+            </span>
+            <p className=" font-Varela text-md lg:pr-14 py-5 leading-6 md:text-xl">
               Aside from my full-time job, I am also{' '}
               <span className="text-blue-500">
                 available for part-time freelance work
@@ -156,7 +167,7 @@ export default function Home() {
           {/* -------THREE SERVICES SECTION------- */}
           <div className="lg:flex gap-10">
             {/* -------DEVELOPING WEB CARD-------*/}
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 ">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300">
               <Image
                 src={Developing}
                 width={100}
@@ -181,14 +192,16 @@ export default function Home() {
             </div>
 
             {/* -------UXUI CARD-------*/}
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 ">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300">
               <Image
                 src={UXUI}
                 width={100}
                 height={100}
                 alt="UXUI Design Serive An Bui Provides"
               />
-              <h3 className="text-lg font-medium pt-8 pb-2">UX/UI Design</h3>
+              <h3 className="text-lg font-Poppins font-medium pt-8 pb-2 leading-6 md:text-xl">
+                UX/UI Design
+              </h3>
               <li className="text-left">
                 UX research: understand user-story, conduct user research and
                 analyst data collected from surveys
@@ -237,8 +250,10 @@ export default function Home() {
         {/* -------PROJECTS PORTFOLIO SECTION------- */}
         <section>
           <div>
-            <h3 className="text-3xl py-1">Portfolio</h3>
-            <p className="text-md py-5 leading-6 text-gray-800">
+            <span className="font-Varela font-[800] text-2xl py-2 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-300 ">
+              Portfolio
+            </span>
+            <p className=" font-Varela text-md lg:pr-14 py-5 leading-6 md:text-xl">
               Here are some of my{' '}
               <span className="text-blue-500">coding projects</span> and{' '}
               <span className="text-blue-500">UX/UI design</span> I have done so
