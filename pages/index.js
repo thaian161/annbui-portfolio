@@ -47,11 +47,13 @@ export default function Home() {
 
           {/* -------ABOUT ME/ FRONT PAGE SECTION------- */}
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium ">
+            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-7xl">
               Ann Bui
             </h2>
-            <h3 className="text-2xl py-2"> Front-end Dev & UXUI Designer</h3>
-            <p className="text-md py-5 leading-6 text-gray-800">
+            <h3 className="text-2xl py-2 md:text-3xl">
+              Front-end Dev & UXUI Designer
+            </h3>
+            <p className="text-md py-5 leading-6 text-gray-800 md:text-xl max-w-4xl mx-auto">
               Junior Front-end Dev who transitioned from Business Administration
               field. I have a strong interest in Web Development and love the
               ability to be creative and design visually appealing applications.
@@ -98,7 +100,7 @@ export default function Home() {
             </a>
           </div>
           {/* -------MY PROFILE PHOTO SECTION------- */}
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image src={AnnProfilePhoto} layout="fill" objectFit="cover" />
           </div>
         </section>
@@ -115,16 +117,18 @@ export default function Home() {
             </p>
           </div>
           {/* -------THREE SERVICES SECTION------- */}
-          <div>
+          <div className="lg:flex gap-10">
             {/* -------DEVELOPING WEB CARD-------*/}
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
               <Image src={Developing} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">
                 Developing Website || Web App
               </h3>
-              <li>Build static website, landing page, blogs...etc</li>
-              <li>Build web applications</li>
-              <li>
+              <li className="text-left">
+                Build static website, landing page, blogs...etc
+              </li>
+              <li className="text-left">Build web applications</li>
+              <li className="text-left">
                 Develop WordPress templates, pages, and posts, document the
                 process, and make user guide for future reference
               </li>
@@ -138,15 +142,17 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
               <Image src={UXUI} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">UX/UI Design</h3>
-              <li>
+              <li className="text-left">
                 UX research: understand user-story, conduct user research and
                 analyst data collected from surveys
               </li>
-              <li>
+              <li className="text-left">
                 Create user interface by choosing color scheme, typography,
                 design pattern and system
               </li>
-              <li>Build wire-frame, prototype and final look mock-up</li>
+              <li className="text-left">
+                Build wire-frame, prototype and final look mock-up
+              </li>
               <h4 className="py-4 text-teal-600">
                 Technology:
                 <span className="text-gray-800"> Figma, Adobe Express </span>
@@ -157,15 +163,15 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
               <Image src={Consulting} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2">Consulting</h3>
-              <li>
+              <li className="text-left">
                 You want to know whether your product is user-friendly or need
                 feedback on the UX/UI? Contact me :D
               </li>
-              <li>
+              <li className="text-left">
                 Website audit to improve SEO, or re-design your entire
                 website/application interface
               </li>
-              <li>
+              <li className="text-left">
                 Feeling nervous before your interview? I can conduct a mock
                 interview and provide feedback
               </li>
