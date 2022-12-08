@@ -58,7 +58,7 @@ export default function Home() {
             <div>
               <div className="text-center m-auto md:text-left">
                 <h2 className="text-5xl py-2 text-blue-600 font-medium md:text-7xl">
-                  Heyyy, I'm Ann Bui
+                  Heyyy, I am Ann Bui
                 </h2>
                 <h3 className="text-2xl py-2 md:text-3xl">
                   Jr Front-end Dev & UXUI Designer
@@ -80,7 +80,7 @@ export default function Home() {
                   <br />
                   <br />
                   Though I still have a lot to learn, I am eager to do so and
-                  look forward to sharpening the skills I've gained from my
+                  look forward to sharpening the skills I have gained from my
                   education.
                 </p>
               </div>
@@ -122,7 +122,12 @@ export default function Home() {
                   boxShadow: '30px 30px white, 30px 30px 0 6px blue',
                 }}
               >
-                <Image src={AnnProfilePhoto} layout="fill" objectFit="cover" />
+                <Image
+                  src={AnnProfilePhoto}
+                  layout="fill"
+                  objectFit="cover"
+                  alt="Ann Bui Profile Picture"
+                />
               </div>
             </div>
           </div>
@@ -144,7 +149,12 @@ export default function Home() {
           <div className="lg:flex gap-10">
             {/* -------DEVELOPING WEB CARD-------*/}
             <div className="text-center shadow-lg p-10 rounded-xl my-10 ">
-              <Image src={Developing} width={100} height={100} />
+              <Image
+                src={Developing}
+                width={100}
+                height={100}
+                alt="Developing Serive An Bui Provides"
+              />
               <h3 className="text-lg font-medium pt-8 pb-2">
                 Developing Website || Web App
               </h3>
@@ -164,7 +174,12 @@ export default function Home() {
 
             {/* -------UXUI CARD-------*/}
             <div className="text-center shadow-lg p-10 rounded-xl my-10 ">
-              <Image src={UXUI} width={100} height={100} />
+              <Image
+                src={UXUI}
+                width={100}
+                height={100}
+                alt="UXUI Design Serive An Bui Provides"
+              />
               <h3 className="text-lg font-medium pt-8 pb-2">UX/UI Design</h3>
               <li className="text-left">
                 UX research: understand user-story, conduct user research and
@@ -185,7 +200,12 @@ export default function Home() {
 
             {/* -------CONSULTING CARD-------*/}
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300">
-              <Image src={Consulting} width={100} height={100} />
+              <Image
+                src={Consulting}
+                width={100}
+                height={100}
+                alt="Consulting Serive An Bui Provides"
+              />
               <h3 className="text-lg font-medium pt-8 pb-2">Consulting</h3>
               <li className="text-left">
                 You want to know whether your product is user-friendly or need
@@ -227,11 +247,13 @@ export default function Home() {
                 width={'100%'}
                 height={'50%'}
                 layout="responsive"
+                alt="Dirty Paws Project"
               />
               <div className="flex items-center justify-center">
                 <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
                     href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
+                    rel="noreferrer"
                     target="_blank"
                   >
                     Demo
@@ -240,6 +262,7 @@ export default function Home() {
                 <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
                     href="https://github.com/thaian161/Dirty-Paws"
+                    rel="noreferrer"
                     target="_blank"
                   >
                     Code
@@ -255,11 +278,13 @@ export default function Home() {
                 width={'100%'}
                 height={'50%'}
                 layout="responsive"
+                alt="Expense App Project"
               />
               <div className="flex items-center justify-center">
                 <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
                     href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
+                    rel="noreferrer"
                     target="_blank"
                   >
                     Demo
@@ -268,6 +293,7 @@ export default function Home() {
                 <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
                     href="https://github.com/thaian161/Dirty-Paws"
+                    rel="noreferrer"
                     target="_blank"
                   >
                     Code
@@ -283,11 +309,13 @@ export default function Home() {
                 width={'100%'}
                 height={'50%'}
                 layout="responsive"
+                alt="Jungle Plan Shop Project"
               />
               <div className="flex items-center justify-center">
                 <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
                     href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
+                    rel="noreferrer"
                     target="_blank"
                   >
                     Demo
@@ -296,6 +324,7 @@ export default function Home() {
                 <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
                     href="https://github.com/thaian161/Dirty-Paws"
+                    rel="noreferrer"
                     target="_blank"
                   >
                     Code
@@ -312,11 +341,13 @@ export default function Home() {
                 width={'100%'}
                 height={'50%'}
                 layout="responsive"
+                alt="Bake It Up"
               />
               <div className="flex items-center justify-center">
                 <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
                     href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
+                    rel="noreferrer"
                     target="_blank"
                   >
                     Demo
@@ -325,6 +356,7 @@ export default function Home() {
                 <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
                     href="https://github.com/thaian161/Dirty-Paws"
+                    rel="noreferrer"
                     target="_blank"
                   >
                     Code
@@ -341,11 +373,13 @@ export default function Home() {
                 width={'100%'}
                 height={'50%'}
                 layout="responsive"
+                alt="Tweeter Project"
               />
               <div className="flex items-center justify-center">
                 <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
                     href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
+                    rel="noreferrer"
                     target="_blank"
                   >
                     Demo
@@ -354,6 +388,7 @@ export default function Home() {
                 <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
                     href="https://github.com/thaian161/Dirty-Paws"
+                    rel="noreferrer"
                     target="_blank"
                   >
                     Code
@@ -370,11 +405,13 @@ export default function Home() {
                 width={'100%'}
                 height={'50%'}
                 layout="responsive"
+                alt="Nflyte Mock-up Project"
               />
               <div className="flex items-center justify-center">
                 <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
                     href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
+                    rel="noreferrer"
                     target="_blank"
                   >
                     Demo
@@ -383,6 +420,7 @@ export default function Home() {
                 <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
                     href="https://github.com/thaian161/Dirty-Paws"
+                    rel="noreferrer"
                     target="_blank"
                   >
                     Code
