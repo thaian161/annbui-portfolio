@@ -15,6 +15,13 @@
 ```
 
 6. Install React Icons `npm i react-icons`
+7. Run
+
+```
+npm install -D tailwindcss postcss aut
+oprefixer
+npx tailwindcss init -p`
+```
 
 # Clean Up Unused Files/Code
 
@@ -22,3 +29,49 @@
 - In `styles/globals.css` remove `@media query` since we will be using Tailwind instead
 
 # Develop Mobile First
+
+- Directly styling using className, example `h-screen` = make an element span the entire height of the viewport.
+- In `tailwind.config.js` file, follow instruction on [2. Configure your templaye paths](https://tailwindcss.com/docs/installation), add the below code
+
+```
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './pages/**/*.{js,ts.jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+
+```
+
+- Href link open in another tab
+  `target="_blank"` = open link in a new tab
+  `rel="noopener noreferrer"` = prevent possible malicious attacks from the pages you link to
+
+```
+<a
+href="https://resume.creddle.io/resume/j1ryfjyu3f1"
+target="_blank"
+rel="noopener noreferrer">
+Resume
+</a>
+```
+
+- In `index.js` import and use React Icons by `import {BsFillMoonStarsFill} from 'react-icons/bs';`
+- `py-10` = padding width 10 (top & bottom) or just use `p` for padding, `pt = padding top`, `pb=padding bottom`...etc
+
+```.py-10 {
+  padding-top: 2.5rem/* 40px */;
+  padding-bottom: 2.5rem/* 40px */;
+}
+```
+
+- super cool and fast way to do background gradient, exampl below
+
+```
+<a className="bg-gradient-to-r from-cyan-300 to-pink-300 text-white >
+```
