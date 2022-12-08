@@ -7,7 +7,8 @@ import {
   AiFillYoutube,
 } from 'react-icons/ai';
 
-import Image from 'next/image';
+import Image from 'next/legacy/image';
+import Ann from '../public/Ann.png';
 
 export default function Home() {
   return (
@@ -93,7 +94,9 @@ export default function Home() {
             </a>
           </div>
           {/* My Photo Section */}
-          <div className=""></div>
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
+            <Image src={Ann} layout="fill" objectFit="cover" />
+          </div>
         </section>
       </main>
 
