@@ -29,10 +29,10 @@ export default function Home() {
       </Head>
 
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-700">
-        <section className="min-h-screen">
+        <section className="min-h-fit">
           {/* -------NAV BAR SECTION------- */}
-          <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl"> Ann Bui Portfolio</h1>
+          <nav className="sticky top-0 z-30 w-full px-2 py-5 bg-white sm:px-4 flex justify-between">
+            <h1 className="text-xl"> Ann Bui Portfolio Logo</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -42,7 +42,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  className="bg-gradient-to-r from-cyan-300 to-pink-300 text-white px-4 py-2 rounded-md ml-8 font-Montserrat"
+                  className="bg-gradient-to-r from-blue-500 to-blue-200 text-white px-4 py-2 rounded-md ml-8 font-Montserrat"
                   href="https://resume.creddle.io/resume/j1ryfjyu3f1"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -54,71 +54,87 @@ export default function Home() {
           </nav>
 
           {/* -------ABOUT ME/ FRONT PAGE SECTION------- */}
-          <div className="text-center p-10 m-auto">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-7xl">
-              Ann Bui
-            </h2>
-            <h3 className="text-2xl py-2 md:text-3xl">
-              Front-end Dev & UXUI Designer
-            </h3>
-            <p className="text-md py-5 leading-6 text-gray-800 md:text-xl max-w-4xl mx-auto">
-              Junior Front-end Dev who transitioned from Business Administration
-              field. I have a strong interest in Web Development and love the
-              ability to be creative and design visually appealing applications.
-              <br />
-              Passionate about creating beautiful and user-centered products
-              that bring joy and meet the needs of users in their daily lives.
-              <br />
-              <br />
-              High achiever, detail oriented to pixel perfect with experience in
-              Project Management and Documentation. With a “work hard play hard”
-              attitude, a willingness to learn, and a desire to get my job done
-              excellently!
-              <br />
-              <br />
-              Though I still have a lot to learn, I am eager to do so and look
-              forward to sharpening the skills I've gained from my education.
-            </p>
-          </div>
-          {/* -------SOCIAL MEDIA ICONS SECTION------- */}
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-            <a
-              href="https://github.com/thaian161"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <AiFillGithub />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/thaian161/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <AiFillLinkedin />
-            </a>
-            <a href="mailto:hello.annbui@gmail.com">
-              <AiOutlineMail />
-            </a>
-            <a
-              href="https://www.youtube.com/@JanthBui/videos"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <AiFillYoutube />
-            </a>
-          </div>
-          {/* -------MY PROFILE PHOTO SECTION------- */}
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
-            <Image src={AnnProfilePhoto} layout="fill" objectFit="cover" />
+          <div className="xl:flex row md:w-full">
+            <div>
+              <div className="text-center m-auto md:text-left">
+                <h2 className="text-5xl py-2 text-blue-600 font-medium md:text-7xl">
+                  Ann Bui
+                </h2>
+                <h3 className="text-2xl py-2 md:text-3xl">
+                  Jr Front-end Dev & UXUI Designer
+                </h3>
+                <p className="text-md lg:pr-14 py-5 leading-6 text-gray-800 md:text-xl max-w-4xl mx-auto">
+                  I have a strong interest in Web Development and love the
+                  ability to be creative and design visually appealing
+                  applications.
+                  <br />
+                  Passionate about creating beautiful and user-centered products
+                  that bring joy and meet the needs of users in their daily
+                  lives.
+                  <br />
+                  <br />
+                  High achiever, detail oriented to pixel perfect with
+                  experience in Project Management and Documentation. With a
+                  “work hard play hard” attitude, a willingness to learn, and a
+                  desire to get my job done excellently!
+                  <br />
+                  <br />
+                  Though I still have a lot to learn, I am eager to do so and
+                  look forward to sharpening the skills I've gained from my
+                  education.
+                </p>
+              </div>
+              {/* -------SOCIAL MEDIA ICONS SECTION------- */}
+              <div className=" text-4xl flex justify-center gap-14 py-3 text-gray-600 md:justify-start md:gap-6 md:mb-10">
+                <a
+                  href="https://github.com/thaian161"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillGithub />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/thaian161/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillLinkedin />
+                </a>
+                <a href="mailto:hello.annbui@gmail.com">
+                  <AiOutlineMail />
+                </a>
+                <a
+                  href="https://www.youtube.com/@JanthBui/videos"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillYoutube />
+                </a>
+              </div>
+            </div>
+
+            <div>
+              {/* -------MY PROFILE PHOTO SECTION------- */}
+
+              <div
+                className="relative rounded-xl mx-auto mb-20 bg-gradient-to-b from-blue-500 w-80 h-80 mt-10 overflow-hidden md:h-94 md:w-94 md:mt-10 lg:mt-40 md:my-4 md:mb-20"
+                style={{
+                  boxShadow: '30px 30px white, 30px 30px 0 6px blue',
+                }}
+              >
+                <Image src={AnnProfilePhoto} layout="fill" objectFit="cover" />
+              </div>
+            </div>
           </div>
         </section>
+
         {/* ------- SERVICES I OFFER SECTION------ */}
         <section>
           <div>
             <h3 className="text-3xl py-1"> Service I Offer</h3>
             <p className="text-md py-5 leading-6 text-gray-800">
               Aside from my full-time job, I am also{' '}
-              <span className="text-teal-500">
+              <span className="text-blue-500">
                 available for part-time freelance work
               </span>
               . Below are the services I offer.
@@ -140,7 +156,7 @@ export default function Home() {
                 Develop WordPress templates, pages, and posts, document the
                 process, and make user guide for future reference
               </li>
-              <h4 className="py-4 text-teal-600">
+              <h4 className="py-4 text-blue-600">
                 Technology:
                 <span className="text-gray-800"> React, Wordpress</span>
               </h4>
@@ -161,7 +177,7 @@ export default function Home() {
               <li className="text-left">
                 Build wire-frame, prototype and final look mock-up
               </li>
-              <h4 className="py-4 text-teal-600">
+              <h4 className="py-4 text-blue-600">
                 Technology:
                 <span className="text-gray-800"> Figma, Adobe Express </span>
               </h4>
@@ -177,13 +193,13 @@ export default function Home() {
               </li>
               <li className="text-left">
                 Website audit to improve SEO, or re-design your entire
-                website/application interface
+                website/app interface
               </li>
               <li className="text-left">
                 Feeling nervous before your interview? I can conduct a mock
                 interview and provide feedback
               </li>
-              <h4 className="py-4 text-teal-600">
+              <h4 className="py-4 text-blue-600">
                 Contact me via:
                 <span className="text-gray-800"> email or linkedin </span>
               </h4>
@@ -196,8 +212,8 @@ export default function Home() {
             <h3 className="text-3xl py-1">Portfolio</h3>
             <p className="text-md py-5 leading-6 text-gray-800">
               Here are some of my{' '}
-              <span className="text-teal-500">coding projects</span> and{' '}
-              <span className="text-teal-500">UX/UI design</span> I have done so
+              <span className="text-blue-500">coding projects</span> and{' '}
+              <span className="text-blue-500">UX/UI design</span> I have done so
               far
             </p>
           </div>
@@ -207,26 +223,26 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={Testing}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover hover:scale-110"
                 width={'100%'}
                 height={'50%'}
                 layout="responsive"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
                     href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
                     target="_blank"
                   >
-                    Live Demo
+                    Demo
                   </a>
                 </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
                     href="https://github.com/thaian161/Dirty-Paws"
                     target="_blank"
                   >
-                    Source Code
+                    Code
                   </a>
                 </button>
               </div>
@@ -235,26 +251,26 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={Testing}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover hover:scale-110"
                 width={'100%'}
                 height={'50%'}
                 layout="responsive"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
                     href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
                     target="_blank"
                   >
-                    Live Demo
+                    Demo
                   </a>
                 </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
                     href="https://github.com/thaian161/Dirty-Paws"
                     target="_blank"
                   >
-                    Source Code
+                    Code
                   </a>
                 </button>
               </div>
@@ -263,26 +279,26 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={Testing}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover hover:scale-110"
                 width={'100%'}
                 height={'50%'}
                 layout="responsive"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
                     href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
                     target="_blank"
                   >
-                    Live Demo
+                    Demo
                   </a>
                 </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
                     href="https://github.com/thaian161/Dirty-Paws"
                     target="_blank"
                   >
-                    Source Code
+                    Code
                   </a>
                 </button>
               </div>
@@ -292,26 +308,26 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={Testing}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover hover:scale-110"
                 width={'100%'}
                 height={'50%'}
                 layout="responsive"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
                     href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
                     target="_blank"
                   >
-                    Live Demo
+                    Demo
                   </a>
                 </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
                     href="https://github.com/thaian161/Dirty-Paws"
                     target="_blank"
                   >
-                    Source Code
+                    Code
                   </a>
                 </button>
               </div>
@@ -321,26 +337,26 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={Testing}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover hover:scale-110"
                 width={'100%'}
                 height={'50%'}
                 layout="responsive"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
                     href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
                     target="_blank"
                   >
-                    Live Demo
+                    Demo
                   </a>
                 </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
                     href="https://github.com/thaian161/Dirty-Paws"
                     target="_blank"
                   >
-                    Source Code
+                    Code
                   </a>
                 </button>
               </div>
@@ -350,26 +366,26 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={Testing}
-                className="rounded-lg object-cover"
+                className="rounded-lg object-cover hover:scale-110"
                 width={'100%'}
                 height={'50%'}
                 layout="responsive"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
                     href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
                     target="_blank"
                   >
-                    Live Demo
+                    Demo
                   </a>
                 </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
                     href="https://github.com/thaian161/Dirty-Paws"
                     target="_blank"
                   >
-                    Source Code
+                    Code
                   </a>
                 </button>
               </div>
@@ -380,7 +396,35 @@ export default function Home() {
       </main>
 
       <footer>
-        <div>Make with lots of love by Ann Bui</div>
+        <div className="text-center mt-2">
+          Made with lots of love by Ann Bui
+        </div>
+        <div className="text-2xl flex justify-center gap-4 py-3 mb-2 text-gray-600">
+          <a
+            href="https://github.com/thaian161"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AiFillGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/thaian161/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AiFillLinkedin />
+          </a>
+          <a href="mailto:hello.annbui@gmail.com">
+            <AiOutlineMail />
+          </a>
+          <a
+            href="https://www.youtube.com/@JanthBui/videos"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AiFillYoutube />
+          </a>
+        </div>
       </footer>
     </div>
   );
