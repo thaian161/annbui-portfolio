@@ -1,13 +1,14 @@
 import Head from 'next/head';
 import { BsFillMoonStarsFill, BsSunFill } from 'react-icons/bs';
 import { RiSunFill } from 'react-icons/ri';
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import {
   AiFillGithub,
   AiFillLinkedin,
   AiOutlineMail,
   AiFillYoutube,
 } from 'react-icons/ai';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 import Image from 'next/legacy/image';
 import AnnProfilePhoto from '../public/AnnBuiProfilePhoto.png';
@@ -19,6 +20,10 @@ import Logo from '../public/Logo2.png';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const ref = useRef(null);
+  const handleBoucingButtonDown = () => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <div className={darkMode ? 'dark' : ''}>
@@ -34,7 +39,7 @@ export default function Home() {
         <section className="min-h-fit">
           {/* -------NAV BAR SECTION------- */}
 
-          <nav className="sticky top-0 z-30 w-full px-2 py-2 bg-[#f8fafc] sm:px-4 flex justify-between dark:bg-gray-600">
+          <nav className="sticky top-0 z-10 w-full px-2 py-2 bg-[#f8fafc] sm:px-4 flex justify-between dark:bg-gray-600">
             <Image
               className="text-xl"
               src={Logo}
@@ -46,32 +51,32 @@ export default function Home() {
             <ul className="flex items-center">
               <li>
                 {!darkMode && (
-                  <h1 className="flex">
+                  <h1 className="flex text-[#516f96]  hover:text-[#35557e] hover:scale-110 font-[800] font-Nunito">
                     Dark
                     <BsFillMoonStarsFill
                       onClick={() => setDarkMode(!darkMode)}
-                      className="cursor-pointer text-xl"
+                      className="cursor-pointer text-2xl"
                     />
                   </h1>
                 )}
                 {darkMode && (
-                  <h1 className="flex text-yellow-300">
+                  <h1 className="flex text-yellow-400 font-[800] hover:text-yellow-200 hover:scale-110 font-Nunito">
                     Light
                     <RiSunFill
                       onClick={() => setDarkMode(!darkMode)}
-                      className="cursor-pointer text-2xl text-yellow-300 hover:text-yellow-500"
+                      className="cursor-pointer text-2xl"
                     />
                   </h1>
                 )}
               </li>
               <li>
                 <a
-                  className="bg-blue-500 text-[#f8fafc] px-4 py-2 rounded-md ml-8"
+                  className="bg-[#385E8F] text-[#ffffff] md:text-lg px-4 py-2 rounded-md ml-8 font-Nunito font-[800] "
                   href="https://resume.creddle.io/resume/j1ryfjyu3f1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Resume
+                  See Resume
                 </a>
               </li>
             </ul>
@@ -87,14 +92,16 @@ export default function Home() {
                 <span className="font-Nunito font-[700] text-2xl md:text-4xl text-white bg-blue-300 px-2 rounded-md">
                   Jr Front-end Dev & UXUI Designer
                 </span>
-                <p className=" font-Open text-md lg:pr-14 py-5 leading-6 text-gray-800 md:text-xl max-w-4xl mx-auto mt-6">
+                <p className=" font-Open text-md lg:pr-14 py-5 leading-6 text-gray-800 md:text-xl max-w-4xl mx-auto mt-6 font-[500]">
                   I have a strong interest in Web Development and love the
                   ability to be{' '}
-                  <span className="text-blue-500">creative and design</span>{' '}
+                  <span className="text-blue-400 font-[500]">
+                    creative and design
+                  </span>{' '}
                   visually appealing applications.
                   <br />
                   Passionate about creating beautiful and{' '}
-                  <span className="text-blue-500">
+                  <span className="text-blue-400 font-[500]">
                     user-centered products
                   </span>{' '}
                   that bring joy and meet the needs of users in their daily
@@ -104,8 +111,10 @@ export default function Home() {
                   High achiever, detail oriented to pixel perfect with
                   experience in Project Management and Documentation. With a
                   “work hard play hard” attitude,{' '}
-                  <span className="text-blue-500">willingness to learn</span> ,
-                  and a desire to get my job done excellently!
+                  <span className="text-blue-400 font-[500]">
+                    willingness to learn
+                  </span>{' '}
+                  , and a desire to get my job done excellently!
                   <br />
                   <br />
                   Though I still have a lot to learn, I am eager to do so and
@@ -146,9 +155,9 @@ export default function Home() {
                 {/* -------MY PROFILE PHOTO SECTION------- */}
 
                 <div
-                  className="relative z-40 rounded-xl mx-auto mb-20 bg-gradient-to-b from-blue-300 w-80 h-80 mt-10 overflow-hidden md:h-94 md:w-94 md:mt-20 lg:mt-52 lg:ml-32 md:my-4 md:mb-20"
+                  className="relative z-30 rounded-lg mx-auto mb-20 bg-gradient-to-b from-blue-300 w-80 h-80 mt-10 overflow-hidden md:h-94 md:w-94 md:mt-20 lg:mt-56 lg:ml-32 md:my-4 md:mb-20"
                   style={{
-                    boxShadow: '30px 30px #f8fafc, 30px 30px 0 6px  #93c5fd',
+                    boxShadow: '30px 30px #f8fafc, 30px 30px 0 7px #93c5fd',
                   }}
                 >
                   <Image
@@ -159,22 +168,29 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="absolute z-0 top-24 -left-4 w-72 h-72 bg-[#c8fad9] rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob animation-delay-400"></div>
-              <div className="absolute z-0 top-7 -right-14 w-80 h-80 bg-[#E0D3FE] rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-3000"></div>
-              <div className="absolute z-0 top-76 -bottom-8 left-20 w-72 h-72 bg-[#fbacb2dc] rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-blob "></div>
+              <div className="absolute z-20 top-40 -left-4 w-72 h-72 bg-[#c8fad9] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob animation-delay-400"></div>
+              <div className="absolute z-20 top-7 -right-2 w-80 h-80 bg-[#E0D3FE] rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-blob animation-delay-3000"></div>
+              <div className="absolute z-20 top-76 -bottom-8 left-32 w-72 h-72 bg-[#fbacb2dc] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob "></div>
             </div>
           </div>
         </section>
+        {/* -------BOUCING ARROW DOWN-------*/}
+        <section className="text-7xl flex justify-center mt-10 mb-24">
+          <IoIosArrowDown
+            onClick={handleBoucingButtonDown}
+            className="text-[#385e8f] animate-bounce "
+          />
+        </section>
 
         {/* ------- SERVICES I OFFER SECTION------ */}
-        <section>
-          <div>
+        <section className="mb-10">
+          <div ref={ref}>
             <span className="font-Nunito font-[700] text-2xl py-2 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-200 ">
               Service I Offer
             </span>
-            <p className=" font-Open text-md lg:pr-14 py-5 leading-6 md:text-xl">
+            <p className=" font-Open text-md lg:pr-14 py-5 leading-6 md:text-xl font-[500] mt-2">
               Aside from my full-time job, I am also{' '}
-              <span className="text-blue-500">
+              <span className="text-blue-400 font-[500]">
                 available for part-time freelance work
               </span>
               . Below are the services I offer.
@@ -277,14 +293,14 @@ export default function Home() {
         {/* -------PROJECTS PORTFOLIO SECTION------- */}
         <section>
           <div>
-            <span className="font-Nunito font-[700] text-2xl py-2 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-300 ">
+            <span className="font-Nunito font-[700] text-2xl py-2 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-300">
               Portfolio
             </span>
-            <p className="font-Open text-mdtext-md lg:pr-14 py-5 leading-6 md:text-xl">
+            <p className="font-Open text-mdtext-md lg:pr-14 py-5 leading-6 md:text-xl font-[500] mt-2">
               Here are some of my{' '}
-              <span className="text-blue-500">coding projects</span> and{' '}
-              <span className="text-blue-500">UX/UI design</span> I have done so
-              far
+              <span className="text-blue-400 font-[500]">coding projects</span>{' '}
+              and <span className="text-blue-400 font-[500]">UX/UI design</span>{' '}
+              I have done so far
             </p>
           </div>
           {/* -------SHOWCASE EACH PROJECT SECTION------- */}
@@ -481,36 +497,44 @@ export default function Home() {
             {/* ----------------------------------------------- */}
           </div>
         </section>
+
+        {/* -------BOUCING ARROW UP-------*/}
+        <section className="text-7xl flex justify-center mt-2 mp-3 md:pb-5 ">
+          <IoIosArrowUp
+            onClick={handleBoucingButtonDown}
+            className="text-[#385e8f] animate-bounce "
+          />
+        </section>
       </main>
 
-      <footer>
-        <div className="text-center mt-2 text-lg">
+      <footer className="bg-[#385e8f] text-[#93c5fd]">
+        <div className="text-center mt-2 text-xl pt-10 pb-2">
           Made with lots of -❤️- by Ann Bui
         </div>
-        <div className="text-3xl flex justify-center gap-4 py-3 mb-2 text-gray-600">
+        <div className="text-3xl flex justify-center gap-4 py-3 mb-2 pb-10 text-[#93c5fd]">
           <a
             href="https://github.com/thaian161"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <AiFillGithub className="hover:text-blue-700 hover:scale-125" />
+            <AiFillGithub className="hover:text-[#ffff] hover:scale-125" />
           </a>
           <a
             href="https://www.linkedin.com/in/thaian161/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <AiFillLinkedin className="hover:text-blue-700 hover:scale-125" />
+            <AiFillLinkedin className="hover:text-[#ffff] hover:scale-125" />
           </a>
           <a href="mailto:hello.annbui@gmail.com">
-            <AiOutlineMail className="hover:text-blue-700 hover:scale-125" />
+            <AiOutlineMail className="hover:text-[#ffff] hover:scale-125" />
           </a>
           <a
             href="https://www.youtube.com/@JanthBui/videos"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <AiFillYoutube className="hover:text-blue-700 hover:scale-125" />
+            <AiFillYoutube className="hover:text-[#ffff] hover:scale-125" />
           </a>
         </div>
       </footer>
