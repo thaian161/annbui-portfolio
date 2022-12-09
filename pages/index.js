@@ -17,7 +17,14 @@ import UXUI from '../public/UX:UI.png';
 import Consulting from '../public/Consulting.png';
 import Testing from '../public/Testing.png';
 import Logo from '../public/Logo2.png';
-import MyPortfolio from '../public/MyPortfolio.png';
+import ABPortfolio from '../public/ABPortfolio.png';
+import CSS from '../public/CSS.png';
+import Bakeitup from '../public/Bakeitup.png';
+import J from '../public/J.png';
+import Scheduler from '../public/Scheduler.png';
+import TinyApp from '../public/TinyApp.png';
+import Tweeter from '../public/Tweeter.png';
+import DP from '../public/DP.png';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -315,10 +322,10 @@ export default function Home() {
             {/* ---------------------Portfolio Page-------------------------- */}
             <div className="basis-1/3 flex-1">
               <Image
-                src={MyPortfolio}
+                src={ABPortfolio}
                 className="rounded-lg object-cover hover:scale-110 transition ease-in-out delay-300"
                 width={'100%'}
-                height={'50%'}
+                height={'60%'}
                 layout="responsive"
                 alt="Ann Bui Portfolio Project"
               />
@@ -343,13 +350,13 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            {/* ---------------------Expense App-------------------------- */}
+            {/* ---------------------Dirty PAws-------------------------- */}
             <div className="basis-1/3 flex-1">
               <Image
                 src={Testing}
                 className="rounded-lg object-cover hover:scale-110 transition ease-in-out delay-300"
                 width={'100%'}
-                height={'50%'}
+                height={'60%'}
                 layout="responsive"
                 alt="Expense App Project"
               />
@@ -377,10 +384,10 @@ export default function Home() {
             {/* ------------------------Jugnle Plant Shop----------------------- */}
             <div className="basis-1/3 flex-1">
               <Image
-                src={Testing}
+                src={Jungle}
                 className="rounded-lg object-cover hover:scale-110 transition ease-in-out delay-300"
                 width={'100%'}
-                height={'50%'}
+                height={'60%'}
                 layout="responsive"
                 alt="Jungle Plan Shop Project"
               />
@@ -409,10 +416,10 @@ export default function Home() {
 
             <div className="basis-1/3 flex-1">
               <Image
-                src={Testing}
+                src={Bakeitup}
                 className="rounded-lg object-cover hover:scale-110 transition ease-in-out delay-300"
                 width={'100%'}
-                height={'50%'}
+                height={'60%'}
                 layout="responsive"
                 alt="Bake It Up"
               />
@@ -441,10 +448,10 @@ export default function Home() {
 
             <div className="basis-1/3 flex-1">
               <Image
-                src={Testing}
+                src={Tweeter}
                 className="rounded-lg object-cover hover:scale-110 transition ease-in-out delay-300"
                 width={'100%'}
-                height={'50%'}
+                height={'60%'}
                 layout="responsive"
                 alt="Tweeter Project"
               />
@@ -469,14 +476,14 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            {/* -----------------------NFlyte Figma Mock-up------------------------ */}
+            {/* -----------------------NScheduler------------------------ */}
 
             <div className="basis-1/3 flex-1">
               <Image
-                src={Testing}
+                src={Scheduler}
                 className="rounded-lg object-cover hover:scale-110 transition ease-in-out delay-300"
                 width={'100%'}
-                height={'50%'}
+                height={'60%'}
                 layout="responsive"
                 alt="Nflyte Mock-up Project"
               />
