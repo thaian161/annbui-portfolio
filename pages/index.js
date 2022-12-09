@@ -17,6 +17,7 @@ import UXUI from '../public/UX:UI.png';
 import Consulting from '../public/Consulting.png';
 import Testing from '../public/Testing.png';
 import Logo from '../public/Logo2.png';
+import MyPortfolio from '../public/MyPortfolio.png';
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -226,8 +227,8 @@ export default function Home() {
               <h4 className="py-4 text-blue-500 font-Open font-[700]">
                 Technology:
                 <span className="text-gray-800 font-Open font-[500]">
-                  <br /> ReactJS, Wordpress, Tailwind, Custom CSS, NodeJS,
-                  mySQL, PostgreSQL, ExpressJS
+                  <br /> ReactJS, Javascript (ES6+), WordPress, Tailwind, SCSS,
+                  Custom CSS, NodeJS, mySQL, PostgreSQL, ExpressJS
                 </span>
               </h4>
             </div>
@@ -311,20 +312,20 @@ export default function Home() {
           </div>
           {/* -------SHOWCASE EACH PROJECT SECTION------- */}
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap font-Nunito font-[500]">
-            {/* ---------------------Dirty Paws-------------------------- */}
+            {/* ---------------------Portfolio Page-------------------------- */}
             <div className="basis-1/3 flex-1">
               <Image
-                src={Testing}
+                src={MyPortfolio}
                 className="rounded-lg object-cover hover:scale-110 transition ease-in-out delay-300"
                 width={'100%'}
                 height={'50%'}
                 layout="responsive"
-                alt="Dirty Paws Project"
+                alt="Ann Bui Portfolio Project"
               />
               <div className="flex items-center justify-center">
                 <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
-                    href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
+                    href="https://thaian161.github.io/annbui-portfolio/"
                     rel="noreferrer"
                     target="_blank"
                   >
@@ -333,7 +334,7 @@ export default function Home() {
                 </button>
                 <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
-                    href="https://github.com/thaian161/Dirty-Paws"
+                    href="https://github.com/thaian161/annbui-portfolio"
                     rel="noreferrer"
                     target="_blank"
                   >
