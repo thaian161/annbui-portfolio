@@ -35,7 +35,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-[#f8fafc] px-10 md:px-20 lg:px-40 dark:bg-gray-600">
+      <main className="bg-[#f8fafc] px-10 md:px-22 lg:px-40 dark:bg-gray-600">
         <section className="min-h-fit">
           {/* -------NAV BAR SECTION------- */}
 
@@ -86,9 +86,11 @@ export default function Home() {
           <div className="lg:flex row md:w-full">
             <div>
               <div className="text-center m-auto md:text-left">
-                <h2 className="text-5xl py-2 text-[#385E8F] font-[700] md:text-7xl mt-10 mb-5 font-Poppins leading-10">
-                  Heyyy, I am Ann Bui 👋🏼
+                <h2 className="text-5xl py-2 text-[#385E8F] font-[700] md:text-7xl mt-10 mb-5 font-Poppins leading-10 ">
+                  Heyyy, I am Ann Bui{' '}
+                  <p className="inline-block animate-waves delay-3000">👋🏼</p>
                 </h2>
+
                 <span className="font-Nunito font-[700] text-2xl md:text-4xl text-white bg-blue-300 px-2 rounded-md">
                   Jr Front-end Dev & UXUI Designer
                 </span>
@@ -129,24 +131,24 @@ export default function Home() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <AiFillGithub className="hover:text-blue-700 hover:scale-125" />
+                  <AiFillGithub className="hover:scale-125 hover:text-[#476fa4]" />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/thaian161/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <AiFillLinkedin className="hover:text-blue-700 hover:scale-125" />
+                  <AiFillLinkedin className=" hover:scale-125 hover:text-[#476fa4]" />
                 </a>
                 <a href="mailto:hello.annbui@gmail.com">
-                  <AiOutlineMail className="hover:text-blue-700 hover:scale-125" />
+                  <AiOutlineMail className="hover:scale-125 hover:text-[#476fa4]" />
                 </a>
                 <a
                   href="https://www.youtube.com/@JanthBui/videos"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <AiFillYoutube className="hover:text-blue-700 hover:scale-125" />
+                  <AiFillYoutube className="hover:scale-125 hover:text-[#476fa4]" />
                 </a>
               </div>
             </div>
@@ -168,9 +170,10 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="absolute z-20 top-40 -left-4 w-72 h-72 bg-[#c8fad9] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob animation-delay-400"></div>
-              <div className="absolute z-20 top-7 -right-2 w-80 h-80 bg-[#E0D3FE] rounded-full mix-blend-multiply filter blur-3xl opacity-60 animate-blob animation-delay-3000"></div>
-              <div className="absolute z-20 top-76 -bottom-8 left-32 w-72 h-72 bg-[#fbacb2dc] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob "></div>
+              <div className="absolute z-20 top-40 -left-4 w-72 h-72 bg-[#c8fad9] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 "></div>
+              <div className="absolute z-20 top-7 -right-2 w-80 h-80 bg-[#E0D3FE] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-3000"></div>
+              <div className="absolute z-20 top-74 -bottom-8 left-64 w-72 h-72 bg-[#fbacb2dc] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob  animation-delay-4000 "></div>
+              <div className="absolute z-20 top-74 -bottom-4 left-2 w-72 h-72 bg-[#fff29a] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-4000 "></div>
             </div>
           </div>
         </section>
@@ -178,14 +181,14 @@ export default function Home() {
         <section className="text-7xl flex justify-center mt-10 mb-24">
           <IoIosArrowDown
             onClick={handleBoucingButtonDown}
-            className="text-[#385e8f] animate-bounce "
+            className="text-[#FF787F] animate-bounce "
           />
         </section>
 
         {/* ------- SERVICES I OFFER SECTION------ */}
         <section className="mb-10">
           <div ref={ref}>
-            <span className="font-Nunito font-[700] text-2xl py-2 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-200 ">
+            <span className="font-Nunito font-[700] text-2xl py-2 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-200">
               Service I Offer
             </span>
             <p className=" font-Open text-md lg:pr-14 py-5 leading-6 md:text-xl font-[500] mt-2">
@@ -199,12 +202,13 @@ export default function Home() {
           {/* -------THREE SERVICES SECTION------- */}
           <div className="lg:flex gap-10">
             {/* -------DEVELOPING WEB CARD-------*/}
-            <div className=" lg:w-1/3 text-center shadow-xl p-10 rounded-xl my-10 bg-gradient-to-tl from-white to-blue-200 dark:bg-slate-300 flex-auto">
+            <div className=" lg:w-1/3 text-center shadow-xl p-10 rounded-xl my-10 bg-gradient-to-tl from-white to-blue-200 dark:bg-slate-300 flex-auto s">
               <Image
                 src={Developing}
-                width={100}
-                height={100}
+                width={110}
+                height={110}
                 alt="Developing Serive An Bui Provides"
+                className="hover:animate-waves"
               />
               <h3 className="text-lg font-Poppins font-medium pt-8 pb-4 leading-6 md:text-xl">
                 Developing Website || App
@@ -219,7 +223,7 @@ export default function Home() {
                 Develop WordPress templates, pages, and posts, document the
                 process, and make user guide for future reference
               </li>
-              <h4 className="py-4 text-blue-600 font-Open font-[700]">
+              <h4 className="py-4 text-blue-500 font-Open font-[700]">
                 Technology:
                 <span className="text-gray-800 font-Open font-[500]">
                   <br /> ReactJS, Wordpress, Tailwind, Custom CSS, NodeJS,
@@ -232,9 +236,10 @@ export default function Home() {
             <div className="lg:w-1/3  text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300 flex-auto bg-gradient-to-t from-white to-blue-100">
               <Image
                 src={UXUI}
-                width={100}
-                height={100}
-                alt="Developing Serive An Bui Provides"
+                width={110}
+                height={110}
+                alt="UXUI - An Bui Provides"
+                className="hover:animate-waves"
               />
               <h3 className="text-lg font-Poppins font-medium pt-8 pb-4  leading-6 md:text-xl">
                 UX/UI Designing
@@ -250,7 +255,7 @@ export default function Home() {
               <li className="text-left font-Open font-md">
                 Build wire-frame, prototype and final look mock-up
               </li>
-              <h4 className="py-4 text-blue-600 font-Open font-[700]">
+              <h4 className="py-4 text-blue-500 font-Open font-[700]">
                 Tools:
                 <span className="text-gray-800 font-Open font-[500]">
                   <br /> Figma, Plugins in Figma, Adobe Express
@@ -261,9 +266,10 @@ export default function Home() {
             <div className="lg:w-1/3  text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300  flex-auto bg-gradient-to-tr from-white to-blue-200">
               <Image
                 src={Consulting}
-                width={100}
-                height={100}
+                width={110}
+                height={110}
                 alt="Consulting Serive An Bui Provides"
+                className="hover:animate-waves"
               />
               <h3 className="text-lg font-Poppins font-medium pt-8 pb-4 leading-6 md:text-xl">
                 Consulting Servies
@@ -279,7 +285,7 @@ export default function Home() {
                 Feeling nervous before your interview? I can conduct a mock
                 interview and provide feedback
               </li>
-              <h4 className="py-4 text-blue-600 font-Open font-[700]">
+              <h4 className="py-4 text-blue-500 font-Open font-[700]">
                 Contact me via:
                 <span className="text-gray-800  font-Open font-[500]">
                   <br />
@@ -293,7 +299,7 @@ export default function Home() {
         {/* -------PROJECTS PORTFOLIO SECTION------- */}
         <section>
           <div>
-            <span className="font-Nunito font-[700] text-2xl py-2 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-300">
+            <span className="font-Nunito font-[700] text-2xl py-2 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-200">
               Portfolio
             </span>
             <p className="font-Open text-mdtext-md lg:pr-14 py-5 leading-6 md:text-xl font-[500] mt-2">
@@ -502,7 +508,7 @@ export default function Home() {
         <section className="text-7xl flex justify-center mt-2 mp-3 md:pb-5 ">
           <IoIosArrowUp
             onClick={handleBoucingButtonDown}
-            className="text-[#385e8f] animate-bounce "
+            className="text-[#FF787F] animate-bounce "
           />
         </section>
       </main>
