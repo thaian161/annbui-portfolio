@@ -353,7 +353,7 @@ export default function Home() {
             {/* ---------------------Dirty PAws-------------------------- */}
             <div className="basis-1/3 flex-1">
               <Image
-                src={Testing}
+                src={DP}
                 className="rounded-lg object-cover hover:scale-110 transition ease-in-out delay-300"
                 width={'100%'}
                 height={'60%'}
@@ -384,7 +384,7 @@ export default function Home() {
             {/* ------------------------Jugnle Plant Shop----------------------- */}
             <div className="basis-1/3 flex-1">
               <Image
-                src={Jungle}
+                src={J}
                 className="rounded-lg object-cover hover:scale-110 transition ease-in-out delay-300"
                 width={'100%'}
                 height={'60%'}
@@ -394,7 +394,7 @@ export default function Home() {
               <div className="flex items-center justify-center">
                 <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
-                    href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
+                    href="https://www.youtube.com/watch?v=uNaOVM1S9eI"
                     rel="noreferrer"
                     target="_blank"
                   >
@@ -403,7 +403,7 @@ export default function Home() {
                 </button>
                 <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
-                    href="https://github.com/thaian161/Dirty-Paws"
+                    href="https://github.com/thaian161/Jungle-Plant-Shop"
                     rel="noreferrer"
                     target="_blank"
                   >
@@ -426,7 +426,7 @@ export default function Home() {
               <div className="flex items-center justify-center">
                 <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
-                    href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
+                    href="https://www.youtube.com/watch?v=0k2WaGUxCJ0&t=2s"
                     rel="noreferrer"
                     target="_blank"
                   >
@@ -435,7 +435,7 @@ export default function Home() {
                 </button>
                 <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
-                    href="https://github.com/thaian161/Dirty-Paws"
+                    href="https://github.com/thaian161/Bake-It-Up"
                     rel="noreferrer"
                     target="_blank"
                   >
@@ -458,7 +458,7 @@ export default function Home() {
               <div className="flex items-center justify-center">
                 <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
-                    href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
+                    href="https://www.youtube.com/watch?v=x8zQIm24-B8&t=3s"
                     rel="noreferrer"
                     target="_blank"
                   >
@@ -467,7 +467,7 @@ export default function Home() {
                 </button>
                 <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
-                    href="https://github.com/thaian161/Dirty-Paws"
+                    href="https://github.com/thaian161/tweeter"
                     rel="noreferrer"
                     target="_blank"
                   >
@@ -476,7 +476,7 @@ export default function Home() {
                 </button>
               </div>
             </div>
-            {/* -----------------------NScheduler------------------------ */}
+            {/* -----------------------Scheduler------------------------ */}
 
             <div className="basis-1/3 flex-1">
               <Image
@@ -490,7 +490,7 @@ export default function Home() {
               <div className="flex items-center justify-center">
                 <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
-                    href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
+                    href="https://www.youtube.com/watch?v=OzJA77gHJeU"
                     rel="noreferrer"
                     target="_blank"
                   >
@@ -499,7 +499,7 @@ export default function Home() {
                 </button>
                 <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
                   <a
-                    href="https://github.com/thaian161/Dirty-Paws"
+                    href="https://github.com/thaian161/Scheduler-react"
                     rel="noreferrer"
                     target="_blank"
                   >
