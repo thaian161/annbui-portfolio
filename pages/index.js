@@ -16,7 +16,7 @@ import Developing from '../public/Developing.png';
 import UXUI from '../public/UX:UI.png';
 import Consulting from '../public/Consulting.png';
 import Testing from '../public/Testing.png';
-import Logo from '../public/Logo2.png';
+import Logo from '../public/logo3.png';
 import ABPortfolio from '../public/ABPortfolio.png';
 import CSS from '../public/CSS.png';
 import Bakeitup from '../public/Bakeitup.png';
@@ -39,39 +39,39 @@ const projects = [
     id: 2,
     thumbnail: DP,
     description: 'Dirty Paws: fullstack pet cartoon theme dating app',
-    tech: 'React JS, Express JS, PostgreSQL, Styled Components',
-    liveDemoLink: 'https://thaian161.github.io/annbui-portfolio/',
-    sourceCodeLink: 'https://github.com/thaian161/annbui-portfolio',
+    tech: 'React JS, SQL, Styled Components',
+    liveDemoLink: 'https://www.youtube.com/watch?v=vDzoe_sz0AQ',
+    sourceCodeLink: 'https://github.com/thaian161/Dirty-Paws',
   },
   {
     id: 3,
     thumbnail: J,
-    description: 'My personal portfolio page :D',
-    tech: 'Next JS, React JS & Tailwind',
+    description: 'Jungle: Add on function and styling on legacy code base',
+    tech: 'Rudy, Rails, Bootraps, Rspec',
     liveDemoLink: 'https://www.youtube.com/watch?v=uNaOVM1S9eI',
     sourceCodeLink: 'https://github.com/thaian161/Jungle-Plant-Shop',
   },
   {
     id: 4,
     thumbnail: Bakeitup,
-    description: 'My personal portfolio page :D',
-    tech: 'Next JS, React JS & Tailwind',
+    description: 'BakeItUp: fullstack e-commerce app',
+    tech: 'SASS, ExpresJS, PostgreSQL',
     liveDemoLink: 'https://www.youtube.com/watch?v=0k2WaGUxCJ0&t=2s',
     sourceCodeLink: 'https://github.com/thaian161/Bake-It-Up',
   },
   {
     id: 5,
-    thumbnail: AnnProfilePhoto,
-    description: 'My personal portfolio page :D',
-    tech: 'Next JS, React JS & Tailwind',
+    thumbnail: Tweeter,
+    description: 'Tweeter: twitter clone app',
+    tech: 'EJS, Bootraps, ExpressJS, Ajax',
     liveDemoLink: 'https://www.youtube.com/watch?v=x8zQIm24-B8&t=3s',
     sourceCodeLink: 'https://github.com/thaian161/tweeter',
   },
   {
     id: 6,
-    thumbnail: AnnProfilePhoto,
-    description: 'My personal portfolio page :D',
-    tech: 'Next JS, React JS & Tailwind',
+    thumbnail: Scheduler,
+    description: 'Scheduler: making appointment in real time app',
+    tech: 'React JS, StoryBook, Testing, Axios',
     liveDemoLink: 'https://www.youtube.com/watch?v=OzJA77gHJeU',
     sourceCodeLink: 'https://github.com/thaian161/Scheduler-react',
   },
@@ -95,7 +95,7 @@ export default function Home() {
       </Head>
 
       {projects.map(({ tech }) => {
-        ` hello ${tech}`;
+        console.log(tech), ` hello ${tech}`;
       })}
 
       <main className="bg-[#f0f5fb] px-10 md:px-22 lg:px-40 dark:bg-[#2a3e5a]">
@@ -392,7 +392,7 @@ export default function Home() {
           {/* -------SHOWCASE EACH PROJECT SECTION------- */}
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap font-Nunito font-[500]">
             {/* ---------------------Portfolio Page-------------------------- */}
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 ">
               <Image
                 src={ABPortfolio}
                 className="rounded-t-xl object-cover hover:scale-110 transition ease-in-out delay-300"
@@ -401,8 +401,8 @@ export default function Home() {
                 layout="responsive"
                 alt="Ann Bui Portfolio Project"
               />
-              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md ">
-                <p className="justify-center pt-5 px-6 leading-8">
+              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg">
+                <p className="justify-center pt-5 px-6 leading-8 ">
                   This portfolio page :D
                 </p>
                 <p>
@@ -433,34 +433,37 @@ export default function Home() {
               </div>
             </div>
             {/* ---------------------Dirty PAws-------------------------- */}
-            <div className="basis-1/3 flex-1 ">
+            <div className="basis-1/3 flex-1">
               <Image
                 src={DP}
-                className="rounded-lg object-cover hover:scale-110 transition ease-in-out delay-300"
+                className="rounded-t-xl object-cover hover:scale-110 transition ease-in-out delay-300"
                 width={'100%'}
                 height={'60%'}
                 layout="responsive"
-                alt="Expense App Project"
+                alt="Ann Bui Portfolio Project"
               />
-              <div className="flex flex-col items-center text-center shadow-xl  rounded-2xl bg-pink-400">
-                <p className="justify-center py-2 px-6">
-                  Dirty Paws: Dating App cartoon theme.
+              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg">
+                <p className="justify-center pt-5 px-6 leading-8">
+                  {projects[1].description}
                 </p>
-                <p>Using ReactJS, ExpressJS and custom CSS</p>
+                <p>
+                  <span className="font-[700]">Tech stack:</span>{' '}
+                  {projects[1].tech}
+                </p>
 
                 <div className="flex items-center justify-center">
-                  <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
+                  <button className=" text-lg w-1/2 px-6 pb-2 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
                     <a
-                      href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
+                      href={projects[1].liveDemoLink}
                       rel="noreferrer"
                       target="_blank"
                     >
                       Demo
                     </a>
                   </button>
-                  <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
+                  <button className=" text-lg w-1/2 px-6 pb-2 m-4 duration-200 hover:scale-125 dark:text-[#f0f5fb] dark:hover:text-blue-200  hover:text-blue-400">
                     <a
-                      href="https://github.com/thaian161/Dirty-Paws"
+                      href={projects[1].sourceCodeLink}
                       rel="noreferrer"
                       target="_blank"
                     >
@@ -474,31 +477,41 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={J}
-                className="rounded-lg object-cover hover:scale-110 transition ease-in-out delay-300"
+                className="rounded-t-xl object-cover hover:scale-110 transition ease-in-out delay-300"
                 width={'100%'}
                 height={'60%'}
                 layout="responsive"
-                alt="Jungle Plan Shop Project"
+                alt="Ann Bui Portfolio Project"
               />
-              <div className="flex items-center justify-center">
-                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
-                  <a
-                    href="https://www.youtube.com/watch?v=uNaOVM1S9eI"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    Demo
-                  </a>
-                </button>
-                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
-                  <a
-                    href="https://github.com/thaian161/Jungle-Plant-Shop"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    Code
-                  </a>
-                </button>
+              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg">
+                <p className="justify-center pt-5 px-6 leading-8">
+                  {projects[2].description}
+                </p>
+                <p>
+                  <span className="font-[700]">Tech stack:</span>{' '}
+                  {projects[2].tech}
+                </p>
+
+                <div className="flex items-center justify-center">
+                  <button className=" text-lg w-1/2 px-6 pb-2 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
+                    <a
+                      href={projects[2].liveDemoLink}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      Demo
+                    </a>
+                  </button>
+                  <button className=" text-lg w-1/2 px-6 pb-2 m-4 duration-200 hover:scale-125 dark:text-[#f0f5fb] dark:hover:text-blue-200  hover:text-blue-400">
+                    <a
+                      href={projects[2].sourceCodeLink}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      Code
+                    </a>
+                  </button>
+                </div>
               </div>
             </div>
             {/* ------------------Bake It Up----------------------------- */}
@@ -506,31 +519,41 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={Bakeitup}
-                className="rounded-lg object-cover hover:scale-110 transition ease-in-out delay-300"
+                className="rounded-t-xl object-cover hover:scale-110 transition ease-in-out delay-300"
                 width={'100%'}
                 height={'60%'}
                 layout="responsive"
-                alt="Bake It Up"
+                alt="Ann Bui Portfolio Project"
               />
-              <div className="flex items-center justify-center">
-                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
-                  <a
-                    href="https://www.youtube.com/watch?v=0k2WaGUxCJ0&t=2s"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    Demo
-                  </a>
-                </button>
-                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
-                  <a
-                    href="https://github.com/thaian161/Bake-It-Up"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    Code
-                  </a>
-                </button>
+              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg">
+                <p className="justify-center pt-5 px-6 leading-8">
+                  {projects[3].description}
+                </p>
+                <p>
+                  <span className="font-[700]">Tech stack:</span>{' '}
+                  {projects[3].tech}{' '}
+                </p>
+
+                <div className="flex items-center justify-center">
+                  <button className=" text-lg w-1/2 px-6 pb-2 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
+                    <a
+                      href={projects[3].liveDemoLink}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      Demo
+                    </a>
+                  </button>
+                  <button className=" text-lg w-1/2 px-6 pb-2 m-4 duration-200 hover:scale-125 dark:text-[#f0f5fb] dark:hover:text-blue-200  hover:text-blue-400">
+                    <a
+                      href={projects[3].sourceCodeLink}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      Code
+                    </a>
+                  </button>
+                </div>
               </div>
             </div>
             {/* --------------------Tweeter--------------------------- */}
@@ -538,31 +561,41 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={Tweeter}
-                className="rounded-lg object-cover hover:scale-110 transition ease-in-out delay-300"
+                className="rounded-t-xl object-cover hover:scale-110 transition ease-in-out delay-300"
                 width={'100%'}
                 height={'60%'}
                 layout="responsive"
-                alt="Tweeter Project"
+                alt="Ann Bui Portfolio Project"
               />
-              <div className="flex items-center justify-center">
-                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
-                  <a
-                    href="https://www.youtube.com/watch?v=x8zQIm24-B8&t=3s"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    Demo
-                  </a>
-                </button>
-                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
-                  <a
-                    href="https://github.com/thaian161/tweeter"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    Code
-                  </a>
-                </button>
+              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg ">
+                <p className="justify-center pt-5 px-6 leading-8">
+                  {projects[4].description}
+                </p>
+                <p>
+                  <span className="font-[700]">Tech stack:</span>{' '}
+                  {projects[4].tech}{' '}
+                </p>
+
+                <div className="flex items-center justify-center">
+                  <button className=" text-lg w-1/2 px-6 pb-2 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
+                    <a
+                      href={projects[4].liveDemoLink}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      Demo
+                    </a>
+                  </button>
+                  <button className=" text-lg w-1/2 px-6 pb-2 m-4 duration-200 hover:scale-125 dark:text-[#f0f5fb] dark:hover:text-blue-200  hover:text-blue-400">
+                    <a
+                      href={projects[4].sourceCodeLink}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      Code
+                    </a>
+                  </button>
+                </div>
               </div>
             </div>
             {/* -----------------------Scheduler------------------------ */}
@@ -570,31 +603,41 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={Scheduler}
-                className="rounded-lg object-cover hover:scale-110 transition ease-in-out delay-300"
+                className="rounded-t-xl object-cover hover:scale-110 transition ease-in-out delay-300"
                 width={'100%'}
                 height={'60%'}
                 layout="responsive"
-                alt="Nflyte Mock-up Project"
+                alt="Ann Bui Portfolio Project"
               />
-              <div className="flex items-center justify-center">
-                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
-                  <a
-                    href="https://www.youtube.com/watch?v=OzJA77gHJeU"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    Demo
-                  </a>
-                </button>
-                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
-                  <a
-                    href="https://github.com/thaian161/Scheduler-react"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    Code
-                  </a>
-                </button>
+              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg">
+                <p className="justify-center pt-5 px-6 leading-8">
+                  {projects[5].description}
+                </p>
+                <p>
+                  <span className="font-[700]">Tech stack:</span>{' '}
+                  {projects[5].tech}{' '}
+                </p>
+
+                <div className="flex items-center justify-center">
+                  <button className=" text-lg w-1/2 px-6 pb-2 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
+                    <a
+                      href={projects[5].liveDemoLink}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      Demo
+                    </a>
+                  </button>
+                  <button className=" text-lg w-1/2 px-6 pb-2 m-4 duration-200 hover:scale-125 dark:text-[#f0f5fb] dark:hover:text-blue-200  hover:text-blue-400">
+                    <a
+                      href={projects[5].sourceCodeLink}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      Code
+                    </a>
+                  </button>
+                </div>
               </div>
             </div>
             {/* ----------------------------------------------- */}
