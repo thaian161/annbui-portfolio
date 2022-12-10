@@ -644,7 +644,22 @@ export default function Home() {
             {/* ----------------------------------------------- */}
           </div>
         </section>
-
+        {/* ------CONTACT ME------ */}
+        <section className="my-10">
+          <div>
+            <span className="font-Nunito font-[700] text-2xl py-1 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-200 dark:text-[#f0f5fb] rounded-md dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#FF787F] ">
+              📧 Let's Connect
+            </span>
+            <p className="font-Open text-mdtext-md lg:pr-14 py-5 leading-6 md:text-xl font-[500] mt-2 dark:text-[#b8c9dc]">
+              If you like to grab a coffee/🧋boba, or chat with me. Please feel
+              free to add me on social media and just{' '}
+              <span className="text-blue-400 font-[500] dark:text-[#f28389]">
+                shoot me a message
+              </span>{' '}
+              . I would get back to you as soon as I can. Have a lovely day! 😄{' '}
+            </p>
+          </div>
+        </section>
         {/* -------BOUCING ARROW UP-------*/}
         <section className="text-7xl flex justify-center mt-2 mp-3 md:pb-5 ">
           <IoIosArrowUp
@@ -654,7 +669,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-[#385e8f] dark:bg-[#2a3e5a]">
+      <footer className="bg-[#2e4d75] dark:bg-[#2a3e5a]">
         <div className="text-3xl flex justify-center gap-4 text-blue-200 pt-6 ">
           <a
             href="https://github.com/thaian161"
