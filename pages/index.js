@@ -224,14 +224,14 @@ export default function Home() {
             <div className="relative w-full max-w-md">
               <div>
                 {/* -------MY PROFILE PHOTO SECTION------- */}
-                <div className="rounded-lg absolute border-dashed border-8 border-[#3482f679] dark:border-[#88b7fc7b] dark:hover:border-[#a0c6ff9f] h-80 w-80 top-[2rem] left-[3rem] md:h-94 md:w-94  md:top-[2rem] md:left-[6rem] lg:top-[15rem] lg:left-[10rem] hover:border-[#3482f69c]"></div>
+                <div className="rounded-lg absolute border-dashed border-8 border-[#3482f679] dark:border-[#88b7fc7b] dark:hover:border-[#a0c6ff9f] h-80 w-80 top-[2rem] left-[3rem] md:h-94 md:w-94  md:top-[2rem] md:left-[6rem] lg:top-[15rem] lg:left-[10rem] hover:border-[#3482f6aa]"></div>
                 <div className="relative z-30 rounded-lg mx-auto mb-20 bg-gradient-to-b from-[#a1c4fd] to-[#c2e9fb] w-80 h-80 mt-10 overflow-hidden md:h-94 md:w-94 md:mt-20 lg:mt-52 lg:ml-32 md:my-4 md:mb-20 dark:bg-gradient-to-b dark:from-[#b2c3eb] dark:to-[#e4efe9]">
                   <Image
                     src={AnnProfilePhoto}
                     layout="fill"
                     objectFit="cover"
                     alt="Ann Bui Profile Picture"
-                    className="hover:bg-gradient-to-b from-[#5497fa64]"
+                    className="hover:bg-gradient-to-b from-[#64a2ff6f]"
                   />
                 </div>
               </div>
