@@ -102,7 +102,7 @@ export default function Home() {
         <section className="min-h-fit">
           {/* -------NAV BAR SECTION------- */}
 
-          <nav className="sticky top-0 z-10 w-full px-2 py-6 bg-[#f0f5fb] sm:px-4 flex justify-between dark:bg-[#2a3e5a]">
+          <nav className="sticky top-0 z-10 w-full px-2 pt-6 pb-4 bg-[#f0f5fb] sm:px-4 flex justify-between dark:bg-[#2a3e5a]">
             <Image
               className="text-xl"
               src={Logo}
