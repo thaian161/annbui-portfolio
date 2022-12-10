@@ -43,11 +43,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-[#f8fafc] px-10 md:px-22 lg:px-40 dark:bg-gray-600">
+      <main className="bg-[#f0f5fb] px-10 md:px-22 lg:px-40 dark:bg-[#2a3e5a]">
         <section className="min-h-fit">
           {/* -------NAV BAR SECTION------- */}
 
-          <nav className="sticky top-0 z-10 w-full px-2 py-2 bg-[#f8fafc] sm:px-4 flex justify-between dark:bg-gray-600">
+          <nav className="sticky top-0 z-10 w-full px-2 py-6 bg-[#f0f5fb] sm:px-4 flex justify-between dark:bg-[#2a3e5a]">
             <Image
               className="text-xl"
               src={Logo}
@@ -59,7 +59,10 @@ export default function Home() {
             <ul className="flex items-center">
               <li>
                 {!darkMode && (
-                  <h1 className="flex text-[#516f96]  hover:text-[#35557e] hover:scale-110 font-[800] font-Nunito">
+                  <h1
+                    className="flex text-[#516f96]  hover:text-[#35557e] hover:scale-110 font-[800] font-Nunito cursor-pointer"
+                    onClick={() => setDarkMode(!darkMode)}
+                  >
                     Dark
                     <BsFillMoonStarsFill
                       onClick={() => setDarkMode(!darkMode)}
@@ -68,7 +71,10 @@ export default function Home() {
                   </h1>
                 )}
                 {darkMode && (
-                  <h1 className="flex text-yellow-400 font-[800] hover:text-yellow-200 hover:scale-110 font-Nunito">
+                  <h1
+                    className="flex text-yellow-400 font-[800] hover:text-yellow-200 hover:scale-110 font-Nunito cursor-pointer"
+                    onClick={() => setDarkMode(!darkMode)}
+                  >
                     Light
                     <RiSunFill
                       onClick={() => setDarkMode(!darkMode)}
@@ -77,9 +83,9 @@ export default function Home() {
                   </h1>
                 )}
               </li>
-              <li>
+              <li className="hover:scale-110 transition ease-in-out delay-100">
                 <a
-                  className="bg-[#385E8F] text-[#ffffff] md:text-lg px-4 py-2 rounded-md ml-8 font-Nunito font-[800] "
+                  className="bg-[#385E8F] text-[#ffffff] md:text-lg px-4 py-2 rounded-md ml-8 font-Nunito font-[800] cursor-pointer "
                   href="https://resume.creddle.io/resume/j1ryfjyu3f1"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -94,24 +100,24 @@ export default function Home() {
           <div className="lg:flex row md:w-full">
             <div>
               <div className="text-center m-auto md:text-left">
-                <h2 className="text-5xl py-2 text-[#385E8F] font-[700] md:text-7xl mt-10 mb-5 font-Poppins leading-10 ">
-                  Heyyy, I am Ann Bui{' '}
+                <h2 className="text-5xl py-2 text-[#385E8F] font-[700] md:text-6xl mt-10 mb-5 font-Poppins leading-10 dark:text-[#f0f5fb]">
+                  Heyyy, this is Ann{' '}
                   <p className="inline-block animate-waves delay-3000">👋🏼</p>
                 </h2>
 
-                <span className="font-Nunito font-[700] text-2xl md:text-4xl text-white bg-blue-300 px-2 rounded-md">
+                <span className="font-Nunito font-[700] text-2xl md:text-3xl text-[#f0f5fb] bg-blue-300 px-2 rounded-md dark:bg-[#f28389]">
                   Jr Front-end Dev & UXUI Designer
                 </span>
-                <p className=" font-Open text-md lg:pr-14 py-5 leading-6 text-gray-800 md:text-xl max-w-4xl mx-auto mt-6 font-[500]">
+                <p className=" font-Open text-md lg:pr-14 py-5 leading-6 text-gray-800 md:text-xl max-w-4xl mx-auto mt-6 font-[500] dark:text-[#b8c9dc]">
                   I have a strong interest in Web Development and love the
                   ability to be{' '}
-                  <span className="text-blue-400 font-[500]">
+                  <span className="text-blue-400 font-[500] dark:text-[#FF787F]">
                     creative and design
                   </span>{' '}
                   visually appealing applications.
                   <br />
                   Passionate about creating beautiful and{' '}
-                  <span className="text-blue-400 font-[500]">
+                  <span className="text-blue-400 font-[500] dark:text-[#FF787F]">
                     user-centered products
                   </span>{' '}
                   that bring joy and meet the needs of users in their daily
@@ -121,7 +127,7 @@ export default function Home() {
                   High achiever, detail oriented to pixel perfect with
                   experience in Project Management and Documentation. With a
                   “work hard play hard” attitude,{' '}
-                  <span className="text-blue-400 font-[500]">
+                  <span className="text-blue-400 font-[500] dark:text-[#FF787F]">
                     willingness to learn
                   </span>{' '}
                   , and a desire to get my job done excellently!
@@ -133,7 +139,7 @@ export default function Home() {
                 </p>
               </div>
               {/* -------SOCIAL MEDIA ICONS SECTION------- */}
-              <div className=" text-4xl flex justify-center gap-14 py-3 text-gray-600 md:justify-start md:gap-6 md:mb-10 ">
+              <div className=" text-4xl flex justify-center gap-14 py-3 text-gray-600 md:justify-start md:gap-6 md:mb-10 dark:text-[#bbdbff]">
                 <a
                   href="https://github.com/thaian161"
                   target="_blank"
@@ -165,9 +171,9 @@ export default function Home() {
                 {/* -------MY PROFILE PHOTO SECTION------- */}
 
                 <div
-                  className="relative z-30 rounded-lg mx-auto mb-20 bg-gradient-to-b from-blue-300 w-80 h-80 mt-10 overflow-hidden md:h-94 md:w-94 md:mt-20 lg:mt-56 lg:ml-32 md:my-4 md:mb-20"
+                  className="relative z-30 rounded-lg mx-auto mb-20 bg-gradient-to-b from-[#a1c4fd] to-[#c2e9fb] w-80 h-80 mt-10 overflow-hidden md:h-94 md:w-94 md:mt-20 lg:mt-56 lg:ml-32 md:my-4 md:mb-20 dark:bg-gradient-to-b dark:from-[#b2c3eb] dark:to-[#e4efe9]"
                   style={{
-                    boxShadow: '30px 30px #f8fafc, 30px 30px 0 7px #93c5fd',
+                    boxShadow: '30px 30px #f0f5fb, 30px 30px 0 7px #93c5fd',
                   }}
                 >
                   <Image
@@ -189,22 +195,22 @@ export default function Home() {
         <section className="text-7xl flex justify-center mt-10 mb-24">
           <IoIosArrowDown
             onClick={handleBoucingButtonDown}
-            className="text-[#FF787F] animate-bounce "
+            className="text-[#FF787F] animate-bounce cursor-pointer  "
           />
         </section>
 
         {/* ------- SERVICES I OFFER SECTION------ */}
         <section className="mb-10">
           <div ref={ref}>
-            <span className="font-Nunito font-[700] text-2xl py-2 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-200">
-              Service I Offer
+            <span className="font-Nunito  rounded-md font-[700] text-2xl py-1 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-200 dark:text-[#f0f5fb] dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#FF787F]">
+              Have a dream website/app in mind?
             </span>
-            <p className=" font-Open text-md lg:pr-14 py-5 leading-6 md:text-xl font-[500] mt-2">
-              Aside from my full-time job, I am also{' '}
-              <span className="text-blue-400 font-[500]">
+            <p className=" font-Open text-md lg:pr-14 py-5 leading-6 md:text-xl font-[500] mt-2 dark:text-[#b8c9dc]">
+              Let's work together to bring your ideas to life. I am{' '}
+              <span className="text-blue-400 font-[500] dark:text-[#f28389]">
                 available for part-time freelance work
-              </span>
-              . Below are the services I offer.
+              </span>{' '}
+              My services are listed below
             </p>
           </div>
           {/* -------THREE SERVICES SECTION------- */}
@@ -297,8 +303,19 @@ export default function Home() {
                 Contact me via:
                 <span className="text-gray-800  font-Open font-[500]">
                   <br />
-                  <a href="mailto:hello.annbui@gmail.com">Email</a> or{' '}
-                  <a href="https://www.linkedin.com/in/thaian161/">Linkedin</a>
+                  <a
+                    className="cursor-pointer"
+                    href="mailto:hello.annbui@gmail.com"
+                  >
+                    Email
+                  </a>{' '}
+                  or{' '}
+                  <a
+                    className="cursor-pointer"
+                    href="https://www.linkedin.com/in/thaian161/"
+                  >
+                    Linkedin
+                  </a>
                 </span>
               </h4>
             </div>
@@ -307,13 +324,18 @@ export default function Home() {
         {/* -------PROJECTS PORTFOLIO SECTION------- */}
         <section>
           <div>
-            <span className="font-Nunito font-[700] text-2xl py-2 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-200">
+            <span className="font-Nunito font-[700] text-2xl py-1 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-200 dark:text-[#f0f5fb] rounded-md dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#FF787F] ">
               Portfolio
             </span>
-            <p className="font-Open text-mdtext-md lg:pr-14 py-5 leading-6 md:text-xl font-[500] mt-2">
+            <p className="font-Open text-mdtext-md lg:pr-14 py-5 leading-6 md:text-xl font-[500] mt-2 dark:text-[#b8c9dc]">
               Here are some of my{' '}
-              <span className="text-blue-400 font-[500]">coding projects</span>{' '}
-              and <span className="text-blue-400 font-[500]">UX/UI design</span>{' '}
+              <span className="text-blue-400 font-[500] dark:text-[#f28389]">
+                coding projects
+              </span>{' '}
+              and{' '}
+              <span className="text-blue-400 font-[500] dark:text-[#f28389]">
+                UX/UI design
+              </span>{' '}
               I have done so far
             </p>
           </div>
@@ -330,7 +352,7 @@ export default function Home() {
                 alt="Ann Bui Portfolio Project"
               />
               <div className="flex items-center justify-center">
-                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
+                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
                   <a
                     href="https://thaian161.github.io/annbui-portfolio/"
                     rel="noreferrer"
@@ -339,7 +361,7 @@ export default function Home() {
                     Demo
                   </a>
                 </button>
-                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
+                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 dark:text-[#f0f5fb] dark:hover:text-blue-200  hover:text-blue-400">
                   <a
                     href="https://github.com/thaian161/annbui-portfolio"
                     rel="noreferrer"
@@ -361,7 +383,7 @@ export default function Home() {
                 alt="Expense App Project"
               />
               <div className="flex items-center justify-center">
-                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
+                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
                   <a
                     href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
                     rel="noreferrer"
@@ -370,7 +392,7 @@ export default function Home() {
                     Demo
                   </a>
                 </button>
-                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
+                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
                   <a
                     href="https://github.com/thaian161/Dirty-Paws"
                     rel="noreferrer"
@@ -392,7 +414,7 @@ export default function Home() {
                 alt="Jungle Plan Shop Project"
               />
               <div className="flex items-center justify-center">
-                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
+                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
                   <a
                     href="https://www.youtube.com/watch?v=uNaOVM1S9eI"
                     rel="noreferrer"
@@ -401,7 +423,7 @@ export default function Home() {
                     Demo
                   </a>
                 </button>
-                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
+                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
                   <a
                     href="https://github.com/thaian161/Jungle-Plant-Shop"
                     rel="noreferrer"
@@ -424,7 +446,7 @@ export default function Home() {
                 alt="Bake It Up"
               />
               <div className="flex items-center justify-center">
-                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
+                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
                   <a
                     href="https://www.youtube.com/watch?v=0k2WaGUxCJ0&t=2s"
                     rel="noreferrer"
@@ -433,7 +455,7 @@ export default function Home() {
                     Demo
                   </a>
                 </button>
-                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
+                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
                   <a
                     href="https://github.com/thaian161/Bake-It-Up"
                     rel="noreferrer"
@@ -456,7 +478,7 @@ export default function Home() {
                 alt="Tweeter Project"
               />
               <div className="flex items-center justify-center">
-                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
+                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
                   <a
                     href="https://www.youtube.com/watch?v=x8zQIm24-B8&t=3s"
                     rel="noreferrer"
@@ -465,7 +487,7 @@ export default function Home() {
                     Demo
                   </a>
                 </button>
-                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
+                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
                   <a
                     href="https://github.com/thaian161/tweeter"
                     rel="noreferrer"
@@ -488,7 +510,7 @@ export default function Home() {
                 alt="Nflyte Mock-up Project"
               />
               <div className="flex items-center justify-center">
-                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
+                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
                   <a
                     href="https://www.youtube.com/watch?v=OzJA77gHJeU"
                     rel="noreferrer"
@@ -497,7 +519,7 @@ export default function Home() {
                     Demo
                   </a>
                 </button>
-                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 hover:text-blue-700">
+                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
                   <a
                     href="https://github.com/thaian161/Scheduler-react"
                     rel="noreferrer"
@@ -516,16 +538,13 @@ export default function Home() {
         <section className="text-7xl flex justify-center mt-2 mp-3 md:pb-5 ">
           <IoIosArrowUp
             onClick={handleBoucingButtonDown}
-            className="text-[#FF787F] animate-bounce "
+            className="text-[#FF787F] animate-bounce cursor-pointer "
           />
         </section>
       </main>
 
-      <footer className="bg-[#385e8f] text-[#93c5fd]">
-        <div className="text-center mt-2 text-xl pt-10 pb-2">
-          Made with lots of -❤️- by Ann Bui
-        </div>
-        <div className="text-3xl flex justify-center gap-4 py-3 mb-2 pb-10 text-[#93c5fd]">
+      <footer className="bg-[#385e8f] dark:bg-[#2a3e5a]">
+        <div className="text-3xl flex justify-center gap-4 text-blue-200 pt-6 ">
           <a
             href="https://github.com/thaian161"
             target="_blank"
@@ -550,6 +569,9 @@ export default function Home() {
           >
             <AiFillYoutube className="hover:text-[#ffff] hover:scale-125" />
           </a>
+        </div>
+        <div className="p-5 text-center text-xl text-blue-200 font-[500] font-Nunito hover:text-white cursor-pointer">
+          Designed & Build by Ann Bui ✌🏼
         </div>
       </footer>
     </div>
