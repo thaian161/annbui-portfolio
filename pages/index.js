@@ -169,7 +169,7 @@ export default function Home() {
             <div className="relative w-full max-w-md">
               <div>
                 {/* -------MY PROFILE PHOTO SECTION------- */}
-                <div className="rounded-lg absolute border-dashed border-8 border-[#3482f679] dark:border-[rgb(59 130 246 / 0.5)] h-80 w-80 top-[2rem] left-[3rem] md:h-94 md:w-94  md:top-[2rem] md:left-[6rem] lg:top-[15rem] lg:left-[10rem]"></div>
+                <div className="rounded-lg absolute border-dashed border-8 border-[#3482f679] dark:border-[#88b7fc7b] h-80 w-80 top-[2rem] left-[3rem] md:h-94 md:w-94  md:top-[2rem] md:left-[6rem] lg:top-[15rem] lg:left-[10rem]"></div>
                 <div className="relative z-30 rounded-lg mx-auto mb-20 bg-gradient-to-b from-[#a1c4fd] to-[#c2e9fb] w-80 h-80 mt-10 overflow-hidden md:h-94 md:w-94 md:mt-20 lg:mt-52 lg:ml-32 md:my-4 md:mb-20 dark:bg-gradient-to-b dark:from-[#b2c3eb] dark:to-[#e4efe9]">
                   <Image
                     src={AnnProfilePhoto}
@@ -179,10 +179,10 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="absolute z-20 top-40 -left-4 w-72 h-72 bg-[#c8fad9] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 "></div>
-              <div className="absolute z-20 top-7 -right-2 w-80 h-80 bg-[#E0D3FE] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-3000"></div>
-              <div className="absolute z-20 md:top-96 md:left-80 top-64 -bottom-8 left-[7rem] w-72 h-72 bg-[#fbacb2dc] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob  animation-delay-4000 "></div>
-              <div className="absolute z-20 md:top-66 top-74 -bottom-4 left-2 w-72 h-72 bg-[#fff29a] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-4000 "></div>
+              <div className="absolute z-20 top-40 -left-4 w-72 h-72 bg-[#c8fad9] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 dark:bg-green-500"></div>
+              <div className="absolute z-20 top-7 -right-2 w-80 h-80 bg-[#E0D3FE] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-3000 dark:bg-purple-300"></div>
+              <div className="absolute z-20 md:top-96 md:left-80 top-64 -bottom-8 left-[7rem] w-72 h-72 bg-[#fbacb2dc] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob  animation-delay-4000 dark:bg-pink-400"></div>
+              <div className="absolute z-20  top-74 -bottom-4 left-2 w-72 h-72 bg-[#fff29a] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-4000 dark:bg-yellow-300 md:top-[28rem]"></div>
             </div>
           </div>
         </section>
@@ -211,7 +211,7 @@ export default function Home() {
           {/* -------THREE SERVICES SECTION------- */}
           <div className="lg:flex gap-10">
             {/* -------DEVELOPING WEB CARD-------*/}
-            <div className=" lg:w-1/3 text-center shadow-xl p-10 rounded-2xl my-10 bg-gradient-to-tl from-white to-blue-200 dark:bg-slate-300 flex-auto s">
+            <div className=" lg:w-1/3 text-center shadow-xl p-10 rounded-2xl my-10 bg-gradient-to-tl from-white to-blue-200 dark:bg-gradient-to-tl dark:from-[#b5c4d8] dark:to-[#6f90bd] flex-auto dark:shadow-[#6f87ac] ">
               <Image
                 src={Developing}
                 width={110}
@@ -219,7 +219,7 @@ export default function Home() {
                 alt="Developing Serive An Bui Provides"
                 className="hover:animate-waves"
               />
-              <h3 className="text-lg font-Poppins font-medium pt-8 pb-4 leading-6 md:text-xl">
+              <h3 className="text-lg font-Poppins font-medium pt-8 pb-4 leading-6 md:text-xl ">
                 Developing Website || App
               </h3>
               <li className="text-left font-Open font-md">
@@ -242,7 +242,7 @@ export default function Home() {
             </div>
 
             {/* -------UXUI CARD-------*/}
-            <div className="lg:w-1/3  text-center shadow-lg p-10 rounded-2xl my-10 dark:bg-slate-300 flex-auto bg-gradient-to-t from-white to-blue-100">
+            <div className="lg:w-1/3  text-center shadow-lg p-10 rounded-2xl my-10 flex-auto bg-gradient-to-t from-white to-blue-100 dark:bg-gradient-to-t dark:from-[#b5c4d8] dark:to-[#6f90bd] dark:shadow-[#6f87ac] ">
               <Image
                 src={UXUI}
                 width={110}
@@ -272,7 +272,7 @@ export default function Home() {
               </h4>
             </div>
             {/* -------CONSULTING CARD-------*/}
-            <div className="lg:w-1/3  text-center shadow-lg p-10 rounded-2xl my-10 dark:bg-slate-300  flex-auto bg-gradient-to-tr from-white to-blue-200">
+            <div className="lg:w-1/3  text-center shadow-lg p-10 rounded-2xl my-10 flex-auto bg-gradient-to-tr from-white to-blue-200 dark:bg-gradient-to-tr dark:from-[#b5c4d8] dark:to-[#6f90bd] dark:shadow-[#6f87ac] ">
               <Image
                 src={Consulting}
                 width={110}
@@ -320,7 +320,7 @@ export default function Home() {
         <section>
           <div>
             <span className="font-Nunito font-[700] text-2xl py-1 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-200 dark:text-[#f0f5fb] rounded-md dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#FF787F] ">
-              Portfolio
+              My Projects
             </span>
             <p className="font-Open text-mdtext-md lg:pr-14 py-5 leading-6 md:text-xl font-[500] mt-2 dark:text-[#b8c9dc]">
               Here are some of my{' '}
@@ -340,35 +340,45 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 src={ABPortfolio}
-                className="rounded-lg object-cover hover:scale-110 transition ease-in-out delay-300"
+                className="rounded-t-xl object-cover hover:scale-110 transition ease-in-out delay-300"
                 width={'100%'}
                 height={'60%'}
                 layout="responsive"
                 alt="Ann Bui Portfolio Project"
               />
-              <div className="flex items-center justify-center">
-                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
-                  <a
-                    href="https://thaian161.github.io/annbui-portfolio/"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    Demo
-                  </a>
-                </button>
-                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 hover:scale-125 dark:text-[#f0f5fb] dark:hover:text-blue-200  hover:text-blue-400">
-                  <a
-                    href="https://github.com/thaian161/annbui-portfolio"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    Code
-                  </a>
-                </button>
+              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md ">
+                <p className="justify-center pt-5 px-6 leading-8">
+                  This portfolio page :D
+                </p>
+                <p>
+                  <span className="font-[700]">Tech stack:</span> NextJS,
+                  ReactJS & Tailwind{' '}
+                </p>
+
+                <div className="flex items-center justify-center">
+                  <button className=" text-lg w-1/2 px-6 pb-2 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
+                    <a
+                      href="https://thaian161.github.io/annbui-portfolio/"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      Demo
+                    </a>
+                  </button>
+                  <button className=" text-lg w-1/2 px-6 pb-2 m-4 duration-200 hover:scale-125 dark:text-[#f0f5fb] dark:hover:text-blue-200  hover:text-blue-400">
+                    <a
+                      href="https://github.com/thaian161/annbui-portfolio"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      Code
+                    </a>
+                  </button>
+                </div>
               </div>
             </div>
             {/* ---------------------Dirty PAws-------------------------- */}
-            <div className="basis-1/3 flex-1">
+            <div className="basis-1/3 flex-1 ">
               <Image
                 src={DP}
                 className="rounded-lg object-cover hover:scale-110 transition ease-in-out delay-300"
@@ -377,25 +387,32 @@ export default function Home() {
                 layout="responsive"
                 alt="Expense App Project"
               />
-              <div className="flex items-center justify-center">
-                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
-                  <a
-                    href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    Demo
-                  </a>
-                </button>
-                <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
-                  <a
-                    href="https://github.com/thaian161/Dirty-Paws"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    Code
-                  </a>
-                </button>
+              <div className="flex flex-col items-center text-center shadow-xl  rounded-2xl bg-pink-400">
+                <p className="justify-center py-2 px-6">
+                  Dirty Paws: Dating App cartoon theme.
+                </p>
+                <p>Using ReactJS, ExpressJS and custom CSS</p>
+
+                <div className="flex items-center justify-center">
+                  <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
+                    <a
+                      href="https://www.youtube.com/watch?v=vDzoe_sz0AQ"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      Demo
+                    </a>
+                  </button>
+                  <button className=" text-lg w-1/2 px-6 py-3 m-4 duration-200 dark:text-[#f0f5fb] dark:hover:text-blue-200 hover:scale-125 hover:text-blue-400">
+                    <a
+                      href="https://github.com/thaian161/Dirty-Paws"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      Code
+                    </a>
+                  </button>
+                </div>
               </div>
             </div>
             {/* ------------------------Jugnle Plant Shop----------------------- */}
