@@ -648,7 +648,7 @@ export default function Home() {
         <section className="my-10">
           <div>
             <span className="font-Nunito font-[700] text-2xl py-1 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-200 dark:text-[#f0f5fb] rounded-md dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#FF787F] ">
-              📧 Let's Connect
+              📧 Let&apos;s Connect
             </span>
             <p className="font-Open text-mdtext-md lg:pr-14 py-5 leading-6 md:text-xl font-[500] mt-2 dark:text-[#b8c9dc]">
               If you like to grab a coffee/🧋boba, or chat with me. Please feel
