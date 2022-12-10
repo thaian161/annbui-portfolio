@@ -95,7 +95,7 @@ export default function Home() {
       </Head>
 
       {projects.map(({ tech }) => {
-        <div>{tech}</div>;
+        ` hello ${tech}`;
       })}
 
       <main className="bg-[#f0f5fb] px-10 md:px-22 lg:px-40 dark:bg-[#2a3e5a]">
