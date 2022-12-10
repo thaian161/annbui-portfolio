@@ -170,18 +170,20 @@ export default function Home() {
               <div>
                 {/* -------MY PROFILE PHOTO SECTION------- */}
 
-                <div
-                  className="relative z-30 rounded-lg mx-auto mb-20 bg-gradient-to-b from-[#a1c4fd] to-[#c2e9fb] w-80 h-80 mt-10 overflow-hidden md:h-94 md:w-94 md:mt-20 lg:mt-56 lg:ml-32 md:my-4 md:mb-20 dark:bg-gradient-to-b dark:from-[#b2c3eb] dark:to-[#e4efe9]"
-                  style={{
-                    boxShadow: '30px 30px #f0f5fb, 30px 30px 0 7px #93c5fd',
-                  }}
-                >
-                  <Image
-                    src={AnnProfilePhoto}
-                    layout="fill"
-                    objectFit="cover"
-                    alt="Ann Bui Profile Picture"
-                  />
+                <div className="bg-transparent border-dashed border-8 border-sky-500">
+                  <div
+                    className="relative z-30 rounded-lg mx-auto mb-20 bg-gradient-to-b from-[#a1c4fd] to-[#c2e9fb] w-80 h-80 mt-10 overflow-hidden md:h-94 md:w-94 md:mt-20 lg:mt-56 lg:ml-32 md:my-4 md:mb-20 dark:bg-gradient-to-b dark:from-[#b2c3eb] dark:to-[#e4efe9]"
+                    style={{
+                      boxShadow: '30px 30px #f0f5fb, 30px 30px 0 7px #93c5fd',
+                    }}
+                  >
+                    <Image
+                      src={AnnProfilePhoto}
+                      layout="fill"
+                      objectFit="cover"
+                      alt="Ann Bui Profile Picture"
+                    />
+                  </div>
                 </div>
               </div>
               <div className="absolute z-20 top-40 -left-4 w-72 h-72 bg-[#c8fad9] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 "></div>
@@ -206,7 +208,7 @@ export default function Home() {
               Have a dream website/app in mind?
             </span>
             <p className=" font-Open text-md lg:pr-14 py-5 leading-6 md:text-xl font-[500] mt-2 dark:text-[#b8c9dc]">
-              Let's work together to bring your ideas to life. I am{' '}
+              Let&apos;s work together to bring your ideas to life. I am{' '}
               <span className="text-blue-400 font-[500] dark:text-[#f28389]">
                 available for part-time freelance work
               </span>{' '}
