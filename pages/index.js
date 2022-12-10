@@ -100,7 +100,7 @@ export default function Home() {
           <div className="lg:flex row md:w-full">
             <div>
               <div className="text-center m-auto md:text-left">
-                <h2 className="text-5xl py-2 text-[#385E8F] font-[700] md:text-6xl mt-10 mb-5 font-Poppins leading-10 dark:text-[#f0f5fb]">
+                <h2 className="leading-[3.5rem] text-5xl py-2 text-[#385E8F] font-[700] md:text-6xl mt-10 mb-5 font-Poppins dark:text-[#f0f5fb]">
                   Heyyy, this is Ann{' '}
                   <p className="inline-block animate-waves delay-3000">👋🏼</p>
                 </h2>
@@ -169,27 +169,20 @@ export default function Home() {
             <div className="relative w-full max-w-lg">
               <div>
                 {/* -------MY PROFILE PHOTO SECTION------- */}
-
-                <div className="bg-transparent border-dashed border-8 border-sky-500">
-                  <div
-                    className="relative z-30 rounded-lg mx-auto mb-20 bg-gradient-to-b from-[#a1c4fd] to-[#c2e9fb] w-80 h-80 mt-10 overflow-hidden md:h-94 md:w-94 md:mt-20 lg:mt-56 lg:ml-32 md:my-4 md:mb-20 dark:bg-gradient-to-b dark:from-[#b2c3eb] dark:to-[#e4efe9]"
-                    style={{
-                      boxShadow: '30px 30px #f0f5fb, 30px 30px 0 7px #93c5fd',
-                    }}
-                  >
-                    <Image
-                      src={AnnProfilePhoto}
-                      layout="fill"
-                      objectFit="cover"
-                      alt="Ann Bui Profile Picture"
-                    />
-                  </div>
+                <div className="absolute border-dashed border-8 border-sky-500 h-80 w-80 top-[2rem] left-[5.5rem]"></div>
+                <div className="relative z-30 rounded-lg mx-auto mb-20 bg-gradient-to-b from-[#a1c4fd] to-[#c2e9fb] w-80 h-80 mt-10 overflow-hidden md:h-94 md:w-94 md:mt-20 lg:mt-56 lg:ml-32 md:my-4 md:mb-20 dark:bg-gradient-to-b dark:from-[#b2c3eb] dark:to-[#e4efe9]">
+                  <Image
+                    src={AnnProfilePhoto}
+                    layout="fill"
+                    objectFit="cover"
+                    alt="Ann Bui Profile Picture"
+                  />
                 </div>
               </div>
               <div className="absolute z-20 top-40 -left-4 w-72 h-72 bg-[#c8fad9] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 "></div>
               <div className="absolute z-20 top-7 -right-2 w-80 h-80 bg-[#E0D3FE] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-3000"></div>
-              <div className="absolute z-20 top-74 -bottom-8 left-64 w-72 h-72 bg-[#fbacb2dc] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob  animation-delay-4000 "></div>
-              <div className="absolute z-20 top-74 -bottom-4 left-2 w-72 h-72 bg-[#fff29a] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-4000 "></div>
+              <div className="absolute z-20 md:top-96 md:left-80 top-64 -bottom-8 left-[7rem] w-72 h-72 bg-[#fbacb2dc] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob  animation-delay-4000 "></div>
+              <div className="absolute z-20 md:top-66 top-74 -bottom-4 left-2 w-72 h-72 bg-[#fff29a] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-4000 "></div>
             </div>
           </div>
         </section>
