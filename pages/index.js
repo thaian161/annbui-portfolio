@@ -166,11 +166,11 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="relative w-full max-w-lg">
+            <div className="relative w-full max-w-md">
               <div>
                 {/* -------MY PROFILE PHOTO SECTION------- */}
-                <div className="absolute border-dashed border-8 border-sky-500 h-80 w-80 top-[2rem] left-[5.5rem]"></div>
-                <div className="relative z-30 rounded-lg mx-auto mb-20 bg-gradient-to-b from-[#a1c4fd] to-[#c2e9fb] w-80 h-80 mt-10 overflow-hidden md:h-94 md:w-94 md:mt-20 lg:mt-56 lg:ml-32 md:my-4 md:mb-20 dark:bg-gradient-to-b dark:from-[#b2c3eb] dark:to-[#e4efe9]">
+                <div className="rounded-lg absolute border-dashed border-8 border-[#3482f679] dark:border-[rgb(59 130 246 / 0.5)] h-80 w-80 top-[2rem] left-[3rem] md:h-94 md:w-94  md:top-[2rem] md:left-[6rem] lg:top-[15rem] lg:left-[10rem]"></div>
+                <div className="relative z-30 rounded-lg mx-auto mb-20 bg-gradient-to-b from-[#a1c4fd] to-[#c2e9fb] w-80 h-80 mt-10 overflow-hidden md:h-94 md:w-94 md:mt-20 lg:mt-52 lg:ml-32 md:my-4 md:mb-20 dark:bg-gradient-to-b dark:from-[#b2c3eb] dark:to-[#e4efe9]">
                   <Image
                     src={AnnProfilePhoto}
                     layout="fill"
@@ -211,7 +211,7 @@ export default function Home() {
           {/* -------THREE SERVICES SECTION------- */}
           <div className="lg:flex gap-10">
             {/* -------DEVELOPING WEB CARD-------*/}
-            <div className=" lg:w-1/3 text-center shadow-xl p-10 rounded-xl my-10 bg-gradient-to-tl from-white to-blue-200 dark:bg-slate-300 flex-auto s">
+            <div className=" lg:w-1/3 text-center shadow-xl p-10 rounded-2xl my-10 bg-gradient-to-tl from-white to-blue-200 dark:bg-slate-300 flex-auto s">
               <Image
                 src={Developing}
                 width={110}
@@ -242,7 +242,7 @@ export default function Home() {
             </div>
 
             {/* -------UXUI CARD-------*/}
-            <div className="lg:w-1/3  text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300 flex-auto bg-gradient-to-t from-white to-blue-100">
+            <div className="lg:w-1/3  text-center shadow-lg p-10 rounded-2xl my-10 dark:bg-slate-300 flex-auto bg-gradient-to-t from-white to-blue-100">
               <Image
                 src={UXUI}
                 width={110}
@@ -272,7 +272,7 @@ export default function Home() {
               </h4>
             </div>
             {/* -------CONSULTING CARD-------*/}
-            <div className="lg:w-1/3  text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-300  flex-auto bg-gradient-to-tr from-white to-blue-200">
+            <div className="lg:w-1/3  text-center shadow-lg p-10 rounded-2xl my-10 dark:bg-slate-300  flex-auto bg-gradient-to-tr from-white to-blue-200">
               <Image
                 src={Consulting}
                 width={110}
