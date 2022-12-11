@@ -15,7 +15,6 @@ import AnnProfilePhoto from '../public/AnnBuiProfilePhoto.png';
 import Developing from '../public/Developing.png';
 import UXUI from '../public/UX:UI.png';
 import Consulting from '../public/Consulting.png';
-import Testing from '../public/Testing.png';
 import Logo from '../public/logo3.png';
 import ABPortfolio from '../public/ABPortfolio.png';
 import CSS from '../public/CSS.png';
@@ -239,7 +238,7 @@ export default function Home() {
               <div className="absolute z-20 top-40 -left-4 w-72 h-72 bg-[#c8fad9] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 dark:bg-green-500"></div>
               <div className="absolute z-20 top-7 -right-2 w-80 h-80 bg-[#E0D3FE] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-3000 dark:bg-purple-300"></div>
               <div className="absolute z-20 md:top-96 md:left-80 top-64 -bottom-8 left-[7rem] w-72 h-72 bg-[#fbacb2dc] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob  animation-delay-4000 dark:bg-pink-400 dark:blur-xl"></div>
-              <div className="absolute z-20  top-74 -bottom-4 left-2 w-72 h-72 bg-[#fff29a] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-4000 dark:bg-[rgb(253,255,129)] md:top-[28rem] dark:blur-md "></div>
+              <div className="absolute z-20  top-74 -bottom-4 left-2 w-72 h-72 bg-[#fff29a] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-4000 dark:bg-[rgb(253,255,129)] md:top-[28rem] dark:blur-xl "></div>
             </div>
           </div>
         </section>
