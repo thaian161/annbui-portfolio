@@ -107,8 +107,8 @@ export default function Home() {
             <Image
               className="text-xl"
               src={Logo}
-              width={100}
-              height={100}
+              width={90}
+              height={90}
               alt="Developing Serive An Bui Provides"
             />
 
@@ -128,7 +128,7 @@ export default function Home() {
                 )}
                 {darkMode && (
                   <h1
-                    className="flex text-yellow-400 font-[800] hover:text-yellow-200 hover:scale-110 font-Nunito cursor-pointer"
+                    className="flex text-yellow-200 font-[800] hover:text-yellow-300 hover:scale-110 font-Nunito cursor-pointer"
                     onClick={() => setDarkMode(!darkMode)}
                   >
                     Light
@@ -161,7 +161,7 @@ export default function Home() {
                   <p className="inline-block animate-waves delay-3000">👋🏼</p>
                 </h2>
 
-                <span className="font-Nunito font-[700] text-2xl md:text-3xl text-[#f0f5fb] bg-blue-300 px-2 rounded-md dark:bg-[#f28389]">
+                <span className="font-Nunito font-[700] text-2xl md:text-3xl text-[#f0f5fb] bg-blue-300 px-3 rounded-md dark:bg-[#f28389]">
                   Jr Front-end Dev & UXUI Designer
                 </span>
                 <p className=" font-Open text-md lg:pr-14 py-5 leading-6 text-gray-800 md:text-xl max-w-7xl mx-auto mt-6 font-[500] dark:text-[#b8c9dc]">
@@ -394,7 +394,7 @@ export default function Home() {
           {/* -------SHOWCASE EACH PROJECT SECTION------- */}
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap font-Nunito font-[500]">
             {/* ---------------------Portfolio Page-------------------------- */}
-            <div className="basis-1/3 flex-1 m-auto  ">
+            <div className="basis-1/3 flex-1 ">
               <Image
                 src={ABPortfolio}
                 className="rounded-t-xl object-cover hover:scale-110 transition ease-in-out delay-300"
@@ -403,7 +403,7 @@ export default function Home() {
                 layout="responsive"
                 alt="Ann Bui Portfolio Project"
               />
-              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white  font-Open text-md dark:shadow-[#4676ba] dark:shadow-lg p-2 px-3 dark:bg-gradient-to-t dark:from-[#d2ddeb] dark:to-[#95afd4] ">
+              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg px-3 p-2 dark:bg-gradient-to-t dark:from-[#d2ddeb] dark:to-[#95afd4]">
                 <p className="justify-center pt-5 px-6 leading-7">
                   This SPA portfolio - fully responsive and dark mode 😄
                 </p>
@@ -413,7 +413,7 @@ export default function Home() {
                 </p>
 
                 <div className="flex items-center justify-center">
-                  <button className=" text-lg w-1/2 px-6 pb-2 m-4 duration-200 text-blue-300  text-blue-300 font-[700]  dark:text-[#577298] dark:hover:text-[#2a3e5a] hover:scale-125 hover:text-blue-400">
+                  <button className=" text-lg w-1/2 px-6 pb-2 m-4 duration-200 text-blue-300 font-[700]  dark:text-[#577298] dark:hover:text-[#2a3e5a] hover:scale-125 hover:text-blue-400">
                     <a
                       href="https://thaian161.github.io/annbui-portfolio/"
                       rel="noreferrer"
@@ -670,7 +670,7 @@ export default function Home() {
           </div>
         </section>
         {/* -------BOUCING ARROW UP-------*/}
-        <section className="text-7xl flex justify-center mt-2 mp-3 md:pb-5 ">
+        <section className="text-7xl flex justify-center  mb-10 md:pb-5 ">
           <IoIosArrowUp
             onClick={handleBoucingButtonDown}
             className="text-[#FF787F] animate-bounce cursor-pointer "
