@@ -99,11 +99,11 @@ export default function Home() {
         })}
       </div>
 
-      <main className="bg-[#f0f5fb] px-10 md:px-22 lg:px-40 dark:bg-[#2a3e5a]">
+      <main className="bg-[#f0f5fb] px-10 md:px-22 lg:px-40 dark:bg-[#1b304e]">
         <section className="min-h-fit">
           {/* -------NAV BAR SECTION------- */}
 
-          <nav className="sticky top-0 z-10 w-full px-2 pt-6 pb-4 bg-[#f0f5fb] sm:px-4 flex justify-between dark:bg-[#2a3e5a]">
+          <nav className="sticky top-0 z-10 w-full px-2 pt-6 pb-4 bg-[#f0f5fb] sm:px-4 flex justify-between dark:bg-[#1b304e]">
             <Image
               className="text-xl"
               src={Logo}
@@ -403,7 +403,7 @@ export default function Home() {
                 layout="responsive"
                 alt="Ann Bui Portfolio Project"
               />
-              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg p-2 px-3">
+              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white  font-Open text-md dark:shadow-[#4676ba] dark:shadow-lg p-2 px-3 dark:bg-gradient-to-t dark:from-[#d2ddeb] dark:to-[#95afd4] ">
                 <p className="justify-center pt-5 px-6 leading-7">
                   This SPA portfolio - fully responsive and dark mode 😄
                 </p>
@@ -444,7 +444,7 @@ export default function Home() {
                 layout="responsive"
                 alt="Ann Bui Portfolio Project"
               />
-              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg  p-2">
+              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg  p-2 dark:bg-gradient-to-t dark:from-[#d2ddeb] dark:to-[#95afd4]">
                 <p className="justify-center pt-5 px-6 leading-7">
                   {projects[1].description}
                 </p>
@@ -485,7 +485,7 @@ export default function Home() {
                 layout="responsive"
                 alt="Ann Bui Portfolio Project"
               />
-              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg  p-2">
+              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg  p-2 dark:bg-gradient-to-t dark:from-[#d2ddeb] dark:to-[#95afd4]">
                 <p className="justify-center pt-5 px-6 leading-7">
                   {projects[2].description}
                 </p>
@@ -527,7 +527,7 @@ export default function Home() {
                 layout="responsive"
                 alt="Ann Bui Portfolio Project"
               />
-              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg p-2">
+              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg p-2 dark:bg-gradient-to-t dark:from-[#d2ddeb] dark:to-[#95afd4]">
                 <p className="justify-center pt-5 px-6 leading-7">
                   {projects[3].description}
                 </p>
@@ -569,7 +569,7 @@ export default function Home() {
                 layout="responsive"
                 alt="Ann Bui Portfolio Project"
               />
-              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg p-2">
+              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg p-2 dark:bg-gradient-to-t dark:from-[#d2ddeb] dark:to-[#95afd4]">
                 <p className="justify-center pt-5 px-6 leading-7">
                   {projects[4].description}
                 </p>
@@ -611,7 +611,7 @@ export default function Home() {
                 layout="responsive"
                 alt="Ann Bui Portfolio Project"
               />
-              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg p-2">
+              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg p-2 dark:bg-gradient-to-t dark:from-[#d2ddeb] dark:to-[#95afd4]">
                 <p className="justify-center pt-5 px-6 leading-7">
                   {projects[5].description}
                 </p>
@@ -678,7 +678,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-[#2e4d75] dark:bg-[#2a3e5a]">
+      <footer className="bg-[#2e4d75] dark:bg-[#1b304e]">
         <div className="text-3xl flex justify-center gap-4 text-blue-200 pt-6 ">
           <a
             href="https://github.com/thaian161"
