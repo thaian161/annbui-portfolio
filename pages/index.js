@@ -669,7 +669,7 @@ export default function Home() {
           </div>
         </section>
         {/* -------BOUCING ARROW UP-------*/}
-        <section className="text-7xl flex justify-center  mb-10 md:pb-5 ">
+        <section className="text-7xl flex justify-center  pb-10 md:pb-5 ">
           <IoIosArrowUp
             onClick={handleBoucingButtonDown}
             className="text-[#FF787F] animate-bounce cursor-pointer "
