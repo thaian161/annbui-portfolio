@@ -8,6 +8,8 @@ import {
   AiOutlineMail,
   AiFillYoutube,
 } from 'react-icons/ai';
+import { FaTimes } from 'react-icons/fa';
+import { TiThMenu } from 'react-icons/ti';
 import { useState, useRef } from 'react';
 
 import Image from 'next/legacy/image';
@@ -78,6 +80,7 @@ const projects = [
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  let [open, setOpen] = useState(false);
   const ref = useRef(null);
   const handleBoucingButtonDown = () => {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
@@ -102,54 +105,73 @@ export default function Home() {
         <section className="min-h-fit">
           {/* -------NAV BAR SECTION------- */}
 
-          <nav className="sticky top-0 z-10 w-full px-2 pt-6 pb-4 bg-[#f0f5fb] sm:px-4 flex justify-between dark:bg-[#1b304e]">
-            <Image
-              className="text-xl"
-              src={Logo}
-              width={90}
-              height={90}
-              alt="Developing Serive An Bui Provides"
-            />
+          <div className="shadow-md w-full fixed top-0 left-0">
+            <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
+              <div
+                className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
+      text-gray-800"
+              >
+                <Image
+                  className="text-xl"
+                  src={Logo}
+                  width={90}
+                  height={90}
+                  alt="Developing Serive An Bui Provides"
+                />
+              </div>
 
-            <ul className="flex items-center">
-              <li>
-                {!darkMode && (
-                  <h1
-                    className="flex text-[#516f96]  hover:text-[#35557e] hover:scale-110 font-[800] font-Nunito cursor-pointer"
-                    onClick={() => setDarkMode(!darkMode)}
-                  >
-                    Dark
-                    <BsFillMoonStarsFill
+              <div
+                onClick={() => setOpen(!open)}
+                className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
+              >
+                {open ? <FaTimes /> : <TiThMenu />}
+              </div>
+
+              <ul
+                className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in  ${
+                  open ? 'top-20 ' : 'top-[-490px]'
+                }`}
+              >
+                <li className="md:ml-8 text-xl md:my-0 my-7">
+                  {!darkMode && (
+                    <h1
+                      className="flex text-[#516f96]  hover:text-[#35557e] hover:scale-110 font-[800] font-Nunito cursor-pointer"
                       onClick={() => setDarkMode(!darkMode)}
-                      className="cursor-pointer text-2xl"
-                    />
-                  </h1>
-                )}
-                {darkMode && (
-                  <h1
-                    className="flex text-yellow-200 font-[800] hover:text-yellow-300 hover:scale-110 font-Nunito cursor-pointer"
-                    onClick={() => setDarkMode(!darkMode)}
-                  >
-                    Light
-                    <RiSunFill
+                    >
+                      Dark
+                      <BsFillMoonStarsFill
+                        onClick={() => setDarkMode(!darkMode)}
+                        className="cursor-pointer text-2xl"
+                      />
+                    </h1>
+                  )}
+                  {darkMode && (
+                    <h1
+                      className="flex text-yellow-200 font-[800] hover:text-yellow-300 hover:scale-110 font-Nunito cursor-pointer"
                       onClick={() => setDarkMode(!darkMode)}
-                      className="cursor-pointer text-2xl"
-                    />
-                  </h1>
-                )}
-              </li>
-              <li className="hover:scale-110 transition ease-in-out delay-100">
-                <a
-                  className="bg-[#385E8F] text-[#ffffff] md:text-lg px-4 py-2 rounded-md ml-8 font-Nunito font-[800] cursor-pointer "
-                  href="https://resume.creddle.io/resume/j1ryfjyu3f1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  See Resume
-                </a>
-              </li>
-            </ul>
-          </nav>
+                    >
+                      Light
+                      <RiSunFill
+                        onClick={() => setDarkMode(!darkMode)}
+                        className="cursor-pointer text-2xl"
+                      />
+                    </h1>
+                  )}
+                </li>
+
+                <li className="hover:scale-110 transition ease-in-out delay-100">
+                  <a
+                    className="bg-[#385E8F] text-[#ffffff] md:text-lg px-4 py-2 rounded-md ml-8 font-Nunito font-[800] cursor-pointer "
+                    href="https://resume.creddle.io/resume/j1ryfjyu3f1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    See Resume
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
           {/* -------ABOUT ME/ FRONT PAGE SECTION------- */}
           <div className="lg:flex row md:w-full">
