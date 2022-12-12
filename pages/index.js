@@ -128,7 +128,7 @@ export default function Home() {
 
             <ul
               className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-[#f0f5fb] dark:bg-[#1b304e] md:z-auto left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in  rounded-xl ${
-                open ? 'top-28' : 'top-[-490px]'
+                open ? 'top-[7.5rem]' : 'top-[-490px]'
               }`}
             >
               <li className="ml-8 text-xl md:my-0 my-7">
@@ -185,7 +185,7 @@ export default function Home() {
                 <span className="font-Nunito font-[700] text-2xl md:text-3xl text-[#f0f5fb] bg-blue-300 px-3 rounded-md dark:bg-[#f28389]">
                   Jr Front-end Dev & UXUI Designer
                 </span>
-                <p className=" font-Open text-md lg:pr-14 py-5 leading-6 text-gray-800 md:text-xl max-w-7xl mx-auto mt-6 font-[500] dark:text-[#b8c9dc]">
+                <p className=" font-Open text-lg lg:pr-14 py-5 leading-6 text-gray-800 md:text-xl max-w-7xl mx-auto mt-6 font-[500] dark:text-[#b8c9dc]">
                   I have a strong interest in Web Development and love the
                   ability to be{' '}
                   <span className="text-blue-400 font-[500] dark:text-[#FF787F]">
@@ -246,8 +246,8 @@ export default function Home() {
             <div className="relative w-full max-w-md">
               <div>
                 {/* -------MY PROFILE PHOTO SECTION------- */}
-                <div className="rounded-lg absolute border-dashed border-8 border-[#3482f679] dark:border-[#88b7fc7b] dark:hover:border-[#a0c6ff9f] h-80 w-80 top-[2rem] left-[2rem] md:h-94 md:w-94  md:top-[2rem] md:left-[6rem] lg:top-[15rem] lg:left-[10rem] hover:border-[#3482f6aa]"></div>
-                <div className="relative z-30 rounded-lg mx-auto mb-20 bg-gradient-to-b from-[#a1c4fd] to-[#c2e9fb] w-80 h-80 mt-10  md:h-94 md:w-94 md:mt-20 lg:mt-52 lg:ml-32 md:my-4 md:mb-20 dark:bg-gradient-to-b dark:from-[#b2c3eb] dark:to-[#e4efe9]">
+                <div className="rounded-lg absolute border-dashed border-8 border-[#3482f679] dark:border-[#88b7fc7b] dark:hover:border-[#a0c6ff9f] h-72 w-72 top-[2rem] left-[4rem] md:h-82 md:w-82  md:top-[2rem] md:left-[7rem] lg:top-[15rem] lg:left-[10.1rem] hover:border-[#3482f6aa]"></div>
+                <div className="relative z-30 rounded-lg mx-auto mb-20 bg-gradient-to-b from-[#a1c4fd] to-[#c2e9fb] w-72 h-72 mt-10  md:h-82 md:w-82 md:mt-20 lg:mt-52 lg:ml-32 md:my-4 md:mb-20 dark:bg-gradient-to-b dark:from-[#b2c3eb] dark:to-[#e4efe9] left-5 md:left-0">
                   <Image
                     src={AnnProfilePhoto}
                     layout="fill"
@@ -260,7 +260,7 @@ export default function Home() {
               <div className="h-32 w-32 overflow-hidden">
                 <div className="absolute z-20 top-40 -left-4 w-72 h-72 bg-[#c8fad9] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 dark:bg-green-500"></div>
                 <div className="absolute z-20 top-7 -right-2 w-80 h-80 bg-[#E0D3FE] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-3000 dark:bg-purple-300"></div>
-                <div className="absolute z-20 md:top-96 md:left-80 top-64 -bottom-8 left-[7rem] w-72 h-72 bg-[#fbacb2dc] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob  animation-delay-4000 dark:bg-pink-400 dark:blur-xl"></div>
+                <div className="absolute z-20 md:top-96 md:left-60 top-64 -bottom-8 left-[7rem] w-72 h-72 bg-[#fbacb2dc] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2  animation-delay-4000 dark:bg-pink-400 dark:blur-xl "></div>
                 <div className="absolute z-20  top-74 -bottom-4 left-2 w-72 h-72 bg-[#fff29a] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-4000 dark:bg-[rgb(253,255,129)] md:top-[28rem] dark:blur-xl "></div>
               </div>
             </div>
@@ -277,7 +277,7 @@ export default function Home() {
         {/* ------- SERVICES I OFFER SECTION------ */}
         <section className="mb-10">
           <div ref={ref}>
-            <span className="font-Nunito  rounded-md font-[700] text-2xl py-1 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-200 dark:text-[#f0f5fb] dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#FF787F]  px-1 ">
+            <span className="font-Nunito  rounded-md font-[700] text-3xl py-1 md:text-4xl bg-gradient-to-b from-transparent via-transparent to-blue-200 dark:text-[#f0f5fb] dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#FF787F]  px-1 ">
               Have A Dream Website/App In Mind?
             </span>
             <p className=" font-Open text-md lg:pr-14 py-5 leading-6 md:text-xl font-[500] mt-2 dark:text-[#b8c9dc]">
@@ -399,7 +399,7 @@ export default function Home() {
         {/* -------PROJECTS PORTFOLIO SECTION------- */}
         <section>
           <div className="mt-[6rem]">
-            <span className=" font-Nunito font-[700] text-2xl py-1 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-200 dark:text-[#f0f5fb] rounded-md dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#FF787F]  px-1 ">
+            <span className=" font-Nunito font-[700] text-3xl py-1 md:text-4xl bg-gradient-to-b from-transparent via-transparent to-blue-200 dark:text-[#f0f5fb] rounded-md dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#FF787F]  px-1 ">
               My Projects
             </span>
             <p className="font-Open text-mdtext-md lg:pr-14 py-5 leading-6 md:text-xl font-[500] mt-2 dark:text-[#b8c9dc]">
@@ -671,7 +671,7 @@ export default function Home() {
         {/* ------CONTACT ME------ */}
         <section className="my-10">
           <div className="mt-[6rem]">
-            <span className="font-Nunito font-[700] text-2xl py-1 md:text-3xl bg-gradient-to-b px-1 from-transparent via-transparent to-blue-200 dark:text-[#f0f5fb] rounded-md dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#FF787F] ">
+            <span className="font-Nunito font-[700] text-3xl py-1 md:text-4xl bg-gradient-to-b px-1 from-transparent via-transparent to-blue-200 dark:text-[#f0f5fb] rounded-md dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#FF787F] ">
               📧 Let&apos;s Connect
             </span>
             <p className="font-Open text-mdtext-md lg:pr-14 py-5 leading-6 md:text-xl font-[500] mt-2 dark:text-[#b8c9dc]">

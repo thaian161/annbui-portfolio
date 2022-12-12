@@ -33,7 +33,7 @@ module.exports = {
             transform: ' translate(0px, 0px) scale(1)',
           },
           '35%': {
-            transform: ' translate(40px, -150px) scale(1.4)',
+            transform: ' translate(40px, -50px) scale(1.1)',
           },
           '68%': {
             transform: ' translate(-50px, 20px) scale(0.8)',
