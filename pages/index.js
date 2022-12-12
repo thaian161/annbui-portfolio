@@ -104,82 +104,82 @@ export default function Home() {
       <main className="bg-[#f0f5fb] px-10 md:px-22 lg:px-40 dark:bg-[#1b304e]">
         <section className="min-h-fit">
           {/* -------NAV BAR SECTION------- */}
-
-          <div className="shadow-md w-full fixed top-0 left-0">
-            <div className="md:flex items-center justify-between bg-white py-4 md:px-10 px-7">
-              <div
-                className="font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
-      text-gray-800"
-              >
-                <Image
-                  className="text-xl"
-                  src={Logo}
-                  width={90}
-                  height={90}
-                  alt="Developing Serive An Bui Provides"
-                />
-              </div>
-
-              <div
-                onClick={() => setOpen(!open)}
-                className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden"
-              >
-                {open ? <FaTimes /> : <TiThMenu />}
-              </div>
-
-              <ul
-                className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-white md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in  ${
-                  open ? 'top-20 ' : 'top-[-490px]'
-                }`}
-              >
-                <li className="md:ml-8 text-xl md:my-0 my-7">
-                  {!darkMode && (
-                    <h1
-                      className="flex text-[#516f96]  hover:text-[#35557e] hover:scale-110 font-[800] font-Nunito cursor-pointer"
-                      onClick={() => setDarkMode(!darkMode)}
-                    >
-                      Dark
-                      <BsFillMoonStarsFill
-                        onClick={() => setDarkMode(!darkMode)}
-                        className="cursor-pointer text-2xl"
-                      />
-                    </h1>
-                  )}
-                  {darkMode && (
-                    <h1
-                      className="flex text-yellow-200 font-[800] hover:text-yellow-300 hover:scale-110 font-Nunito cursor-pointer"
-                      onClick={() => setDarkMode(!darkMode)}
-                    >
-                      Light
-                      <RiSunFill
-                        onClick={() => setDarkMode(!darkMode)}
-                        className="cursor-pointer text-2xl"
-                      />
-                    </h1>
-                  )}
-                </li>
-
-                <li className="hover:scale-110 transition ease-in-out delay-100">
-                  <a
-                    className="bg-[#385E8F] text-[#ffffff] md:text-lg px-4 py-2 rounded-md ml-8 font-Nunito font-[800] cursor-pointer "
-                    href="https://resume.creddle.io/resume/j1ryfjyu3f1"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    See Resume
-                  </a>
-                </li>
-              </ul>
+          <nav className="w-full fixed top-0 left-0 4 flex justify-between bg-[#f0f5fb] dark:bg-[#1b304e] z-[35] pt-6 pb-6 md:pr-36 md:pl-36 pl-[60px] ">
+            <div className="md:flex items-center justify-between pt-1">
+              <Image
+                className="text-xl bg-transparent "
+                src={Logo}
+                width={90}
+                height={90}
+                alt="Developing Serive An Bui Provides"
+              />
             </div>
-          </div>
+
+            <div
+              onClick={() => setOpen(!open)}
+              className="text-3xl absolute right-12 top-14 cursor-pointer md:hidden"
+            >
+              {open ? (
+                <FaTimes className="text-[#41628e] " />
+              ) : (
+                <TiThMenu className="text-[#41628e]  " />
+              )}
+            </div>
+
+            <ul
+              className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-[#f0f5fb] dark:bg-[#1b304e] md:z-auto left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in  rounded-xl  md:shawdow-none lg:shadow-none xl:shadow-none  ${
+                open ? 'top-28' : 'top-[-490px]'
+              }`}
+            >
+              <li className="ml-8 text-xl md:my-0 my-7">
+                {!darkMode && (
+                  <h1
+                    className="flex text-[#516f96]  hover:text-[#35557e] md:hover:scale-110 font-[800] font-Nunito cursor-pointer"
+                    onClick={() => setDarkMode(!darkMode)}
+                  >
+                    Dark
+                    <BsFillMoonStarsFill
+                      onClick={() => setDarkMode(!darkMode)}
+                      className="cursor-pointer text-2xl"
+                    />
+                  </h1>
+                )}
+                {darkMode && (
+                  <h1
+                    className="flex text-yellow-200 font-[800] hover:text-yellow-300 md:hover:scale-110 font-Nunito cursor-pointer"
+                    onClick={() => setDarkMode(!darkMode)}
+                  >
+                    Light
+                    <RiSunFill
+                      onClick={() => setDarkMode(!darkMode)}
+                      className="cursor-pointer text-2xl"
+                    />
+                  </h1>
+                )}
+              </li>
+
+              <li className="md:hover:scale-110 md:transition md:ease-in-out md:delay-100">
+                <a
+                  className="bg-[#385E8F] text-[#ffffff] md:text-lg px-4 py-2 rounded-md ml-8 font-Nunito font-[800] cursor-pointer "
+                  href="https://resume.creddle.io/resume/j1ryfjyu3f1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  See Resume
+                </a>
+              </li>
+            </ul>
+          </nav>
 
           {/* -------ABOUT ME/ FRONT PAGE SECTION------- */}
-          <div className="lg:flex row md:w-full">
+          <div className="lg:flex row md:w-full pt-36">
             <div>
               <div className="text-center m-auto md:text-left">
                 <h2 className="leading-[3.5rem] text-5xl py-2 text-[#385E8F] font-[700] md:text-6xl mt-10 mb-5 font-Poppins dark:text-[#f0f5fb]">
                   Heyyy, this is Ann{' '}
-                  <p className="inline-block animate-waves delay-3000">👋🏼</p>
+                  <p className="  inline-block -z-50 animate-waves delay-3000 ">
+                    👋🏼
+                  </p>
                 </h2>
 
                 <span className="font-Nunito font-[700] text-2xl md:text-3xl text-[#f0f5fb] bg-blue-300 px-3 rounded-md dark:bg-[#f28389]">
@@ -247,7 +247,7 @@ export default function Home() {
               <div>
                 {/* -------MY PROFILE PHOTO SECTION------- */}
                 <div className="rounded-lg absolute border-dashed border-8 border-[#3482f679] dark:border-[#88b7fc7b] dark:hover:border-[#a0c6ff9f] h-80 w-80 top-[2rem] left-[2rem] md:h-94 md:w-94  md:top-[2rem] md:left-[6rem] lg:top-[15rem] lg:left-[10rem] hover:border-[#3482f6aa]"></div>
-                <div className="relative z-30 rounded-lg mx-auto mb-20 bg-gradient-to-b from-[#a1c4fd] to-[#c2e9fb] w-80 h-80 mt-10 overflow-hidden md:h-94 md:w-94 md:mt-20 lg:mt-52 lg:ml-32 md:my-4 md:mb-20 dark:bg-gradient-to-b dark:from-[#b2c3eb] dark:to-[#e4efe9]">
+                <div className="relative z-30 rounded-lg mx-auto mb-20 bg-gradient-to-b from-[#a1c4fd] to-[#c2e9fb] w-80 h-80 mt-10  md:h-94 md:w-94 md:mt-20 lg:mt-52 lg:ml-32 md:my-4 md:mb-20 dark:bg-gradient-to-b dark:from-[#b2c3eb] dark:to-[#e4efe9]">
                   <Image
                     src={AnnProfilePhoto}
                     layout="fill"
@@ -257,10 +257,12 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="absolute z-20 top-40 -left-4 w-72 h-72 bg-[#c8fad9] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 dark:bg-green-500"></div>
-              <div className="absolute z-20 top-7 -right-2 w-80 h-80 bg-[#E0D3FE] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-3000 dark:bg-purple-300"></div>
-              <div className="absolute z-20 md:top-96 md:left-80 top-64 -bottom-8 left-[7rem] w-72 h-72 bg-[#fbacb2dc] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob  animation-delay-4000 dark:bg-pink-400 dark:blur-xl"></div>
-              <div className="absolute z-20  top-74 -bottom-4 left-2 w-72 h-72 bg-[#fff29a] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-4000 dark:bg-[rgb(253,255,129)] md:top-[28rem] dark:blur-xl "></div>
+              <div className="h-32 w-32 overflow-hidden">
+                <div className="absolute z-20 top-40 -left-4 w-72 h-72 bg-[#c8fad9] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 dark:bg-green-500"></div>
+                <div className="absolute z-20 top-7 -right-2 w-80 h-80 bg-[#E0D3FE] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-3000 dark:bg-purple-300"></div>
+                <div className="absolute z-20 md:top-96 md:left-80 top-64 -bottom-8 left-[7rem] w-72 h-72 bg-[#fbacb2dc] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob  animation-delay-4000 dark:bg-pink-400 dark:blur-xl"></div>
+                <div className="absolute z-20  top-74 -bottom-4 left-2 w-72 h-72 bg-[#fff29a] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-4000 dark:bg-[rgb(253,255,129)] md:top-[28rem] dark:blur-xl "></div>
+              </div>
             </div>
           </div>
         </section>
@@ -295,7 +297,7 @@ export default function Home() {
                 width={110}
                 height={110}
                 alt="Developing Serive An Bui Provides"
-                className="hover:animate-waves"
+                className="hover:animate-waves "
               />
               <h3 className="text-lg font-Poppins font-medium pt-8 pb-4 leading-6 md:text-xl ">
                 Developing Website || App
@@ -691,7 +693,7 @@ export default function Home() {
           </div>
         </section>
         {/* -------BOUCING ARROW UP-------*/}
-        <section className="text-4xl flex justify-center  pb-10 md:pb-5 m-14 ">
+        <section className="text-4xl flex justify-center  pb-10 md:pb-5 p-14 ">
           <IoIosArrowUp
             onClick={handleBoucingButtonDown}
             className="text-[#FF787F] animate-bounce cursor-pointer "
@@ -700,7 +702,7 @@ export default function Home() {
       </main>
 
       <footer className="bg-[#2e4d75] dark:bg-[#1b304e]">
-        <div className="text-3xl flex justify-center gap-4 text-blue-200 pt-6 ">
+        <div className="text-3xl flex justify-center gap-4 text-blue-200 pt-8 ">
           <a
             href="https://github.com/thaian161"
             target="_blank"
@@ -726,7 +728,7 @@ export default function Home() {
             <AiFillYoutube className="hover:text-[#ffff] hover:scale-125" />
           </a>
         </div>
-        <div className="p-5 text-center text-xl text-blue-200 font-[500] font-Nunito hover:text-white cursor-pointer">
+        <div className="p-5 pb-8 text-center text-xl text-blue-200 font-[500] font-Nunito hover:text-white cursor-pointer">
           Designed & Build by Ann Bui ✌🏼
         </div>
       </footer>
