@@ -76,7 +76,7 @@ const projects = [
 ];
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   const setDarkModeHandler = (darkMode) => {
     setDarkMode(!darkMode);
@@ -105,7 +105,7 @@ export default function Home() {
       <main className="bg-[#f0f5fb] px-10 md:px-22 lg:px-40 dark:bg-[#1b304e]">
         <section className="min-h-fit">
           {/* -------NAV BAR SECTION------- */}
-          <NavBar onSetDarkMode={setDarkModeHandler} />
+          <NavBar onClick={setDarkModeHandler} />
 
           {/* <nav className="sticky top-0 z-10 w-full px-2 pt-6 pb-4 bg-[#f0f5fb] sm:px-4 flex justify-between dark:bg-[#1b304e]">
             <Image

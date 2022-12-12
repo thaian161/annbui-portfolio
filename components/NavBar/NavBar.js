@@ -5,12 +5,11 @@ import Logo from '../../public/logo3.png';
 import ResumeButton from './ResumeButton';
 import { FaTimes } from 'react-icons/fa';
 import { TiThMenu } from 'react-icons/ti';
-import { BsFillMoonStarsFill, BsSunFill } from 'react-icons/bs';
+import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { RiSunFill } from 'react-icons/ri';
 
 const NavBar = (props) => {
   let [open, setOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
 
   return (
     <div className="shadow-md w-full fixed top-0 left-0">
@@ -41,26 +40,26 @@ const NavBar = (props) => {
           }`}
         >
           <li className="md:ml-8 text-xl md:my-0 my-7">
-            {!darkMode && (
+            {!props.darkMode && (
               <h1
                 className="flex text-[#516f96]  hover:text-[#35557e] hover:scale-110 font-[800] font-Nunito cursor-pointer"
-                onClick={() => props.onSetDarkMode}
+                onClick={() => props.onClick}
               >
                 Dark
                 <BsFillMoonStarsFill
-                  onClick={() => props.onSetDarkMode}
+                  onClick={() => props.onClick}
                   className="cursor-pointer text-2xl"
                 />
               </h1>
             )}
-            {darkMode && (
+            {props.darkMode && (
               <h1
                 className="flex text-yellow-200 font-[800] hover:text-yellow-300 hover:scale-110 font-Nunito cursor-pointer"
-                onClick={() => props.onSetDarkMode}
+                onClick={() => props.onClick}
               >
                 Light
                 <RiSunFill
-                  onClick={() => props.onSetDarkMode}
+                  onClick={() => props.onClick}
                   className="cursor-pointer text-2xl"
                 />
               </h1>
