@@ -243,7 +243,7 @@ export default function Home() {
           </div>
         </section>
         {/* -------BOUCING ARROW DOWN-------*/}
-        <section className="text-7xl flex justify-center mt-10 mb-24">
+        <section className="text-4xl flex justify-center mt-12 mb-24 ">
           <IoIosArrowDown
             onClick={handleBoucingButtonDown}
             className="text-[#FF787F] animate-bounce cursor-pointer  "
@@ -253,21 +253,21 @@ export default function Home() {
         {/* ------- SERVICES I OFFER SECTION------ */}
         <section className="mb-10">
           <div ref={ref}>
-            <span className="font-Nunito  rounded-md font-[700] text-2xl py-1 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-200 dark:text-[#f0f5fb] dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#FF787F]">
-              Have a dream website/app in mind?
+            <span className="font-Nunito  rounded-md font-[700] text-2xl py-1 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-200 dark:text-[#f0f5fb] dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#FF787F]  px-1 ">
+              Have A Dream Website/App In Mind?
             </span>
             <p className=" font-Open text-md lg:pr-14 py-5 leading-6 md:text-xl font-[500] mt-2 dark:text-[#b8c9dc]">
               Let&apos;s work together to bring your ideas to life. I am{' '}
               <span className="text-blue-400 font-[500] dark:text-[#f28389]">
                 available for part-time freelance work
               </span>{' '}
-              My services are listed below
+              . My services are listed below
             </p>
           </div>
           {/* -------THREE SERVICES SECTION------- */}
           <div className="lg:flex gap-10">
             {/* -------DEVELOPING WEB CARD-------*/}
-            <div className=" lg:w-1/3 text-center shadow-xl p-10 rounded-2xl my-10 bg-gradient-to-tl from-white to-blue-200 dark:bg-gradient-to-tl dark:from-[#b5c4d8] dark:to-[#6f90bd] flex-auto dark:shadow-[#6f87ac] ">
+            <div className=" lg:w-1/3 text-center shadow-xl p-10 rounded-xl my-10 bg-gradient-to-tl from-white to-blue-200 dark:bg-gradient-to-tl dark:from-[#b5c4d8] dark:to-[#6f90bd] flex-auto dark:shadow-[#6f87ac] ">
               <Image
                 src={Developing}
                 width={110}
@@ -298,7 +298,7 @@ export default function Home() {
             </div>
 
             {/* -------UXUI CARD-------*/}
-            <div className="lg:w-1/3  text-center shadow-lg p-10 rounded-2xl my-10 flex-auto bg-gradient-to-t from-white to-blue-100 dark:bg-gradient-to-t dark:from-[#b5c4d8] dark:to-[#6f90bd] dark:shadow-[#6f87ac] ">
+            <div className="lg:w-1/3  text-center shadow-lg p-10 rounded-xl my-10 flex-auto bg-gradient-to-t from-white to-blue-100 dark:bg-gradient-to-t dark:from-[#b5c4d8] dark:to-[#6f90bd] dark:shadow-[#6f87ac] ">
               <Image
                 src={UXUI}
                 width={110}
@@ -328,7 +328,7 @@ export default function Home() {
               </h4>
             </div>
             {/* -------CONSULTING CARD-------*/}
-            <div className="lg:w-1/3  text-center shadow-lg p-10 rounded-2xl my-10 flex-auto bg-gradient-to-tr from-white to-blue-200 dark:bg-gradient-to-tr dark:from-[#b5c4d8] dark:to-[#6f90bd] dark:shadow-[#6f87ac] ">
+            <div className="lg:w-1/3  text-center shadow-lg p-10 rounded-xl my-10 flex-auto bg-gradient-to-tr from-white to-blue-200 dark:bg-gradient-to-tr dark:from-[#b5c4d8] dark:to-[#6f90bd] dark:shadow-[#6f87ac] ">
               <Image
                 src={Consulting}
                 width={110}
@@ -374,8 +374,8 @@ export default function Home() {
         </section>
         {/* -------PROJECTS PORTFOLIO SECTION------- */}
         <section>
-          <div>
-            <span className="font-Nunito font-[700] text-2xl py-1 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-200 dark:text-[#f0f5fb] rounded-md dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#FF787F] ">
+          <div className="mt-[6rem]">
+            <span className=" font-Nunito font-[700] text-2xl py-1 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-200 dark:text-[#f0f5fb] rounded-md dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#FF787F]  px-1 ">
               My Projects
             </span>
             <p className="font-Open text-mdtext-md lg:pr-14 py-5 leading-6 md:text-xl font-[500] mt-2 dark:text-[#b8c9dc]">
@@ -402,13 +402,13 @@ export default function Home() {
                 layout="responsive"
                 alt="Ann Bui Portfolio Project"
               />
-              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg px-3 p-2 dark:bg-gradient-to-t dark:from-[#d2ddeb] dark:to-[#95afd4]">
+              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg px-3 p-2 dark:bg-gradient-to-t dark:from-[#d2ddeb] dark:to-[#95afd4]">
                 <p className="justify-center pt-5 px-6 leading-7">
                   This SPA portfolio - fully responsive and dark mode 😄
                 </p>
                 <p className="leading-7">
                   <span className="font-[700]">Tech stack:</span> Next JS, React
-                  JS & Tailwind{' '}
+                  JS & Tailwind CSS{' '}
                 </p>
 
                 <div className="flex items-center justify-center">
@@ -443,7 +443,7 @@ export default function Home() {
                 layout="responsive"
                 alt="Ann Bui Portfolio Project"
               />
-              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg  p-2 dark:bg-gradient-to-t dark:from-[#d2ddeb] dark:to-[#95afd4]">
+              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg  p-2 dark:bg-gradient-to-t dark:from-[#d2ddeb] dark:to-[#95afd4]">
                 <p className="justify-center pt-5 px-6 leading-7">
                   {projects[1].description}
                 </p>
@@ -484,7 +484,7 @@ export default function Home() {
                 layout="responsive"
                 alt="Ann Bui Portfolio Project"
               />
-              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg  p-2 dark:bg-gradient-to-t dark:from-[#d2ddeb] dark:to-[#95afd4]">
+              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg  p-2 dark:bg-gradient-to-t dark:from-[#d2ddeb] dark:to-[#95afd4]">
                 <p className="justify-center pt-5 px-6 leading-7">
                   {projects[2].description}
                 </p>
@@ -526,7 +526,7 @@ export default function Home() {
                 layout="responsive"
                 alt="Ann Bui Portfolio Project"
               />
-              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg p-2 dark:bg-gradient-to-t dark:from-[#d2ddeb] dark:to-[#95afd4]">
+              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg p-2 dark:bg-gradient-to-t dark:from-[#d2ddeb] dark:to-[#95afd4]">
                 <p className="justify-center pt-5 px-6 leading-7">
                   {projects[3].description}
                 </p>
@@ -568,7 +568,7 @@ export default function Home() {
                 layout="responsive"
                 alt="Ann Bui Portfolio Project"
               />
-              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg p-2 dark:bg-gradient-to-t dark:from-[#d2ddeb] dark:to-[#95afd4]">
+              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg p-2 dark:bg-gradient-to-t dark:from-[#d2ddeb] dark:to-[#95afd4]">
                 <p className="justify-center pt-5 px-6 leading-7">
                   {projects[4].description}
                 </p>
@@ -610,7 +610,7 @@ export default function Home() {
                 layout="responsive"
                 alt="Ann Bui Portfolio Project"
               />
-              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-2xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg p-2 dark:bg-gradient-to-t dark:from-[#d2ddeb] dark:to-[#95afd4]">
+              <div className="flex flex-col items-center text-center shadow-xl  rounded-b-xl bg-white font-Open text-md dark:shadow-[#6f87ac] dark:shadow-lg p-2 dark:bg-gradient-to-t dark:from-[#d2ddeb] dark:to-[#95afd4]">
                 <p className="justify-center pt-5 px-6 leading-7">
                   {projects[5].description}
                 </p>
@@ -646,8 +646,8 @@ export default function Home() {
         </section>
         {/* ------CONTACT ME------ */}
         <section className="my-10">
-          <div>
-            <span className="font-Nunito font-[700] text-2xl py-1 md:text-3xl bg-gradient-to-b from-transparent via-transparent to-blue-200 dark:text-[#f0f5fb] rounded-md dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#FF787F] ">
+          <div className="mt-[6rem]">
+            <span className="font-Nunito font-[700] text-2xl py-1 md:text-3xl bg-gradient-to-b px-1 from-transparent via-transparent to-blue-200 dark:text-[#f0f5fb] rounded-md dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#FF787F] ">
               📧 Let&apos;s Connect
             </span>
             <p className="font-Open text-mdtext-md lg:pr-14 py-5 leading-6 md:text-xl font-[500] mt-2 dark:text-[#b8c9dc]">
@@ -669,7 +669,7 @@ export default function Home() {
           </div>
         </section>
         {/* -------BOUCING ARROW UP-------*/}
-        <section className="text-7xl flex justify-center  pb-10 md:pb-5 ">
+        <section className="text-4xl flex justify-center  pb-10 md:pb-5 m-14 ">
           <IoIosArrowUp
             onClick={handleBoucingButtonDown}
             className="text-[#FF787F] animate-bounce cursor-pointer "
