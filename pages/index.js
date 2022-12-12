@@ -1,6 +1,5 @@
 import Head from 'next/head';
-import { BsFillMoonStarsFill, BsSunFill } from 'react-icons/bs';
-import { RiSunFill } from 'react-icons/ri';
+
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import {
   AiFillGithub,
@@ -15,7 +14,6 @@ import AnnProfilePhoto from '../public/AnnBuiProfilePhoto.png';
 import Developing from '../public/Developing.png';
 import UXUI from '../public/UX:UI.png';
 import Consulting from '../public/Consulting.png';
-import Logo from '../public/logo3.png';
 import ABPortfolio from '../public/ABPortfolio.png';
 import CSS from '../public/CSS.png';
 import Bakeitup from '../public/Bakeitup.png';
@@ -24,6 +22,7 @@ import Scheduler from '../public/Scheduler.png';
 import TinyApp from '../public/TinyApp.png';
 import Tweeter from '../public/Tweeter.png';
 import DP from '../public/DP.png';
+import NavBar from '../components/NavBar/NavBar';
 
 const projects = [
   {
@@ -78,6 +77,11 @@ const projects = [
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+
+  const setDarkModeHandler = (darkMode) => {
+    setDarkMode(!darkMode);
+  };
+
   const ref = useRef(null);
   const handleBoucingButtonDown = () => {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
@@ -101,8 +105,9 @@ export default function Home() {
       <main className="bg-[#f0f5fb] px-10 md:px-22 lg:px-40 dark:bg-[#1b304e]">
         <section className="min-h-fit">
           {/* -------NAV BAR SECTION------- */}
+          <NavBar onSetDarkMode={setDarkModeHandler} />
 
-          <nav className="sticky top-0 z-10 w-full px-2 pt-6 pb-4 bg-[#f0f5fb] sm:px-4 flex justify-between dark:bg-[#1b304e]">
+          {/* <nav className="sticky top-0 z-10 w-full px-2 pt-6 pb-4 bg-[#f0f5fb] sm:px-4 flex justify-between dark:bg-[#1b304e]">
             <Image
               className="text-xl"
               src={Logo}
@@ -149,11 +154,11 @@ export default function Home() {
                 </a>
               </li>
             </ul>
-          </nav>
+          </nav> */}
 
           {/* -------ABOUT ME/ FRONT PAGE SECTION------- */}
           <div className="lg:flex row md:w-full">
-            <div>
+            <div className="mt-[20rem]">
               <div className="text-center m-auto md:text-left">
                 <h2 className="leading-[3.5rem] text-5xl py-2 text-[#385E8F] font-[700] md:text-6xl mt-10 mb-5 font-Poppins dark:text-[#f0f5fb]">
                   Heyyy, this is Ann{' '}
