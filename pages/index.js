@@ -246,22 +246,22 @@ export default function Home() {
             <div className="relative w-full max-w-md">
               <div>
                 {/* -------MY PROFILE PHOTO SECTION------- */}
-                <div className="rounded-lg absolute border-dashed border-8 border-[#3482f679] dark:border-[#88b7fc7b] dark:hover:border-[#a0c6ff9f] h-72 w-72 top-[2rem] left-[4rem] md:h-82 md:w-82  md:top-[2rem] md:left-[7rem] lg:top-[15rem] lg:left-[10.1rem] hover:border-[#3482f6aa]"></div>
-                <div className="relative z-30 rounded-lg mx-auto mb-20 bg-gradient-to-b from-[#a1c4fd] to-[#c2e9fb] w-72 h-72 mt-10  md:h-82 md:w-82 md:mt-20 lg:mt-52 lg:ml-32 md:my-4 md:mb-20 dark:bg-gradient-to-b dark:from-[#b2c3eb] dark:to-[#e4efe9] left-5 md:left-0  ">
+                <div className="rounded-lg absolute border-dashed border-8 border-[#3482f679] dark:border-[#88b7fc7b] dark:hover:border-[#a0c6ff9f] h-72 w-72 top-[2rem] left-[3rem] md:h-82 md:w-82  md:top-[2rem] md:left-[7rem] lg:top-[15rem] lg:left-[10.1rem] hover:border-[#3482f6aa]"></div>
+                <div className="relative z-30 rounded-lg mx-auto mb-20 bg-gradient-to-b from-[#a1c4fd] to-[#c2e9fb] w-72 h-72 mt-10  md:h-82 md:w-82 md:mt-20 lg:mt-52 lg:ml-32 md:my-4 md:mb-20 dark:bg-gradient-to-b dark:from-[#b2c3eb] dark:to-[#e4efe9]  md:left-0  ">
                   <Image
                     src={AnnProfilePhoto}
                     layout="fill"
                     objectFit="cover"
                     alt="Ann Bui Profile Picture"
-                    className="hover:bg-gradient-to-b from-[#64a2ff6f]"
+                    className="hover:bg-gradient-to-b from-[#64a2ff6f] rounded-xl"
                   />
                 </div>
               </div>
               <div className="h-32 w-32 overflow-hidden">
-                <div className="absolute z-20 top-40 -left-4 w-72 h-72 bg-[#c8fad9] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 dark:bg-green-500"></div>
-                <div className="absolute z-20 top-7 -right-2 w-80 h-80 bg-[#E0D3FE] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-3000 dark:bg-purple-300"></div>
-                <div className="absolute z-20 md:top-96 md:left-60 top-64 -bottom-8 left-[7rem] w-72 h-72 bg-[#fbacb2dc] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2  animation-delay-4000 dark:bg-pink-400 dark:blur-xl "></div>
-                <div className="absolute z-20  top-74 -bottom-4 left-2 w-72 h-72 bg-[#fff29a] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-4000 dark:bg-[rgb(253,255,129)] md:top-[28rem] dark:blur-xl "></div>
+                <div className="absolute md:top-32 z-20 top-5 -left-4 w-72 h-72 bg-[#c8fad9] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 dark:bg-green-500"></div>
+                <div className="absolute z-20 top-16 -right-2 w-52 h-52 bg-[#E0D3FE] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-3000 dark:bg-purple-300"></div>
+                <div className="absolute z-20 md:top-96 md:left-64 top-64 -bottom-8 left-[7rem] w-52 h-52 bg-[#fbacb2dc] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2  animation-delay-4000 dark:bg-pink-400 dark:blur-xl "></div>
+                <div className="absolute z-20 top-74 -bottom-4 left-2 w-64 h-64 bg-[#fff29a] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-4000 dark:bg-[rgb(253,255,129)] md:top-[25rem] dark:blur-xl "></div>
               </div>
             </div>
           </div>
