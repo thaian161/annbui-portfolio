@@ -129,7 +129,7 @@ export default function Home() {
 
             <ul
               className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-[#f0f5fb] dark:bg-[#1b304e] md:z-auto left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in  rounded-xl ${
-                open ? 'top-[7.5rem]' : 'top-[-600px]'
+                open ? 'top-[8rem]' : 'top-[-600px]'
               }`}
             >
               <li className="text-[#5e7a9f]  hover:text-[#385E8F]  md:hover:scale-110 font-[800] font-Nunito cursor-pointer text-xl px-6 py-3 md:px-4 dark:hover:text-[#c7d6e9] ">
@@ -180,7 +180,7 @@ export default function Home() {
               </li>
 
               <li className="md:hover:scale-110 md:transition md:ease-in-out md:delay-100 pr-6 py-6">
-                <div className="w-full bg-[#385E8F] hover:bg-[#4f74a4] h-[2rem] pt-[0.15rem] ">
+                <div className="w-full bg-[#385E8F] hover:bg-[#4f74a4] h-[2.5rem] pt-[0.30rem] ">
                   <a
                     className=" md:bg-[#385E8F] text-[#ffffff] text-lg px-6 py-3 md:px-4 rounded-lg  font-Nunito font-[800] cursor-pointer "
                     href="https://resume.creddle.io/resume/j1ryfjyu3f1"
