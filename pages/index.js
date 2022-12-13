@@ -185,7 +185,7 @@ export default function Home() {
                 <span className="font-Nunito font-[700] text-2xl md:text-3xl text-[#f0f5fb] bg-blue-300 px-3 rounded-md dark:bg-[#f28389]">
                   Jr Front-end Dev & UXUI Designer
                 </span>
-                <p className=" font-Open text-lg lg:pr-14 py-5 leading-6 text-gray-800 md:text-xl max-w-7xl mx-auto mt-6 font-[500] dark:text-[#b8c9dc]">
+                <p className=" font-Open text-lg lg:pr-14 py-5 leading-6 text-gray-800 md:text-xl  mx-auto mt-6 font-[500] dark:text-[#b8c9dc]">
                   I have a strong interest in Web Development and love the
                   ability to be{' '}
                   <span className="text-blue-400 font-[500] dark:text-[#FF787F]">
@@ -246,8 +246,8 @@ export default function Home() {
             <div className="relative w-full max-w-md">
               <div>
                 {/* -------MY PROFILE PHOTO SECTION------- */}
-                <div className="rounded-lg absolute border-dashed border-8 border-[#3482f679] dark:border-[#88b7fc7b] dark:hover:border-[#a0c6ff9f] h-72 w-72 top-[2rem] left-[3rem] md:h-82 md:w-82  md:top-[2rem] md:left-[7rem] lg:top-[15rem] lg:left-[10.1rem] hover:border-[#3482f6aa]"></div>
-                <div className="relative z-30 rounded-lg mx-auto mb-20 bg-gradient-to-b from-[#a1c4fd] to-[#c2e9fb] w-72 h-72 mt-10  md:h-82 md:w-82 md:mt-20 lg:mt-52 lg:ml-32 md:my-4 md:mb-20 dark:bg-gradient-to-b dark:from-[#b2c3eb] dark:to-[#e4efe9]  md:left-0  ">
+                <div className="rounded-lg absolute border-dashed border-8 border-[#3482f679] dark:border-[#88b7fc7b] dark:hover:border-[#a0c6ff9f] h-72 w-72 top-[6.7rem] left-[5rem] md:h-82 md:w-82  md:top-[4rem] md:left-[13rem] lg:top-[16.5rem] lg:left-[10.1rem] hover:border-[#3482f6aa]"></div>
+                <div className="relative z-30 rounded-lg mx-auto mb-20 bg-gradient-to-b from-[#a1c4fd] to-[#c2e9fb] w-72 h-72 mt-10  md:h-82 md:w-82 md:mt-20 lg:mt-52 lg:ml-32 md:my-4 md:mb-20 dark:bg-gradient-to-b dark:from-[#b2c3eb] dark:to-[#e4efe9]  md:left-[6rem] top-20 md:top-[2rem] left-0 lg:top-6 lg:left-0">
                   <Image
                     src={AnnProfilePhoto}
                     layout="fill"
@@ -258,10 +258,10 @@ export default function Home() {
                 </div>
               </div>
               <div className="h-32 w-32 overflow-hidden">
-                <div className="absolute md:top-32 z-20 top-5 -left-4 w-72 h-72 bg-[#c8fad9] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 dark:bg-green-500"></div>
-                <div className="absolute z-20 top-16 -right-1 w-52 h-52 bg-[#E0D3FE] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-3000 dark:bg-purple-300"></div>
-                <div className="absolute z-20 md:top-96 md:left-64 top-64 -bottom-8 left-[7rem] w-52 h-52 bg-[#fbacb2dc] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2  animation-delay-4000 dark:bg-pink-400 dark:blur-xl "></div>
-                <div className="absolute z-20 top-74 -bottom-4 left-2 w-64 h-64 bg-[#fff29a] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-4000 dark:bg-[rgb(253,255,129)] md:top-[25rem] dark:blur-xl "></div>
+                <div className="absolute md:-top-[4rem] z-20 top-[0rem] -left-4 w-72 h-72 bg-[#c8fad9] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 dark:bg-green-500  lg:top-[10rem]"></div>
+                <div className="absolute z-20 top-16 -right-1 w-52 h-52 bg-[#E0D3FE] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-3000 dark:bg-purple-300 m:-top-[6rem] lg:top-[9rem] lg:left-[16rem]"></div>
+                <div className="absolute z-20 md:top-[15rem] md:left-[20rem] top-64 -bottom-8 left-[12rem] w-52 h-52 bg-[#fbacb2dc] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2  animation-delay-4000 dark:bg-pink-400 dark:blur-xl lg:top-[26rem] lg:left-[17rem]"></div>
+                <div className="absolute z-20 top-74 -bottom-[1rem] -left-1 w-64 h-64 bg-[#fff29a] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-4000 dark:bg-[rgb(253,255,129)] md:top-[12rem] md:left-[4rem] dark:blur-xl lg:top-[25rem] lg:left-[1rem]"></div>
               </div>
             </div>
           </div>
