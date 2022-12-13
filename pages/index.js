@@ -11,6 +11,7 @@ import {
 import { FaTimes } from 'react-icons/fa';
 import { TiThMenu } from 'react-icons/ti';
 import { useState, useRef } from 'react';
+import { Link } from 'react-scroll';
 
 import Image from 'next/legacy/image';
 import AnnProfilePhoto from '../public/AnnBuiProfilePhoto.png';
@@ -131,7 +132,27 @@ export default function Home() {
                 open ? 'top-[7.5rem]' : 'top-[-490px]'
               }`}
             >
-              <li className="ml-8 text-xl md:my-0 my-7">
+              <li className="text-[#516f96]  hover:text-[#35557e] md:hover:scale-110 font-[800] font-Nunito cursor-pointer text-xl px-4 py-2 dark:hover:text-[#c7d6e9] ">
+                <Link smooth spy to="about-me" duration={500}>
+                  About
+                </Link>
+              </li>
+              <li className="text-[#516f96]  hover:text-[#35557e] md:hover:scale-110 font-[800] font-Nunito cursor-pointer text-xl px-4 py-2 dark:hover:text-[#c7d6e9]">
+                <Link smooth spy to="services" duration={500}>
+                  Services
+                </Link>
+              </li>
+              <li className="text-[#516f96]  hover:text-[#35557e] md:hover:scale-110 font-[800] font-Nunito cursor-pointer text-xl px-4 py-2 dark:hover:text-[#c7d6e9]">
+                <Link smooth spy to="projects" duration={500}>
+                  Projects
+                </Link>
+              </li>
+              <li className="text-[#516f96]  hover:text-[#35557e] md:hover:scale-110 font-[800] font-Nunito cursor-pointer text-xl px-4 py-2 dark:hover:text-[#c7d6e9]">
+                <Link smooth spy to="contact" duration={500}>
+                  Contact
+                </Link>
+              </li>
+              <li className="px-4 py-2 text-xl md:my-0 ">
                 {!darkMode && (
                   <h1
                     className="flex text-[#516f96]  hover:text-[#35557e] md:hover:scale-110 font-[800] font-Nunito cursor-pointer"
@@ -158,9 +179,9 @@ export default function Home() {
                 )}
               </li>
 
-              <li className="md:hover:scale-110 md:transition md:ease-in-out md:delay-100">
+              <li className="md:hover:scale-110 md:transition md:ease-in-out md:delay-100 px-2 py-4">
                 <a
-                  className="bg-[#385E8F] text-[#ffffff] md:text-lg px-4 py-2 rounded-md ml-8 font-Nunito font-[800] cursor-pointer "
+                  className="bg-[#385E8F] text-[#ffffff] md:text-lg px-4 py-2 rounded-md  font-Nunito font-[800] cursor-pointer "
                   href="https://resume.creddle.io/resume/j1ryfjyu3f1"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -173,7 +194,7 @@ export default function Home() {
 
           {/* -------ABOUT ME/ FRONT PAGE SECTION------- */}
           <div className="lg:flex row md:w-full pt-36">
-            <div>
+            <div id="about-me">
               <div className="text-center m-auto md:text-left">
                 <h2 className="leading-[3.5rem] text-5xl py-2 text-[#385E8F] font-[700] md:text-6xl mt-10 mb-5 font-Poppins dark:text-[#f0f5fb]">
                   Heyyy, this is Ann{' '}
@@ -275,7 +296,7 @@ export default function Home() {
         </section>
 
         {/* ------- SERVICES I OFFER SECTION------ */}
-        <section className="mb-10">
+        <section className="mb-10" id="services">
           <div ref={ref}>
             <span className="font-Nunito  rounded-md font-[700] text-3xl py-1 md:text-4xl bg-gradient-to-b from-transparent via-transparent to-blue-200 dark:text-[#f0f5fb] dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#FF787F]  px-1 ">
               Have A Dream Website/App In Mind?
@@ -399,7 +420,10 @@ export default function Home() {
         {/* -------PROJECTS PORTFOLIO SECTION------- */}
         <section>
           <div className="mt-[6rem]">
-            <span className=" font-Nunito font-[700] text-3xl py-1 md:text-4xl bg-gradient-to-b from-transparent via-transparent to-blue-200 dark:text-[#f0f5fb] rounded-md dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#FF787F]  px-1 ">
+            <span
+              className=" font-Nunito font-[700] text-3xl py-1 md:text-4xl bg-gradient-to-b from-transparent via-transparent to-blue-200 dark:text-[#f0f5fb] rounded-md dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#FF787F]  px-1 "
+              id="projects"
+            >
               Projects I&apos;ve Built
             </span>
             <p className="font-Open text-lg  lg:pr-14 py-5 leading-7 md:text-xl font-[500] mt-2 dark:text-[#b8c9dc]">
@@ -670,7 +694,7 @@ export default function Home() {
           </div>
         </section>
         {/* ------CONTACT ME------ */}
-        <section className="my-10">
+        <section className="my-10" id="contact">
           <div className="mt-[6rem]">
             <span className="font-Nunito font-[700] text-3xl py-1 md:text-4xl bg-gradient-to-b px-1 from-transparent via-transparent to-blue-200 dark:text-[#f0f5fb] rounded-md dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#FF787F] ">
               📧 Let&apos;s Connect
