@@ -247,7 +247,7 @@ export default function Home() {
               <div>
                 {/* -------MY PROFILE PHOTO SECTION------- */}
                 <div className="rounded-lg absolute border-dashed border-8 border-[#3482f679] dark:border-[#88b7fc7b] dark:hover:border-[#a0c6ff9f] h-72 w-72 top-[2rem] left-[4rem] md:h-82 md:w-82  md:top-[2rem] md:left-[7rem] lg:top-[15rem] lg:left-[10.1rem] hover:border-[#3482f6aa]"></div>
-                <div className="relative z-30 rounded-lg mx-auto mb-20 bg-gradient-to-b from-[#a1c4fd] to-[#c2e9fb] w-72 h-72 mt-10  md:h-82 md:w-82 md:mt-20 lg:mt-52 lg:ml-32 md:my-4 md:mb-20 dark:bg-gradient-to-b dark:from-[#b2c3eb] dark:to-[#e4efe9] left-5 md:left-0">
+                <div className="relative z-30 rounded-lg mx-auto mb-20 bg-gradient-to-b from-[#a1c4fd] to-[#c2e9fb] w-72 h-72 mt-10  md:h-82 md:w-82 md:mt-20 lg:mt-52 lg:ml-32 md:my-4 md:mb-20 dark:bg-gradient-to-b dark:from-[#b2c3eb] dark:to-[#e4efe9] left-5 md:left-0  ">
                   <Image
                     src={AnnProfilePhoto}
                     layout="fill"
@@ -280,7 +280,7 @@ export default function Home() {
             <span className="font-Nunito  rounded-md font-[700] text-3xl py-1 md:text-4xl bg-gradient-to-b from-transparent via-transparent to-blue-200 dark:text-[#f0f5fb] dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#FF787F]  px-1 ">
               Have A Dream Website/App In Mind?
             </span>
-            <p className=" font-Open text-md lg:pr-14 py-5 leading-6 md:text-xl font-[500] mt-2 dark:text-[#b8c9dc]">
+            <p className=" font-Open text-lg lg:pr-14 py-5 leading-7 md:text-xl font-[500] mt-2 dark:text-[#b8c9dc]">
               Let&apos;s work together to bring your ideas to life. I am{' '}
               <span className="text-blue-400 font-[500] dark:text-[#f28389]">
                 available for part-time freelance work
@@ -400,10 +400,10 @@ export default function Home() {
         <section>
           <div className="mt-[6rem]">
             <span className=" font-Nunito font-[700] text-3xl py-1 md:text-4xl bg-gradient-to-b from-transparent via-transparent to-blue-200 dark:text-[#f0f5fb] rounded-md dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#FF787F]  px-1 ">
-              My Projects
+              Projects I&apos;ve Built
             </span>
-            <p className="font-Open text-mdtext-md lg:pr-14 py-5 leading-6 md:text-xl font-[500] mt-2 dark:text-[#b8c9dc]">
-              Here are some of my{' '}
+            <p className="font-Open text-lg  lg:pr-14 py-5 leading-7 md:text-xl font-[500] mt-2 dark:text-[#b8c9dc]">
+              A colllection of{' '}
               <span className="text-blue-400 font-[500] dark:text-[#f28389]">
                 coding projects
               </span>{' '}
@@ -411,7 +411,8 @@ export default function Home() {
               <span className="text-blue-400 font-[500] dark:text-[#f28389]">
                 UX/UI design
               </span>{' '}
-              I have done so far
+              I have built so far. Both working solo and in a team setting. Each
+              project also includes a live demo and the source code. Enjoy :)
             </p>
           </div>
           {/* -------SHOWCASE EACH PROJECT SECTION------- */}
@@ -674,9 +675,10 @@ export default function Home() {
             <span className="font-Nunito font-[700] text-3xl py-1 md:text-4xl bg-gradient-to-b px-1 from-transparent via-transparent to-blue-200 dark:text-[#f0f5fb] rounded-md dark:bg-gradient-to-b dark:from-transparent dark:via-transparent dark:to-[#FF787F] ">
               📧 Let&apos;s Connect
             </span>
-            <p className="font-Open text-mdtext-md lg:pr-14 py-5 leading-6 md:text-xl font-[500] mt-2 dark:text-[#b8c9dc]">
-              If you wanna grab a coffee/🧋boba, or chat with me. Please feel
-              free to add me on social media and just{' '}
+            <p className="font-Open text-lg lg:pr-14 py-5 leading-7 md:text-xl font-[500] mt-2 dark:text-[#b8c9dc]">
+              I am always open to discussing challenging, interesting positions
+              that fit my skillset. <br /> If you wanna grab a coffee/🧋boba, or
+              chat with me. Please feel free to add me on social media and just{' '}
               <span className="text-blue-400 font-[500] dark:text-[#f28389]">
                 <a
                   href="https://www.linkedin.com/in/thaian161/"
