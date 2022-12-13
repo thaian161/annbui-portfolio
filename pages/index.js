@@ -246,8 +246,8 @@ export default function Home() {
             <div className="relative w-full max-w-md">
               <div>
                 {/* -------MY PROFILE PHOTO SECTION------- */}
-                <div className="rounded-lg absolute border-dashed border-8 border-[#3482f679] dark:border-[#88b7fc7b] dark:hover:border-[#a0c6ff9f] h-72 w-72 top-[6.7rem] left-[5rem] md:h-82 md:w-82  md:top-[4rem] md:left-[13rem] lg:top-[16.5rem] lg:left-[10.1rem] hover:border-[#3482f6aa]"></div>
-                <div className="relative z-30 rounded-lg mx-auto mb-20 bg-gradient-to-b from-[#a1c4fd] to-[#c2e9fb] w-72 h-72 mt-10  md:h-82 md:w-82 md:mt-20 lg:mt-52 lg:ml-32 md:my-4 md:mb-20 dark:bg-gradient-to-b dark:from-[#b2c3eb] dark:to-[#e4efe9]  md:left-[6rem] top-20 md:top-[2rem] left-0 lg:top-6 lg:left-0">
+                <div className="rounded-lg absolute border-dashed border-4 md:border-8 border-[#3482f679] dark:border-[#88b7fc7b] dark:hover:border-[#a0c6ff9f] h-72 w-72 top-[6.7rem] left-[6.2rem] md:h-82 md:w-82  md:top-[4rem] md:left-[13rem] lg:top-[16.5rem] lg:left-[10.1rem] hover:border-[#3482f6aa]"></div>
+                <div className="relative z-30 rounded-lg mx-auto mb-20 bg-gradient-to-b from-[#a1c4fd] to-[#c2e9fb] w-72 h-72 mt-10  md:h-82 md:w-82 md:mt-20 lg:mt-52 lg:ml-32 md:my-4 md:mb-20 dark:bg-gradient-to-b dark:from-[#b2c3eb] dark:to-[#e4efe9]  md:left-[6rem] top-20 md:top-[2rem] -left-1 lg:top-6 lg:left-0">
                   <Image
                     src={AnnProfilePhoto}
                     layout="fill"
