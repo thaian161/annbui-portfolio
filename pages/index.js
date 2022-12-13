@@ -259,7 +259,7 @@ export default function Home() {
               </div>
               <div className="h-32 w-32 overflow-hidden">
                 <div className="absolute md:top-32 z-20 top-5 -left-4 w-72 h-72 bg-[#c8fad9] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 dark:bg-green-500"></div>
-                <div className="absolute z-20 top-16 -right-2 w-52 h-52 bg-[#E0D3FE] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-3000 dark:bg-purple-300"></div>
+                <div className="absolute z-20 top-16 -right-1 w-52 h-52 bg-[#E0D3FE] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-3000 dark:bg-purple-300"></div>
                 <div className="absolute z-20 md:top-96 md:left-64 top-64 -bottom-8 left-[7rem] w-52 h-52 bg-[#fbacb2dc] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2  animation-delay-4000 dark:bg-pink-400 dark:blur-xl "></div>
                 <div className="absolute z-20 top-74 -bottom-4 left-2 w-64 h-64 bg-[#fff29a] rounded-full mix-blend-multiply filter blur-2xl opacity-60 animate-blob2 animation-delay-4000 dark:bg-[rgb(253,255,129)] md:top-[25rem] dark:blur-xl "></div>
               </div>
