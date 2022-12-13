@@ -105,8 +105,8 @@ export default function Home() {
       <main className="bg-[#f0f5fb] px-10 md:px-22 lg:px-40 dark:bg-[#1b304e]">
         <section className="min-h-fit">
           {/* -------NAV BAR SECTION------- */}
-          <nav className="w-full fixed top-0 left-0 4 flex justify-between bg-[#f0f5fb] dark:bg-[#1b304e] z-[35] pt-6 pb-6 md:pr-36 md:pl-36 pl-[60px] ">
-            <div className="md:flex items-center justify-between pt-1">
+          <nav className="w-full fixed top-0 left-0 4 flex justify-between bg-[#f0f5fb] dark:bg-[#1b304e] z-[35] pt-6 pb-6 md:pr-24 md:pl-[8rem] pl-[60px] ">
+            <div className="md:flex items-center justify-between pt-2 -ml-4">
               <Image
                 className="text-xl bg-transparent "
                 src={Logo}
@@ -123,39 +123,39 @@ export default function Home() {
               {open ? (
                 <FaTimes className="text-[#41628e] " />
               ) : (
-                <TiThMenu className="text-[#41628e]  " />
+                <TiThMenu className="text-[#41628e] " />
               )}
             </div>
 
             <ul
               className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-[#f0f5fb] dark:bg-[#1b304e] md:z-auto left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in  rounded-xl ${
-                open ? 'top-[7.5rem]' : 'top-[-490px]'
+                open ? 'top-[7.5rem]' : 'top-[-600px]'
               }`}
             >
-              <li className="text-[#516f96]  hover:text-[#35557e] md:hover:scale-110 font-[800] font-Nunito cursor-pointer text-xl px-4 py-2 dark:hover:text-[#c7d6e9] ">
+              <li className="text-[#5e7a9f]  hover:text-[#385E8F]  md:hover:scale-110 font-[800] font-Nunito cursor-pointer text-xl px-6 py-3 md:px-4 dark:hover:text-[#c7d6e9] ">
                 <Link smooth spy to="about-me" duration={500}>
                   About
                 </Link>
               </li>
-              <li className="text-[#516f96]  hover:text-[#35557e] md:hover:scale-110 font-[800] font-Nunito cursor-pointer text-xl px-4 py-2 dark:hover:text-[#c7d6e9]">
+              <li className="text-[#5e7a9f]  hover:text-[#385E8F]  md:hover:scale-110 font-[800] font-Nunito cursor-pointer text-xl px-6 py-3 md:px-4 dark:hover:text-[#c7d6e9]">
                 <Link smooth spy to="services" duration={500}>
                   Services
                 </Link>
               </li>
-              <li className="text-[#516f96]  hover:text-[#35557e] md:hover:scale-110 font-[800] font-Nunito cursor-pointer text-xl px-4 py-2 dark:hover:text-[#c7d6e9]">
+              <li className="text-[#5e7a9f]  hover:text-[#385E8F]  md:hover:scale-110 font-[800] font-Nunito cursor-pointer text-xl px-6 py-3 md:px-4 dark:hover:text-[#c7d6e9]">
                 <Link smooth spy to="projects" duration={500}>
                   Projects
                 </Link>
               </li>
-              <li className="text-[#516f96]  hover:text-[#35557e] md:hover:scale-110 font-[800] font-Nunito cursor-pointer text-xl px-4 py-2 dark:hover:text-[#c7d6e9]">
+              <li className="text-[#5e7a9f]  hover:text-[#385E8F] md:hover:scale-110 font-[800] font-Nunito cursor-pointer text-xl px-6 py-3 md:px-4 dark:hover:text-[#c7d6e9]">
                 <Link smooth spy to="contact" duration={500}>
                   Contact
                 </Link>
               </li>
-              <li className="px-4 py-2 text-xl md:my-0 ">
+              <li className="px-6 py-3 md:px-4 text-xl md:my-0 md:mr-2">
                 {!darkMode && (
                   <h1
-                    className="flex text-[#516f96]  hover:text-[#35557e] md:hover:scale-110 font-[800] font-Nunito cursor-pointer"
+                    className="flex text-[#5e7a9f]  hover:text-[#385E8F]  md:hover:scale-110 font-[800] font-Nunito cursor-pointer"
                     onClick={() => setDarkMode(!darkMode)}
                   >
                     Dark
@@ -179,15 +179,17 @@ export default function Home() {
                 )}
               </li>
 
-              <li className="md:hover:scale-110 md:transition md:ease-in-out md:delay-100 px-2 py-4">
-                <a
-                  className="bg-[#385E8F] text-[#ffffff] md:text-lg px-4 py-2 rounded-md  font-Nunito font-[800] cursor-pointer "
-                  href="https://resume.creddle.io/resume/j1ryfjyu3f1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  See Resume
-                </a>
+              <li className="md:hover:scale-110 md:transition md:ease-in-out md:delay-100 pr-6 py-6">
+                <div className="w-full bg-[#385E8F] hover:bg-[#4f74a4] h-[2rem] pt-[0.15rem] ">
+                  <a
+                    className=" md:bg-[#385E8F] text-[#ffffff] text-lg px-6 py-3 md:px-4 rounded-lg  font-Nunito font-[800] cursor-pointer "
+                    href="https://resume.creddle.io/resume/j1ryfjyu3f1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Resume
+                  </a>
+                </div>
               </li>
             </ul>
           </nav>
